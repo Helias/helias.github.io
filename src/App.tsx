@@ -5,7 +5,7 @@ function App(): JSX.Element {
   return (
     <>
       <Navbar />
-      <img src="src/assets/Home.jpg" />
+      <img src="Home.jpg" />
     </>
   );
 }
