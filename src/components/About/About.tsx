@@ -1,0 +1,73 @@
+import DescriptionIcon from '@mui/icons-material/Description';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import SocialLink from './SocialLink';
+
+export default function About(): JSX.Element {
+  return (
+    <div>
+      <div className="grid grid-cols-12 mb-20">
+        <div className="ml-45 text-center col-span-5">
+          <h2 className="text-6xl mt-10 text-gray-600 underline underline-offset-15">About</h2>
+          <img className="rounded-full h-75 mt-10 mx-auto border" src="Stefano.png" />
+          <div className="mt-10 flex justify-center items-center">
+            <SocialLink url="mailto:stefanoborzi32@gmail.com">
+              <EmailIcon sx={{ fontSize: 50 }} />
+            </SocialLink>
+            <SocialLink url="https://t.me/Helias" classNames="text-sky-500">
+              <TelegramIcon sx={{ fontSize: 50 }} />
+            </SocialLink>
+            <SocialLink url="https://github.com/Helias">
+              <GitHubIcon sx={{ fontSize: 50 }} />
+            </SocialLink>
+            <SocialLink url="https://linkedin.com/in/stefanoborzi" classNames="text-blue-900">
+              <LinkedInIcon sx={{ fontSize: 50 }} />
+            </SocialLink>
+          </div>
+          <div className="mt-10 flex items-center justify-center">
+            <a
+              className="bg-gray-800 px-12 py-5 font-medium text-white hover:text-red-400"
+              href="StefanoBorzi-CV.pdf"
+            >
+              <DescriptionIcon fontSize="medium" className="align-bottom" /> Download Resume
+            </a>
+          </div>
+        </div>
+        <div className="mt-40 col-span-6 text-2xl text-gray-600">
+          <p>I'm a software engineer who started programming for fun at the age of 12.</p>
+          <p className="mt-10">
+            I have several years of working experience mostly using web technologies like
+            TypeScript/JavaScript, Angular, Python, Node.js, Bootstrap, HTML, CSS/SCSS, C++, PHP,
+            and Laravel. I also have academic experience with other technologies like Java.
+          </p>
+          <p className="mt-10">
+            In my spare time, I manage two opensource communities that I have founded{' '}
+            <a
+              className="underline hover:text-black"
+              href="https://github.com/azerothcore"
+              target="_blank"
+            >
+              AzerothCore
+            </a>{' '}
+            and{' '}
+            <a
+              className="underline hover:text-black"
+              href="https://github.com/unict-dmi"
+              target="_blank"
+            >
+              UNICT-DEVS
+            </a>
+            .
+          </p>
+          <p className="mt-10 text-center">
+            <img className="inline-block align-middle mr-3" src="opensource.png" width="32" />I am
+            really passionate about opensource and Linux.{' '}
+            <img className="inline-block align-middle" src="linux-tux.png" width="32" />
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
