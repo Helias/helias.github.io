@@ -3,8 +3,6 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches: ['main', 'portfolio-wip']
-  pull_request:
-    branches: ['main', 'portfolio-wip']
 
 permissions:
   contents: write
