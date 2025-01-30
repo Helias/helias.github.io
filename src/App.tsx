@@ -14,8 +14,11 @@ function App(): JSX.Element {
       <Navbar />
       <Home />
       <About />
+      <hr />
       <Projects />
+      <hr />
       <Opensource />
+      <hr />
       <Teachings />
       <Publications />
       <Events />
