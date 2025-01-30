@@ -20,12 +20,9 @@ jobs:
         with:
           node-version: '20.14.0'
       - name: Build 🔨
-        run: |
-          npm install
-          npm run predeploy
-          npm run deploy
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     branch: gh-pages
-      #     folder: dist/opis-manager
+        run: npm install
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist/
