@@ -4,20 +4,20 @@ import NavbarLink from './Navbar-Link';
 export default function Navbar(): JSX.Element {
   return (
     <>
-      <nav className="bg-gray-800">
+      <nav className="bg-gray-800 z-100 top-0 sticky w-full">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
-                  <NavbarLink content="Home" />
-                  <NavbarLink content="About" />
+                  <NavbarLink content="Home" id="home" />
+                  <NavbarLink content="About" id="about" />
                   {/* <NavbarLink content="Experience & Education" /> */}
-                  <NavbarLink content="Skills & Projects" />
-                  <NavbarLink content="Opensource" />
-                  <NavbarLink content="Teachings" />
-                  <NavbarLink content="Publications" />
-                  <NavbarLink content="Events" />
+                  <NavbarLink content="Skills & Projects" id="projects" />
+                  <NavbarLink content="Opensource" id="opensource" />
+                  <NavbarLink content="Teachings" id="teachings" />
+                  <NavbarLink content="Publications" id="publications" />
+                  <NavbarLink content="Events" id="events" />
                 </div>
               </div>
             </div>

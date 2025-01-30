@@ -7,7 +7,7 @@ import SocialLink from './SocialLink';
 
 export default function About(): JSX.Element {
   return (
-    <div>
+    <div id="about">
       <div className="grid grid-cols-12 mb-20">
         <div className="ml-45 text-center col-span-5">
           <h2 className="text-6xl mt-10 text-gray-600 underline underline-offset-15">About</h2>
