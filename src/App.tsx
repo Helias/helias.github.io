@@ -5,6 +5,7 @@ function App(): JSX.Element {
   return (
     <>
       <Navbar />
+      <img src="Home.jpg" />
     </>
   );
 }
