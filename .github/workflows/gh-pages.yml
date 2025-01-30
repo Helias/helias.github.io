@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: '20.14.0'
       - name: Build 🔨
-        run: npm install
+        run: |
+          npm install
+          npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
