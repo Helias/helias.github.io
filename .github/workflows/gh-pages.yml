@@ -1,15 +1,31 @@
-name: Build and Deploy
+name: Deploy React App to GitHub Pages
 
 on:
   push:
     branches: ['main']
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Build and Deploy React app to GitHub Pages
-        uses: omkartapale/react-deployment-gh-pages@v1.0.0
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Use Node.js 16.15.1
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.15.1'
+      - name: Build 🔨
+        run: |
+          npm install
+          npm run predeploy
+          npm run deploy
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     branch: gh-pages
+      #     folder: dist/opis-manager
