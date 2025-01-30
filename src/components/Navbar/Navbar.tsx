@@ -12,8 +12,11 @@ export default function Navbar(): JSX.Element {
                 <div className="flex space-x-4">
                   <NavbarLink content="Home" />
                   <NavbarLink content="About" />
+                  {/* <NavbarLink content="Experience & Education" /> */}
                   <NavbarLink content="Skills & Projects" />
+                  <NavbarLink content="Opensource" />
                   <NavbarLink content="Teachings" />
+                  <NavbarLink content="Publications" />
                   <NavbarLink content="Events" />
                 </div>
               </div>
