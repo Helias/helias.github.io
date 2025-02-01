@@ -17,8 +17,6 @@ export default function Opensource(): JSX.Element {
             <iframe
               className="mt-5 mb-5 mx-auto"
               src="https://ghbtns.com/github-btn.html?user=azerothcore&type=follow&count=true&size=large"
-              frameborder="0"
-              scrolling="0"
               width="230"
               height="30"
               title="GitHub"
@@ -27,8 +25,6 @@ export default function Opensource(): JSX.Element {
               <iframe
                 className="float-left"
                 src="https://ghbtns.com/github-btn.html?user=azerothcore&repo=azerothcore-wotlk&type=star&count=true&size=large"
-                frameborder="0"
-                scrolling="0"
                 width="170"
                 height="30"
                 title="GitHub"
@@ -37,8 +33,6 @@ export default function Opensource(): JSX.Element {
               <iframe
                 className="float-left"
                 src="https://ghbtns.com/github-btn.html?user=azerothcore&repo=azerothcore-wotlk&type=watch&count=true&size=large&v=2"
-                frameborder="0"
-                scrolling="0"
                 width="170"
                 height="30"
                 title="GitHub"
@@ -46,8 +40,6 @@ export default function Opensource(): JSX.Element {
 
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=azerothcore&repo=azerothcore-wotlk&type=fork&count=true&size=large"
-                frameborder="0"
-                scrolling="0"
                 width="170"
                 height="30"
                 title="GitHub"
@@ -72,8 +64,6 @@ export default function Opensource(): JSX.Element {
             <iframe
               className="mt-5 mb-5 mx-auto"
               src="https://ghbtns.com/github-btn.html?user=unict-dmi&type=follow&count=true&size=large"
-              frameborder="0"
-              scrolling="0"
               width="230"
               height="30"
               title="GitHub"
@@ -82,8 +72,6 @@ export default function Opensource(): JSX.Element {
               <iframe
                 className="float-left"
                 src="https://ghbtns.com/github-btn.html?user=unict-dmi&repo=telegram-dmi-bot&type=star&count=true&size=large"
-                frameborder="0"
-                scrolling="0"
                 width="170"
                 height="30"
                 title="GitHub"
@@ -92,8 +80,6 @@ export default function Opensource(): JSX.Element {
               <iframe
                 className="float-left"
                 src="https://ghbtns.com/github-btn.html?user=unict-dmi&repo=telegram-dmi-bot&type=watch&count=true&size=large&v=2"
-                frameborder="0"
-                scrolling="0"
                 width="170"
                 height="30"
                 title="GitHub"
@@ -101,8 +87,6 @@ export default function Opensource(): JSX.Element {
 
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=unict-dmi&repo=telegram-dmi-bot&type=fork&count=true&size=large"
-                frameborder="0"
-                scrolling="0"
                 width="170"
                 height="30"
                 title="GitHub"
