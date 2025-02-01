@@ -10,7 +10,7 @@ export default function About(): JSX.Element {
     <div id="about">
       <div className="grid grid-cols-12 mb-20">
         <div className="ml-45 text-center col-span-5">
-          <h2 className="text-6xl mt-10 text-gray-600 underline underline-offset-15">About</h2>
+          <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">About</h2>
           <img className="rounded-full h-75 mt-10 mx-auto border" src="Stefano.png" />
           <div className="mt-10 flex justify-center items-center">
             <SocialLink url="mailto:stefanoborzi32@gmail.com">

@@ -3,7 +3,7 @@ export default function Opensource(): JSX.Element {
     <div id="opensource">
       <div className="grid grid-cols-12">
         <div className="ml-45 text-center col-span-5">
-          <h2 className="text-6xl mt-10 text-gray-600 underline underline-offset-15">Opensource</h2>
+          <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">Opensource</h2>
         </div>
       </div>
 
