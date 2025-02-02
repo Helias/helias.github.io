@@ -11,7 +11,7 @@ export default function About(): JSX.Element {
       <div className="grid grid-cols-12 mb-20">
         <div className="ml-45 text-center col-span-5">
           <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">About</h2>
-          <img className="rounded-full h-75 mt-10 mx-auto border" src="Stefano.png" />
+          <img className="rounded-full h-75 mt-10 mx-auto border" src="about/Stefano.png" />
           <div className="mt-10 flex justify-center items-center">
             <SocialLink url="mailto:stefanoborzi32@gmail.com">
               <EmailIcon sx={{ fontSize: 50 }} />
@@ -62,9 +62,9 @@ export default function About(): JSX.Element {
             .
           </p>
           <p className="mt-10 text-center">
-            <img className="inline-block align-middle mr-3" src="opensource.png" width="32" />I am
-            really passionate about opensource and Linux.{' '}
-            <img className="inline-block align-middle" src="linux-tux.png" width="32" />
+            <img className="inline-block align-middle mr-3" src="about/opensource.png" width="32" />
+            I am really passionate about opensource and Linux.{' '}
+            <img className="inline-block align-middle" src="about/linux-tux.png" width="32" />
           </p>
         </div>
       </div>

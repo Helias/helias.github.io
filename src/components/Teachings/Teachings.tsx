@@ -1,6 +1,7 @@
 import CodeIcon from '@mui/icons-material/Code';
 import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import TelegramIcon from '@mui/icons-material/Telegram';
 import Course from './Course';
 
 export default function Teachings(): JSX.Element {
@@ -74,7 +75,21 @@ export default function Teachings(): JSX.Element {
                 />
                 Students Projects
               </a>
-            </span>
+            </span>{' '}
+            -{' '}
+            <span>
+              <a
+                href="https://t.me/unict_qd"
+                target="_blank"
+                className="underline hover:text-gray-400"
+              >
+                <TelegramIcon
+                  sx={{ fontSize: 50 }}
+                  className="drop-shadow-[5px_5px_5px_rgba(0,0,0,1)] text-sky-500 mx-2"
+                />
+                Telegram channel
+              </a>
+            </span>{' '}
           </div>
 
           <div className="ml-[20vw]">

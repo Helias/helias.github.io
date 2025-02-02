@@ -17,7 +17,7 @@ export default function Opensource(): JSX.Element {
       <div className="grid grid-cols-6 mt-10 mb-20">
         <div className="text-center col-span-3">
           <div className="bg-gray-800 py-10 border-5 border-white">
-            <img src="azerothcore.png" className="h-75 mt-10 mx-auto" />
+            <img src="opensource/azerothcore.png" className="h-75 mt-10 mx-auto" />
             <h2 className="text-6xl text-white mt-10">AzerothCore</h2>
           </div>
           <div>
@@ -64,7 +64,7 @@ export default function Opensource(): JSX.Element {
         </div>
         <div className="col-span-3 text-center">
           <div className="bg-gray-800 py-10 border-5 border-white">
-            <img src="unict-devs.png" className="h-75 mt-10 mx-auto" />
+            <img src="opensource/unict-devs.png" className="h-75 mt-10 mx-auto" />
             <h2 className="text-6xl text-white mt-10">UNICT-DEVS</h2>
           </div>
           <div>
