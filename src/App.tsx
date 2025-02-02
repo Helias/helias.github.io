@@ -12,18 +12,20 @@ import Teachings from './components/Teachings/Teachings';
 function App(): JSX.Element {
   return (
     <>
-      <Navbar />
-      <Home />
-      <About />
-      <hr />
-      <Projects />
-      <hr />
-      <Opensource />
-      <hr />
-      <Teachings />
-      <Publications />
-      <Events />
-      <Footer />
+      <div id="home">
+        <Navbar />
+        <Home />
+        <About />
+        <hr />
+        <Projects />
+        <hr />
+        <Opensource />
+        <hr />
+        <Teachings />
+        <Publications />
+        <Events />
+        <Footer />
+      </div>
     </>
   );
 }
