@@ -5,6 +5,13 @@ export default function Opensource(): JSX.Element {
         <div className="ml-45 text-center col-span-5">
           <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">Opensource</h2>
         </div>
+        <div className="col-span-12">
+          <p className="max-w-300 mx-auto mt-10 text-center p-5 text-2xl">
+            I am deeply passionate about open-source. I've always been involved in various
+            open-source communities, and I have now founded two of my own:{' '}
+            <strong>AzerothCore</strong> and <strong>UNICT Devs</strong>.
+          </p>
+        </div>
       </div>
 
       <div className="grid grid-cols-6 mt-10 mb-20">
@@ -47,7 +54,7 @@ export default function Opensource(): JSX.Element {
             </div>
           </div>
           <div>
-            <p className="bg-gray-800 text-white m-2 p-5">
+            <p className="bg-gray-800 text-white m-2 p-5 text-2xl">
               AzerothCore is an open-source game server application and framework designed for
               hosting massively multiplayer online role-playing games (MMORPGs). It is based on the
               popular MMORPG World of Warcraft (WoW) and seeks to recreate the gameplay experience
@@ -94,7 +101,7 @@ export default function Opensource(): JSX.Element {
             </div>
           </div>
           <div>
-            <p className="bg-gray-800 text-white m-2 p-5">
+            <p className="bg-gray-800 text-white m-2 p-5 text-2xl">
               UNICT Devs is an open-source community created by students of the Department of
               Mathematics and Computer Science (DMI) at the University of Catania.It develops and
               maintains Telegram bots, web apps, and automation tools to enhance university
