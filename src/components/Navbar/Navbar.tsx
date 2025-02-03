@@ -4,7 +4,7 @@ import NavbarLink from './Navbar-Link';
 export default function Navbar(): JSX.Element {
   return (
     <>
-      <nav className="bg-gray-800 z-100 top-0 sticky w-full">
+      <nav className="bg-gray-800 z-100 top-0 sticky w-full border-b-2">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">

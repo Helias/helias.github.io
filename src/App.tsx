@@ -19,7 +19,6 @@ function App(): JSX.Element {
         <Projects />
         <hr />
         <Opensource />
-        <hr />
         <Teachings />
         <Publications />
         <Events />
