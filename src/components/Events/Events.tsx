@@ -2,7 +2,7 @@ import Talk from './Talk';
 
 export default function Events(): JSX.Element {
   return (
-    <div id="events" className="pt-16 pb-20 bg-[url('events/events.jpg')] bg-fixed">
+    <div id="events" className="pt-16 pb-20 bg-[url('/events/events.jpg')] bg-fixed">
       <div className="w-full">
         <div className="mt-5 ml-[20vw]">
           <h2 className="text-6xl text-white underline underline-offset-15 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">

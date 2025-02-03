@@ -8,7 +8,7 @@ export default function Teachings(): JSX.Element {
   return (
     <div
       id="teachings"
-      className="bg-gray-800 pt-16 pb-20 bg-[url('teachings/qd-bg.jpg')] bg-fixed"
+      className="bg-gray-800 pt-16 pb-20 bg-[url('/teachings/qd-bg.jpg')] bg-fixed"
     >
       <div className="w-full">
         <div className="">
