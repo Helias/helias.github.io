@@ -1,6 +1,7 @@
 import './App.css';
 import About from './components/About/About';
 import Events from './components/Events/Events';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Opensource from './components/Opensource/Opensource';
@@ -22,7 +23,7 @@ function App(): JSX.Element {
         <Teachings />
         <Publications />
         <Events />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

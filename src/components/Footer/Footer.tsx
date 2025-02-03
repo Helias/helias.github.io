@@ -3,7 +3,7 @@ import CopyrightIcon from '@mui/icons-material/Copyright';
 export default function Footer(): JSX.Element {
   return (
     <>
-      <nav className="bg-gray-800 w-full">
+      <nav className="bg-gray-800 w-full mb-10">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="sm:items-stretch sm:justify-center">
