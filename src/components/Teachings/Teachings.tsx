@@ -3,6 +3,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import Course from './Course';
+import CourseLink from './CourseLink';
 
 export default function Teachings(): JSX.Element {
   return (
@@ -42,57 +43,44 @@ export default function Teachings(): JSX.Element {
           </div>
 
           <div className="ml-[20vw] mt-10 text-center text-white text-2xl mx-auto max-w-300 bg-gray-800 p-5">
-            <span>
-              <a
-                href="https://github.com/UNICT-Quality-Development/"
-                target="_blank"
-                className="drop-shadow-[2px_2px_2px_rgba(0,0,0,1)] underline hover:text-gray-400"
-              >
-                <GitHubIcon sx={{ fontSize: 50 }} className="bg-black" /> GitHub Organization
-              </a>
-            </span>{' '}
+            <CourseLink
+              href="https://github.com/UNICT-Quality-Development/"
+              icon={<GitHubIcon sx={{ fontSize: 50 }} className="bg-black" />}
+              text="GitHub Organization"
+            />{' '}
             -{' '}
-            <span>
-              <a
-                href="https://slides.com/d/kr7YIK0/live"
-                target="_blank"
-                className="drop-shadow-[2px_2px_2px_rgba(0,0,0,1)] underline hover:text-gray-400"
-              >
+            <CourseLink
+              href="https://slides.com/stefanoborzi/code"
+              icon={
                 <DescriptionIcon
                   sx={{ fontSize: 50 }}
                   className="drop-shadow-[5px_5px_5px_rgba(0,0,0,1)]"
-                />{' '}
-                Slides
-              </a>
-            </span>{' '}
+                />
+              }
+              text="Slides"
+            />{' '}
             -{' '}
-            <span>
-              <a
-                href="https://unict-quality-development.github.io/git-catalogue/#/"
-                target="_blank"
-                className="drop-shadow-[2px_2px_2px_rgba(0,0,0,1)] underline hover:text-gray-400"
-              >
+            <CourseLink
+              href="https://unict-quality-development.github.io/git-catalogue/#/"
+              icon={
                 <CodeIcon
                   sx={{ fontSize: 50 }}
                   className="drop-shadow-[5px_5px_5px_rgba(0,0,0,1)]"
                 />
-                Students Projects
-              </a>
-            </span>{' '}
+              }
+              text="Students Projects"
+            />{' '}
             -{' '}
-            <span>
-              <a
-                href="https://t.me/unict_qd"
-                target="_blank"
-                className="drop-shadow-[2px_2px_2px_rgba(0,0,0,1)] underline hover:text-gray-400"
-              >
+            <CourseLink
+              href="https://t.me/unict_qd"
+              icon={
                 <TelegramIcon
                   sx={{ fontSize: 50 }}
                   className="drop-shadow-[5px_5px_5px_rgba(0,0,0,1)] text-sky-500 mx-2"
                 />
-                Telegram channel
-              </a>
-            </span>{' '}
+              }
+              text="Telegram channel"
+            />
           </div>
 
           <div className="ml-[20vw]">
