@@ -8,7 +8,7 @@ export default function Teachings(): JSX.Element {
   return (
     <div
       id="teachings"
-      className="bg-gray-800 pt-16 pb-20 bg-[url('/teachings/qd-bg.jpg')] bg-fixed"
+      className="bg-gray-800 pt-16 pb-20 bg-[url('/teachings/qd-bg.jpg')] bg-fixed bg-center bg-cover"
     >
       <div className="w-full">
         <div className="">
@@ -41,7 +41,7 @@ export default function Teachings(): JSX.Element {
             </div>
           </div>
 
-          <div className="mt-10 text-center text-white text-2xl mx-auto max-w-300">
+          <div className="ml-[20vw] mt-10 text-center text-white text-2xl mx-auto max-w-300 bg-gray-800 p-5">
             <span>
               <a
                 href="https://github.com/UNICT-Quality-Development/"
