@@ -2,7 +2,7 @@ import TypedText from './Typed-text';
 
 export default function Home(): JSX.Element {
   return (
-    <div className="relative w-full bg-black opacity-100">
+    <div className="relative w-full">
       <img src="Home.jpg" className="w-full h-[calc(100vh-4rem)] object-cover object-[85%_100%]" />
       <div className="absolute inset-0">
         <div className="mt-[40vh] ml-[20vw] absolute">
