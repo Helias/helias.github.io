@@ -7,11 +7,11 @@ import SocialLink from './SocialLink';
 
 export default function About(): JSX.Element {
   return (
-    <div>
+    <div id="about">
       <div className="grid grid-cols-12 mb-20">
-        <div className="ml-45 text-center col-span-5">
-          <h2 className="text-6xl mt-10 text-gray-600 underline underline-offset-15">About</h2>
-          <img className="rounded-full h-75 mt-10 mx-auto border" src="Stefano.png" />
+        <div className="ml-[5vw] text-center md:col-span-5 col-span-12">
+          <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">About</h2>
+          <img className="rounded-full h-75 mt-10 mx-auto border" src="about/Stefano.png" />
           <div className="mt-10 flex justify-center items-center">
             <SocialLink url="mailto:stefanoborzi32@gmail.com">
               <EmailIcon sx={{ fontSize: 50 }} />
@@ -35,7 +35,7 @@ export default function About(): JSX.Element {
             </a>
           </div>
         </div>
-        <div className="mt-40 col-span-6 text-2xl text-gray-600">
+        <div className="mt-40 md:col-span-6 col-span-12 text-2xl text-gray-600 px-10">
           <p>I'm a software engineer who started programming for fun at the age of 12.</p>
           <p className="mt-10">
             I have several years of working experience mostly using web technologies like
@@ -62,9 +62,9 @@ export default function About(): JSX.Element {
             .
           </p>
           <p className="mt-10 text-center">
-            <img className="inline-block align-middle mr-3" src="opensource.png" width="32" />I am
-            really passionate about opensource and Linux.{' '}
-            <img className="inline-block align-middle" src="linux-tux.png" width="32" />
+            <img className="inline-block align-middle mr-3" src="about/opensource.png" width="32" />
+            I am really passionate about opensource and Linux.{' '}
+            <img className="inline-block align-middle" src="about/linux-tux.png" width="32" />
           </p>
         </div>
       </div>
