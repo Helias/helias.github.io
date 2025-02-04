@@ -12,7 +12,7 @@ export default function Teachings(): JSX.Element {
       className="bg-gray-800 pt-16 pb-20 bg-[url('/teachings/qd-bg.jpg')] bg-fixed bg-center bg-cover"
     >
       <div className="w-full">
-        <div className="md:ml-[20vw] ml-[5vw]">
+        <div className="ml-[5vw]">
           <h2 className="text-6xl text-white underline underline-offset-15 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
             Teachings
           </h2>

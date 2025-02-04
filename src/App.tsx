@@ -1,3 +1,4 @@
+import 'devicon/devicon.min.css';
 import './App.css';
 import About from './components/About/About';
 import Events from './components/Events/Events';
@@ -18,7 +19,6 @@ function App(): JSX.Element {
         <About />
         <hr />
         <Projects />
-        <hr />
         <Opensource />
         <Teachings />
         <Publications />
