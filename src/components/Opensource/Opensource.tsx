@@ -2,11 +2,12 @@ import Community from './Community';
 
 export default function Opensource(): JSX.Element {
   return (
-    <div id="opensource" className="bg-gray-800 text-white">
+    <div id="opensource" className="bg-gray-800 text-white pt-1">
+      <div className="ml-[5vw]">
+        <h2 className="text-6xl mt-20 underline underline-offset-15">Opensource</h2>
+      </div>
+
       <div className="grid grid-cols-12">
-        <div className="ml-45 text-center col-span-5">
-          <h2 className="text-6xl mt-20 underline underline-offset-15">Opensource</h2>
-        </div>
         <div className="col-span-12">
           <p className="max-w-300 mx-auto mt-10 text-center p-5 text-2xl">
             I am deeply passionate about open-source. I've always been involved in various

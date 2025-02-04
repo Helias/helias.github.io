@@ -30,11 +30,11 @@ export default function Article({
   return (
     <div className="ml-[20vw] mt-10">
       <div className="grid grid-cols-12 place-items-center">
-        <div className="col-span-3 h-75 w-75 flex justify-center items-center border border-gray-200 p-3">
+        <div className="col-span-3 h-75 w-75 flex justify-center items-center border border-gray-200  border-3 p-3">
           <img src={image} className="w-75 my-auto" />
         </div>
         <div className="col-span-8 ml-5 w-full">
-          <div className="bg-gray-800 p-3 w-full max-w-230 max-h-400 text-white drop-shadow-[5px_5px_5px_rgba(0,0,0,1)] p-8">
+          <div className="bg-gray-800 p-3 w-full max-w-230 max-h-400 text-white p-8">
             <h2 className="text-2xl">{title}</h2>
             <p className="text-gray-400">{authors}</p>
             <div className="mt-4">

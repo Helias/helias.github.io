@@ -3,12 +3,8 @@ import Article from './Article';
 export default function Publications(): JSX.Element {
   return (
     <div id="publications" className="mb-10">
-      <div className="grid grid-cols-12">
-        <div className="ml-45 text-center col-span-5">
-          <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">
-            Publications
-          </h2>
-        </div>
+      <div className="w-full ml-[5vw]">
+        <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">Publications</h2>
       </div>
 
       <Article
