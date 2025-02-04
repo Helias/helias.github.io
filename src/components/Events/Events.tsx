@@ -8,7 +8,7 @@ export default function Events(): JSX.Element {
           <h2 className="text-6xl text-white underline underline-offset-15 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
             Events
           </h2>
-          <div className="grid grid-cols-3 mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20">
             <Talk
               image="events/Audio Processing - ffmpeg.png"
               prefix="🇮🇹 Speaker:"
