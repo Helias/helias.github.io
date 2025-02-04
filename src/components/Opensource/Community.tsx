@@ -14,7 +14,7 @@ export default function Community({
   repository,
 }: CommunityProps): JSX.Element {
   return (
-    <div className="col-span-3 text-center">
+    <div className="md:col-span-3 col-span-6 text-center">
       <div className="py-10">
         <img src={image} className="h-75 mt-10 mx-auto" />
         <h2 className="text-6xl mt-10">{name}</h2>
@@ -30,29 +30,32 @@ export default function Community({
           height="30"
           title="GitHub"
         ></iframe>
-        <div className="mx-auto w-130 mb-5">
-          <iframe
-            className="float-left"
-            src={`https://ghbtns.com/github-btn.html?user=${organization}&repo=${repository}&type=star&count=true&size=large`}
-            width="170"
-            height="30"
-            title="GitHub"
-          ></iframe>
+        <div className="mx-auto mb-5 text-center">
+          <div className="mx-auto w-75">
+            <iframe
+              className="float-left mx-2"
+              src={`https://ghbtns.com/github-btn.html?user=${organization}&repo=${repository}&type=star&count=true&size=large`}
+              width="75"
+              height="30"
+              title="GitHub"
+            ></iframe>
 
-          <iframe
-            className="float-left"
-            src={`https://ghbtns.com/github-btn.html?user=${organization}&repo=${repository}&type=watch&count=true&size=large&v=2`}
-            width="170"
-            height="30"
-            title="GitHub"
-          ></iframe>
+            <iframe
+              className="float-left mx-4"
+              src={`https://ghbtns.com/github-btn.html?user=${organization}&repo=${repository}&type=watch&count=true&size=large&v=2`}
+              width="75"
+              height="30"
+              title="GitHub"
+            ></iframe>
 
-          <iframe
-            src={`https://ghbtns.com/github-btn.html?user=${organization}&repo=${repository}&type=fork&count=true&size=large`}
-            width="170"
-            height="30"
-            title="GitHub"
-          ></iframe>
+            <iframe
+              className="mx-4"
+              src={`https://ghbtns.com/github-btn.html?user=${organization}&repo=${repository}&type=fork&count=true&size=large`}
+              width="75"
+              height="30"
+              title="GitHub"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
