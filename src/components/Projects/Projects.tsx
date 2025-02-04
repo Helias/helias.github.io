@@ -1,4 +1,4 @@
-import Project from './Project';
+import PaginationComponent from './PaginationComponent';
 import { ProjectList } from './ProjectList';
 
 export default function Projects(): JSX.Element {
@@ -12,22 +12,7 @@ export default function Projects(): JSX.Element {
         </div>
       </div>
 
-      <div className="mt-5 ml-[2vw] mb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20">
-          {ProjectList.map(({ prefix, title, description, image, skills, demo, website, date }) => (
-            <Project
-              prefix={prefix}
-              title={title}
-              description={description}
-              image={image}
-              skills={skills}
-              demo={demo}
-              website={website}
-              date={date}
-            />
-          ))}
-        </div>
-      </div>
+      <PaginationComponent items={ProjectList} />
     </div>
   );
 }

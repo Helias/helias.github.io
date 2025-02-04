@@ -26,7 +26,7 @@ export default function Project({
   date,
 }: ProjectProps): JSX.Element {
   return (
-    <div className={`col-span-1 flex flex-col border m-3 min-h-100`}>
+    <div className={`col-span-1 flex flex-col border m-3 min-h-95`}>
       <div className="h-16 bg-gray-800 flex items-center justify-center p-2">
         <h2 className="text-lg text-center text-white my-auto">
           <strong className="text-gray-400">{prefix}</strong> {title}
