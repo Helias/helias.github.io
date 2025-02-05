@@ -30,7 +30,7 @@ export const ProjectList: ProjectProps[] = [
     image: 'projects/vwd-group.png',
     skills: ['typescript', 'angular', 'ngrx', 'jasmine', 'karma', 'bootstrap', 'rxjs'],
     date: 'Jan 2020 - Dec 2020',
-    customClass: 'bg-[position:20%]',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
     website: 'https://www.infrontfinance.com/',
   },
   {
@@ -70,7 +70,7 @@ export const ProjectList: ProjectProps[] = [
     image: 'projects/perdichizzi.png',
     skills: ['angular', 'typescript', 'php', 'laravel', 'bootstrap', 'mysql', 'rxjs'],
     date: 'Oct 2016 - Jul 2017',
-    customClass: 'bg-center',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
     website: 'https://www.gioielleriaperdichizzi.it/',
   },
   {
@@ -129,7 +129,7 @@ export const ProjectList: ProjectProps[] = [
     skills: ['cplusplus', 'c', 'lua', 'mysql', 'bash', 'python', 'githubactions', 'docker'],
     github: 'https://github.com/azerothcore/azerothcore-wotlk',
     website: 'https://azerothcore.org/',
-    customClass: 'bg-center',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
   },
   {
     prefix: 'Opensource:',
@@ -143,6 +143,7 @@ export const ProjectList: ProjectProps[] = [
       'https://unict-dmi.github.io/git-catalogue/',
       'https://unict-quality-development.github.io/git-catalogue/#/tab/unict-qd',
     ],
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
   },
   {
     prefix: 'Opensource:',
@@ -169,6 +170,6 @@ export const ProjectList: ProjectProps[] = [
     image: 'projects/acore-api.png',
     skills: ['typescript', 'nodejs', 'nestjs', 'docker'],
     github: 'https://github.com/azerothcore/acore-api',
-    customClass: 'bg-[center_top_1rem]',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
   },
 ];

@@ -28,9 +28,10 @@ export default function Project({
   customClass = 'bg-top-center',
 }: ProjectProps): JSX.Element {
   const animationClasses = 'opacity-0 group-hover:opacity-100 transition-all duration-500 ';
+  const bgCover = customClass.includes('no-bg-cover') ? '' : 'bg-cover';
   return (
     <div
-      className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group bg-cover ${customClass}`}
+      className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group ${bgCover} ${customClass}`}
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className={`h-16 bg-gray-800 flex items-center justify-center p-2 ${animationClasses}`}>
