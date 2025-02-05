@@ -2,7 +2,7 @@ import { ProjectProps } from './Project';
 
 export const ProjectList: ProjectProps[] = [
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Developed and mantained the FedEx rating application',
     // description: 'description',
     image: 'projects/fedex.png',
@@ -24,7 +24,7 @@ export const ProjectList: ProjectProps[] = [
     date: 'Jan 2021 - Present',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Developed a web application for InfrontFinance (ex VWD)',
     // description: 'description',
     image: 'projects/vwd-group.png',
@@ -34,7 +34,7 @@ export const ProjectList: ProjectProps[] = [
     website: 'https://www.infrontfinance.com/',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Provided services as freelancer in Fiverr',
     // description: 'description',
     image: 'projects/fiverr.jpg',
@@ -44,7 +44,7 @@ export const ProjectList: ProjectProps[] = [
     customClass: 'bg-center',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Software Management for NewTecna & ItaliaHotspot',
     // description: 'description',
     image: 'projects/newtecna.jpg',
@@ -53,7 +53,7 @@ export const ProjectList: ProjectProps[] = [
     website: 'https://lnx.newtecna.com/',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Software management developed for Codice a Barre Italia & GirasoleEventi',
     // description: 'description',
     image: 'projects/CodiceaBarreSM.jpg',
@@ -64,7 +64,7 @@ export const ProjectList: ProjectProps[] = [
     website: 'https://codiceabarra.it/',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Software management developed for PerdichizziGioiellerie',
     // description: 'description',
     image: 'projects/perdichizzi.png',
@@ -74,7 +74,7 @@ export const ProjectList: ProjectProps[] = [
     website: 'https://www.gioielleriaperdichizzi.it/',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'BarcodeDatabase, website for Codice a Barre Italia',
     // description: 'description',
     image: 'projects/BarcodeDatabase.png',
@@ -83,7 +83,7 @@ export const ProjectList: ProjectProps[] = [
     date: 'Aug 2016 - Oct 2016',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title:
       'Consultant for ItaliaHotspot, developing a web interface, RadiusServer interface and OpenWRT OS',
     // description: 'description',
@@ -94,7 +94,7 @@ export const ProjectList: ProjectProps[] = [
     customClass: 'bg-center',
   },
   {
-    prefix: 'Work:',
+    prefix: '👔 Work:',
     title: 'Consultant for Insolaria, developing a web application',
     // description: 'description',
     image: 'projects/insolaria.png',
@@ -102,7 +102,7 @@ export const ProjectList: ProjectProps[] = [
     date: 'Jan 2015 - Jul 2015',
   },
   {
-    prefix: 'Opensource:',
+    prefix: '🤝 Opensource:',
     title: 'Keira3 web application',
     // description: 'description',
     image: 'projects/Keira3.png',
@@ -122,7 +122,7 @@ export const ProjectList: ProjectProps[] = [
     website: 'https://azerothcore.org/Keira3',
   },
   {
-    prefix: 'Opensource:',
+    prefix: '🤝 Opensource:',
     title: 'AzerothCore, complete open source and modular solution for MMO',
     // description: 'description',
     image: 'projects/azerothcore.png',
@@ -132,7 +132,7 @@ export const ProjectList: ProjectProps[] = [
     customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
   },
   {
-    prefix: 'Opensource:',
+    prefix: '🤝 Opensource:',
     title: 'Git-catalogue, a web application to catalog git repositories',
     // description: 'description',
     image: 'projects/git-catalogue.png',
@@ -146,7 +146,7 @@ export const ProjectList: ProjectProps[] = [
     customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
   },
   {
-    prefix: 'Opensource:',
+    prefix: '🤝 Opensource:',
     title: 'Server-status, web application',
     // description: 'description',
     image: 'projects/server-status.png',
@@ -155,7 +155,7 @@ export const ProjectList: ProjectProps[] = [
     demo: 'http://chromiecraft.com/apps/server-status',
   },
   {
-    prefix: 'Opensource:',
+    prefix: '🤝 Opensource:',
     title: 'Arena-stats, web application',
     // description: 'description',
     image: 'projects/arena-stats.png',
@@ -164,7 +164,7 @@ export const ProjectList: ProjectProps[] = [
     demo: 'http://chromiecraft.com/apps/arena-stats',
   },
   {
-    prefix: 'Opensource:',
+    prefix: '🤝 Opensource:',
     title: 'Acore API, RESTful APIs for Azerothcore written in NestJS',
     // description: 'description',
     image: 'projects/acore-api.png',

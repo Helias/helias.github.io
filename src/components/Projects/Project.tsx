@@ -29,6 +29,7 @@ export default function Project({
 }: ProjectProps): JSX.Element {
   const animationClasses = 'opacity-0 group-hover:opacity-100 transition-all duration-500 ';
   const bgCover = customClass.includes('no-bg-cover') ? '' : 'bg-cover';
+
   return (
     <div
       className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group ${bgCover} ${customClass}`}
@@ -39,11 +40,6 @@ export default function Project({
           <strong className="text-red-400">{prefix}</strong> {title}
         </h2>
       </div>
-
-      {/* <div
-        className={`flex flex-col w-full h-full bg-cover ${customClass}`}
-        style={{ backgroundImage: `url(${image})` }}
-      ></div> */}
 
       <div className={`mt-auto bg-white ${animationClasses}`}>
         {date && (
