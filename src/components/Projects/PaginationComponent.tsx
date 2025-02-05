@@ -23,12 +23,13 @@ const PaginationComponent = ({
   };
 
   const buttonsClasses = 'px-3 py-1 rounded text-2xl text-white';
-  const disableClasses = 'bg-gray-200 cursor-not-allowed';
-  const enableClasses = 'bg-gray-800 text-white hover:bg-gray-400 hover:cursor-pointer';
+  const disableClasses = 'bg-gray-400 cursor-not-allowed';
+  const enableClasses =
+    'bg-gray-800 text-white hover:bg-gray-400 hover:cursor-pointer border-1 border-gray-200';
 
   return (
     <div>
-      <div className="flex justify-center items-center space-x-2 mt-8">
+      <div className="flex justify-center items-center space-x-2 mt-8 sticky top-12 bg-gray-800 p-2">
         <button
           className={`${buttonsClasses} ${currentPage === 1 ? disableClasses : enableClasses}`}
           onClick={() => goToPage(currentPage - 1)}
