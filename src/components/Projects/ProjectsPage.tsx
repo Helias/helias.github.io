@@ -1,7 +1,7 @@
 import PaginationComponent from './PaginationComponent';
 import { ProjectList } from './ProjectList';
 
-export default function Projects(): JSX.Element {
+export default function ProjectsPage(): JSX.Element {
   return (
     <div id="projects">
       <div className="w-full">

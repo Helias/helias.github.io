@@ -64,7 +64,18 @@ const PaginationComponent = ({
       <div className="ml-[2vw]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20">
           {currentItems.map(
-            ({ prefix, title, description, image, skills, demo, website, date, customClass }) => (
+            ({
+              prefix,
+              title,
+              description,
+              image,
+              skills,
+              demo,
+              website,
+              date,
+              github,
+              customClass,
+            }) => (
               <Project
                 prefix={prefix}
                 title={title}
@@ -73,6 +84,7 @@ const PaginationComponent = ({
                 skills={skills}
                 demo={demo}
                 website={website}
+                github={github}
                 date={date}
                 customClass={customClass}
               />

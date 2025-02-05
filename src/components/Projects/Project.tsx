@@ -9,7 +9,7 @@ export interface ProjectProps {
   description?: string;
   skills: string[];
   github?: string;
-  demo?: string;
+  demo?: string | string[];
   website?: string;
   date?: string;
   customClass?: string;
@@ -31,7 +31,7 @@ export default function Project({
     <div className={`col-span-1 flex flex-col border border-3 m-3 min-h-100`}>
       <div className="h-16 bg-gray-800 flex items-center justify-center p-2">
         <h2 className="text-lg text-center text-white my-auto">
-          <strong className="text-gray-400">{prefix}</strong> {title}
+          <strong className="text-red-400">{prefix}</strong> {title}
         </h2>
       </div>
 
@@ -56,7 +56,7 @@ export default function Project({
               Object.keys(MissingDevIconsMap).includes(skill) ? (
                 MissingDevIconsMap[skill]
               ) : (
-                <i className={`devicon-${skill}-plain colored mx-5`}></i>
+                <i className={`devicon-${skill}-plain colored mx-3`}></i>
               ),
             )}
         </div>
@@ -70,11 +70,23 @@ export default function Project({
                 <GitHubIcon /> <span className="underline">github</span>
               </a>
             )}
-            {demo && (
+            {demo && !Array.isArray(demo) && (
               <a href={demo} target="_blank" className="hover:text-gray-400 mx-5">
                 <LanguageIcon /> <span className="underline">demo</span>
               </a>
             )}
+            {demo && Array.isArray(demo) && (
+              <span className="mx-3">
+                <LanguageIcon /> demo: [
+                {demo.map((demoLink, index) => (
+                  <a href={demoLink} target="_blank" className="hover:text-gray-400 mx-1">
+                    #{index + 1}
+                  </a>
+                ))}
+                ]
+              </span>
+            )}
+
             {website && (
               <a href={website} target="_blank" className="hover:text-gray-400 mx-5">
                 <LanguageIcon /> <span className="underline">website</span>
