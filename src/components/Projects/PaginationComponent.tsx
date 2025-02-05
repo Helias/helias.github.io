@@ -29,7 +29,7 @@ const PaginationComponent = ({
 
   return (
     <div>
-      <div className="flex justify-center items-center space-x-2 mt-8 sticky top-12 bg-gray-800 p-2">
+      <div className="flex justify-center items-center space-x-2 mt-20 my-8 sticky top-12 bg-gray-800 p-2">
         <button
           className={`${buttonsClasses} ${currentPage === 1 ? disableClasses : enableClasses}`}
           onClick={() => goToPage(currentPage - 1)}
@@ -61,35 +61,37 @@ const PaginationComponent = ({
         </button>
       </div>
 
-      <div className="ml-[2vw]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20">
-          {currentItems.map(
-            ({
-              prefix,
-              title,
-              description,
-              image,
-              skills,
-              demo,
-              website,
-              date,
-              github,
-              customClass,
-            }) => (
-              <Project
-                prefix={prefix}
-                title={title}
-                description={description}
-                image={image}
-                skills={skills}
-                demo={demo}
-                website={website}
-                github={github}
-                date={date}
-                customClass={customClass}
-              />
-            ),
-          )}
+      <div className="w-full">
+        <div className="mx-auto md:w-[95%] lg:w-[85%]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20 mx-auto">
+            {currentItems.map(
+              ({
+                prefix,
+                title,
+                description,
+                image,
+                skills,
+                demo,
+                website,
+                date,
+                github,
+                customClass,
+              }) => (
+                <Project
+                  prefix={prefix}
+                  title={title}
+                  description={description}
+                  image={image}
+                  skills={skills}
+                  demo={demo}
+                  website={website}
+                  github={github}
+                  date={date}
+                  customClass={customClass}
+                />
+              ),
+            )}
+          </div>
         </div>
       </div>
     </div>

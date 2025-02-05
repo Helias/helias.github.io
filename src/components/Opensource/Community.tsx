@@ -4,6 +4,7 @@ interface CommunityProps {
   description: string;
   organization: string;
   repository: string;
+  extraClass?: string;
 }
 
 export default function Community({
@@ -12,9 +13,10 @@ export default function Community({
   description,
   organization,
   repository,
+  extraClass,
 }: CommunityProps): JSX.Element {
   return (
-    <div className="md:col-span-3 col-span-6 text-center">
+    <div className={`md:col-span-3 col-span-6 text-center ${extraClass}`}>
       <div className="py-10">
         <img src={image} className="h-75 mt-10 mx-auto" />
         <h2 className="text-6xl mt-10">{name}</h2>
