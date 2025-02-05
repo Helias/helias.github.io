@@ -27,43 +27,49 @@ export default function Project({
   date,
   customClass = 'bg-top-center',
 }: ProjectProps): JSX.Element {
+  const animationClasses = 'opacity-0 group-hover:opacity-100 transition-all duration-500 ';
   return (
-    <div className={`col-span-1 flex flex-col border border-3 m-3 min-h-100`}>
-      <div className="h-16 bg-gray-800 flex items-center justify-center p-2">
+    <div
+      className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group bg-cover ${customClass}`}
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <div className={`h-16 bg-gray-800 flex items-center justify-center p-2 ${animationClasses}`}>
         <h2 className="text-lg text-center text-white my-auto">
           <strong className="text-red-400">{prefix}</strong> {title}
         </h2>
       </div>
 
-      <div
+      {/* <div
         className={`flex flex-col w-full h-full bg-cover ${customClass}`}
         style={{ backgroundImage: `url(${image})` }}
-      ></div>
+      ></div> */}
 
-      {date && (
-        <div className="h-16 bg-gray-800 flex items-center justify-center p-2">
-          <h2 className="text-lg text-centermy-auto">
-            <strong className="text-white">{date}</strong>
-          </h2>
-        </div>
-      )}
+      <div className={`mt-auto bg-white ${animationClasses}`}>
+        {date && (
+          <div
+            className={`h-16 bg-gray-800 flex items-center justify-center p-2 ${animationClasses}`}
+          >
+            <h2 className="text-lg text-centermy-auto">
+              <strong className="text-white">{date}</strong>
+            </h2>
+          </div>
+        )}
 
-      {skills?.length && (
-        <div className="text-center text-2xl pt-2 border-t-1 border-gray-800">
-          {skills
-            // .sort()
-            .map((skill) =>
-              Object.keys(MissingDevIconsMap).includes(skill) ? (
-                MissingDevIconsMap[skill]
-              ) : (
-                <i className={`devicon-${skill}-plain colored mx-3`}></i>
-              ),
-            )}
-        </div>
-      )}
+        {skills?.length && (
+          <div className="text-center text-2xl pt-2 border-t-1 border-gray-800">
+            {skills
+              // .sort()
+              .map((skill) =>
+                Object.keys(MissingDevIconsMap).includes(skill) ? (
+                  MissingDevIconsMap[skill]
+                ) : (
+                  <i className={`devicon-${skill}-plain colored mx-3`}></i>
+                ),
+              )}
+          </div>
+        )}
 
-      {(github || demo || website) && (
-        <div className="mt-auto ">
+        {(github || demo || website) && (
           <div className="text-center mt-2">
             {github && (
               <a href={github} target="_blank" className="hover:text-gray-400 mx-5">
@@ -93,10 +99,8 @@ export default function Project({
               </a>
             )}
           </div>
-
-          {/* <div className="text-center my-5 bg-gray-800 text-white">{description}</div> */}
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

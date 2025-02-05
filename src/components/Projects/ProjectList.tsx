@@ -30,7 +30,7 @@ export const ProjectList: ProjectProps[] = [
     image: 'projects/vwd-group.png',
     skills: ['typescript', 'angular', 'ngrx', 'jasmine', 'karma', 'bootstrap', 'rxjs'],
     date: 'Jan 2020 - Dec 2020',
-    customClass: 'bg-center',
+    customClass: 'bg-[position:20%]',
     website: 'https://www.infrontfinance.com/',
   },
   {
@@ -91,6 +91,7 @@ export const ProjectList: ProjectProps[] = [
     skills: ['angular', 'php', 'typescript', 'mysql', 'bootstrap', 'rxjs'],
     website: 'https://italiahotspot.it/landing/index.html',
     date: 'Aug 2015 - Jul 2016',
+    customClass: 'bg-center',
   },
   {
     prefix: 'Work:',
@@ -142,7 +143,6 @@ export const ProjectList: ProjectProps[] = [
       'https://unict-dmi.github.io/git-catalogue/',
       'https://unict-quality-development.github.io/git-catalogue/#/tab/unict-qd',
     ],
-    customClass: 'bg-center',
   },
   {
     prefix: 'Opensource:',
@@ -169,6 +169,6 @@ export const ProjectList: ProjectProps[] = [
     image: 'projects/acore-api.png',
     skills: ['typescript', 'nodejs', 'nestjs', 'docker'],
     github: 'https://github.com/azerothcore/acore-api',
-    customClass: 'bg-center',
+    customClass: 'bg-[center_top_1rem]',
   },
 ];
