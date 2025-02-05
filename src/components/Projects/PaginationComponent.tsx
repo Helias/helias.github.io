@@ -1,15 +1,20 @@
 import { useState } from 'react';
-import Project from './Project';
-import { ProjectList } from './ProjectList';
+import Project, { ProjectProps } from './Project';
 
-const PaginationComponent = ({ items, itemsPerPage = 6 }: any) => {
+const PaginationComponent = ({
+  items,
+  itemsPerPage = 6,
+}: {
+  items: ProjectProps[];
+  itemsPerPage?: number;
+}) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(items.length / itemsPerPage);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = ProjectList.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
 
   const goToPage = (page: number): void => {
     if (page >= 1 && page <= totalPages) {
@@ -23,7 +28,7 @@ const PaginationComponent = ({ items, itemsPerPage = 6 }: any) => {
 
   return (
     <div>
-      <div className="flex justify-center items-center space-x-2 mt-4">
+      <div className="flex justify-center items-center space-x-2 mt-8">
         <button
           className={`${buttonsClasses} ${currentPage === 1 ? disableClasses : enableClasses}`}
           onClick={() => goToPage(currentPage - 1)}

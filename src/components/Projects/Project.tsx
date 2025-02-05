@@ -53,7 +53,7 @@ export default function Project({
               <a href={website} target="_blank" className="hover:text-gray-400">
                 <LanguageIcon /> <span className="underline">website</span>
               </a>
-            )}{' '}
+            )}
           </div>
 
           {/* <div className="text-center my-5 bg-gray-800 text-white">{description}</div> */}
