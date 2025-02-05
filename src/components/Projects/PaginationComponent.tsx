@@ -24,7 +24,7 @@ const PaginationComponent = ({
 
   const buttonsClasses = 'px-3 py-1 rounded text-2xl text-white';
   const disableClasses = 'bg-gray-200 cursor-not-allowed';
-  const enableClasses = 'bg-gray-800 text-white hover:bg-gray-400';
+  const enableClasses = 'bg-gray-800 text-white hover:bg-gray-400 hover:cursor-pointer';
 
   return (
     <div>
@@ -41,7 +41,7 @@ const PaginationComponent = ({
           <button
             key={index + 1}
             className={`${buttonsClasses} ${
-              currentPage === index + 1 ? disableClasses : 'bg-gray-800'
+              currentPage === index + 1 ? disableClasses : enableClasses
             }`}
             onClick={() => goToPage(index + 1)}
           >
@@ -63,7 +63,7 @@ const PaginationComponent = ({
       <div className="ml-[2vw]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20">
           {currentItems.map(
-            ({ prefix, title, description, image, skills, demo, website, date }) => (
+            ({ prefix, title, description, image, skills, demo, website, date, customClass }) => (
               <Project
                 prefix={prefix}
                 title={title}
@@ -73,6 +73,7 @@ const PaginationComponent = ({
                 demo={demo}
                 website={website}
                 date={date}
+                customClass={customClass}
               />
             ),
           )}
