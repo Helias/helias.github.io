@@ -34,6 +34,9 @@ export default function Project({
     'opacity-0 group-active:opacity-100  group-focus:opacity-100 group-hover:opacity-100 transition-all duration-500 ';
   const bgCover = !customClass.includes('no-bg-cover') && 'bg-cover';
 
+  const sharedButtonsClasses =
+    'hover:text-gray-400 px-3 py-1 text-base text-white bg-gray-800 hover:cursor-pointer border-1 border-gray-200 pb-2';
+
   return (
     <div
       className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group ${bgCover} ${customClass}`}
@@ -57,7 +60,7 @@ export default function Project({
         )}
 
         {skills?.length && (
-          <div className="text-center text-2xl pt-2 border-t-1 border-gray-800">
+          <div className="text-center pt-2 border-t-1 border-gray-800 text-2xl">
             {skills
               // .sort()
               .map((skill) => getIcon(skill, true, 'inline-block w-8 h-8'))}
@@ -65,31 +68,30 @@ export default function Project({
         )}
 
         {(github || demo || website) && (
-          <div className="text-center mt-2">
+          <div className="text-center mt-2 mb-3">
             {github && (
-              <a href={github} target="_blank" className="hover:text-gray-400 mx-5">
+              <a href={github} target="_blank" className={`mx-5 ${sharedButtonsClasses}`}>
                 <GitHubIcon /> <span className="underline">github</span>
               </a>
             )}
             {demo && !Array.isArray(demo) && (
-              <a href={demo} target="_blank" className="hover:text-gray-400 mx-5">
+              <a href={demo} target="_blank" className={`mx-5 ${sharedButtonsClasses}`}>
                 <LanguageIcon /> <span className="underline">demo</span>
               </a>
             )}
             {demo && Array.isArray(demo) && (
               <span className="mx-3">
-                <LanguageIcon /> demo: [
+                <LanguageIcon /> demo:
                 {demo.map((demoLink, index) => (
-                  <a href={demoLink} target="_blank" className="hover:text-gray-400 mx-1">
+                  <a href={demoLink} target="_blank" className={`mx-1 ${sharedButtonsClasses}`}>
                     #{index + 1}
                   </a>
                 ))}
-                ]
               </span>
             )}
 
             {website && (
-              <a href={website} target="_blank" className="hover:text-gray-400 mx-5">
+              <a href={website} target="_blank" className={`mx-5 ${sharedButtonsClasses}`}>
                 <LanguageIcon /> <span className="underline">website</span>
               </a>
             )}

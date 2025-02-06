@@ -296,9 +296,9 @@ export const ProjectList: ProjectProps[] = [
     demo: [
       'https://t.me/medicina_unict',
       'https://t.me/dminews',
-      'https://t.me/deinews',
-      'https://t.me/disfornews',
-      'https://t.me/dsfnews',
+      // 'https://t.me/deinews',
+      // 'https://t.me/disfornews',
+      // 'https://t.me/dsfnews',
       'https://telegram.unictdev.org/',
     ],
     customClass: 'no-bg-cover bg-[length:80%] bg-no-repeat bg-center',
