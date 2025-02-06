@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 const sharedStyle = { marginTop: '-10px' };
 
 export const AngularIcon: (classNames: string) => ReactNode = (classNames) => (
-  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
+  <svg viewBox="0 0 128 128" id="angular" className={classNames} style={sharedStyle}>
     <g id="surface1">
       {' '}
       <path
@@ -40,7 +40,7 @@ export const AngularIcon: (classNames: string) => ReactNode = (classNames) => (
 export const OptimizelyIcon: (classNames: string) => ReactNode = (classNames) => (
   <svg
     version="1.1"
-    id="Layer_1"
+    id="optimizely"
     x="0px"
     y="0px"
     viewBox="0 0 77.4 73"
@@ -82,7 +82,7 @@ export const OptimizelyIcon: (classNames: string) => ReactNode = (classNames) =>
 );
 
 export const PythonIcon: (classNames: string) => ReactNode = (classNames) => (
-  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
+  <svg viewBox="0 0 128 128" id="python" className={classNames} style={sharedStyle}>
     <linearGradient
       id="python-original-a"
       gradientUnits="userSpaceOnUse"
@@ -137,7 +137,7 @@ export const PythonIcon: (classNames: string) => ReactNode = (classNames) => (
 );
 
 export const TelegramIcon: (classNames: string) => ReactNode = (classNames) => (
-  <svg viewBox="0 0 240 240" className={classNames} style={sharedStyle}>
+  <svg viewBox="0 0 240 240" id="telegram" className={classNames} style={sharedStyle}>
     <defs>
       <linearGradient
         id="linear-gradient"
@@ -169,6 +169,7 @@ export const TelegramIcon: (classNames: string) => ReactNode = (classNames) => (
 
 export const NxIcon: (classNames: string) => ReactNode = (classNames) => (
   <svg
+    id="nx"
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +184,7 @@ export const NxIcon: (classNames: string) => ReactNode = (classNames) => (
 );
 
 export const JenkinsIcon: (classNames: string) => ReactNode = (classNames) => (
-  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
+  <svg viewBox="0 0 128 128" id="jenkins" className={classNames} style={sharedStyle}>
     <path
       fill="#d33833"
       d="M108.893 61.68c0 25.36-20.099 45.918-44.892 45.918-24.794 0-44.893-20.558-44.893-45.918s20.1-45.92 44.893-45.92 44.892 20.56 44.892 45.92"
@@ -256,7 +257,7 @@ export const JenkinsIcon: (classNames: string) => ReactNode = (classNames) => (
 );
 
 export const PytestIcon: (classNames: string) => ReactNode = (classNames) => (
-  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
+  <svg viewBox="0 0 128 128" id="pytest" className={classNames} style={sharedStyle}>
     <path
       d="M44.508 18.238h36.781a1.802 1.802 0 110 3.605H44.508a1.802 1.802 0 010-3.605zm0 0"
       fill="#696969"
@@ -283,7 +284,7 @@ export const PytestIcon: (classNames: string) => ReactNode = (classNames) => (
 );
 
 export const ScikitLearnIcon: (classNames: string) => ReactNode = (classNames) => (
-  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
+  <svg viewBox="0 0 128 128" id="scikitlearn" className={classNames} style={sharedStyle}>
     <path
       fill="#f89939"
       d="M98.18 88.13c15.63-15.62 18.23-38.36 5.8-50.78-12.43-12.42-35.17-9.82-50.8 5.8-15.63 15.62-11.11 45.48-5.8 50.78 4.29 4.29 35.17 9.82 50.8-5.8Z"

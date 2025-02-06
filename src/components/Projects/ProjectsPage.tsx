@@ -1,5 +1,6 @@
+import { getIcon } from './helper';
 import PaginationComponent from './PaginationComponent';
-import { ProjectList } from './ProjectList';
+import { ProjectList, skillsWeighted } from './ProjectList';
 
 export default function ProjectsPage(): JSX.Element {
   return (
@@ -9,6 +10,33 @@ export default function ProjectsPage(): JSX.Element {
           <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">
             Skills & Projects
           </h2>
+        </div>
+      </div>
+
+      <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw] mt-10 text-2xl w-[80vw] text-center">
+        I am full-stack developer with a strong focus on front-end development, primarily using
+        Angular. My expertise lies in creating dynamic and responsive web applications, leveraging
+        TypeScript and modern front-end frameworks. Beyond Angular, I have experience with various
+        front-end and back-end technologies. I have also developed several Telegram bots, showcasing
+        my ability to create software solutions that enhance user experience. I have founded two
+        opensource communities like AzerothCore and UNICT Devs and I contribute on platforms such as
+        Stack Overflow, always looking to share knowledge and refine my skills.
+      </div>
+
+      <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw] mt-10 text-center w-[80vw]">
+        <p className="text-2xl">
+          The following skills are linked to their size based on the quality and quantity of the
+          projects listed below (note that the order is randomized with each visit).
+        </p>
+        <div className="mt-10 text-center">
+          {skillsWeighted
+            .sort(() => Math.random() - 0.5) // shuffle
+            .map(({ skill, weight }) => (
+              <span id="single-skill" style={{ fontSize: `${2 + weight / 8}rem` }} className="mr-2">
+                <style>{`#single-skill #${skill} { width: ${weight / 4 + 0.5}rem; height: ${weight / 4 + 0.5}rem }`}</style>
+                {/* {weight}: */} {getIcon(skill, false, `inline-block mt-0`)}
+              </span>
+            ))}
         </div>
       </div>
 

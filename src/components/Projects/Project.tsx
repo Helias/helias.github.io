@@ -14,6 +14,7 @@ export interface ProjectProps {
   date?: string;
   customClass?: string;
   menuOpen?: boolean;
+  multiplier?: number;
 }
 
 export default function Project({

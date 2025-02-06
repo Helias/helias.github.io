@@ -22,6 +22,7 @@ export const ProjectList: ProjectProps[] = [
     ],
     demo: 'https://www.fedex.com/en-nl/online/rating.html',
     date: 'Jan 2021 - Present',
+    multiplier: 4,
   },
   {
     prefix: '👔 Work:',
@@ -130,6 +131,16 @@ export const ProjectList: ProjectProps[] = [
     github: 'https://github.com/azerothcore/azerothcore-wotlk',
     website: 'https://azerothcore.org/',
     customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title: 'My personal website (this website!)',
+    // description: 'description',
+    image: 'projects/personal-website.png',
+    skills: ['react', 'typescript', 'tailwindcss', 'githubactions'],
+    github: 'https://github.com/helias/helias.github.io',
+    demo: 'helias.github.io',
+    customClass: 'bg-center',
   },
   {
     prefix: '🤝 Opensource:',
@@ -518,3 +529,23 @@ export const ProjectList: ProjectProps[] = [
 ];
 
 export const allSkills = new Set([...ProjectList.map((p) => p.skills)].flat());
+
+export const skillsWeighted = [...allSkills].map((skill) => {
+  let weight = 0;
+
+  for (const project of ProjectList) {
+    if (project.skills.includes(skill)) {
+      weight++;
+
+      if (project.prefix?.includes('Work')) {
+        weight++;
+      }
+
+      if (project?.multiplier) {
+        weight += project.multiplier;
+      }
+    }
+  }
+
+  return { skill, weight };
+});

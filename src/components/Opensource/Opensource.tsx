@@ -12,7 +12,7 @@ export default function Opensource(): JSX.Element {
           <div className="col-span-12">
             <p className="max-w-300 mx-auto mt-10 text-center p-5 text-2xl">
               I am deeply passionate about open-source. I've always been involved in various
-              open-source communities, and I have now founded two of my own:{' '}
+              open-source communities, and I have founded two of my own:{' '}
               <strong>AzerothCore</strong> and <strong>UNICT Devs</strong>.
             </p>
           </div>
