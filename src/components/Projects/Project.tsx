@@ -29,7 +29,8 @@ export default function Project({
   customClass = 'bg-top-center',
   menuOpen,
 }: ProjectProps): JSX.Element {
-  const animationClasses = 'opacity-0 group-hover:opacity-100 transition-all duration-500 ';
+  const animationClasses =
+    'opacity-0 group-active:opacity-100  group-focus:opacity-100 group-hover:opacity-100 transition-all duration-500 ';
   const bgCover = !customClass.includes('no-bg-cover') && 'bg-cover';
 
   return (
