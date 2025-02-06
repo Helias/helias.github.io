@@ -5,7 +5,7 @@ export const ProjectList: ProjectProps[] = [
     prefix: '👔 Work:',
     title: 'Developed and mantained the FedEx rating application',
     // description: 'description',
-    image: 'projects/FedEx.png',
+    image: 'projects/FedEx_0.png',
     skills: [
       'typescript',
       'angular',
