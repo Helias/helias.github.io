@@ -1,31 +1,31 @@
 import { useState } from 'react';
-import Select, { components } from 'react-select';
+import Select, {
+  components,
+  MultiValue,
+  OptionProps,
+  SingleValue,
+  SingleValueProps,
+} from 'react-select';
 import { getIcon } from './helper';
 import Project, { ProjectProps } from './Project';
+import { Filter, OptionType } from './project.model';
 import { allSkills } from './ProjectList';
 
-const enum Filter {
-  ALL = 'all',
-  WORK = 'work',
-  OPENSOURCE = 'opensource',
-}
-
 const { Option } = components;
-const IconOption = (props: { data?: { value?: string; label?: string } }) => (
+
+const IconOption = (props: OptionProps<OptionType, boolean>) => (
   <Option {...props} className="text-left w-8">
     {getIcon(props?.data?.value as string, false, 'inline-block w-5 h-5', 'align-middle')}{' '}
     {props?.data?.label}
   </Option>
 );
 
-const CustomSingleValue = (props) => {
+const CustomSingleValue = (props: SingleValueProps<OptionType, boolean>) => {
   return (
-    <>
-      <div className="absolute ml-5">
-        {getIcon(props?.data?.value as string, false, 'inline-block w-5 h-5 mt-0', 'align-middle')}{' '}
-        {props?.data?.label}
-      </div>
-    </>
+    <div className="absolute ml-5">
+      {getIcon(props?.data?.value as string, false, 'inline-block w-5 h-5 mt-0', 'align-middle')}{' '}
+      {props?.data?.label}
+    </div>
   );
 };
 
@@ -38,14 +38,17 @@ const PaginationComponent = ({
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentFilter, setCurrentFilter] = useState(Filter.ALL);
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const options = [...allSkills].map((skill: string) => ({ value: skill, label: skill }));
+  const options: OptionType[] = [...allSkills].map((skill: string) => ({
+    value: skill,
+    label: skill,
+  }));
 
   const filteredItems = items
     .filter((i) => currentFilter === Filter.ALL || i.prefix?.toLowerCase().includes(currentFilter))
-    .filter((item) => !selectedOption || item.skills.includes(selectedOption));
+    .filter((item) => !selectedOption || item.skills.includes(selectedOption.value));
 
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
 
@@ -64,9 +67,11 @@ const PaginationComponent = ({
     setCurrentPage(1);
   };
 
-  const updateFilterSkills = (skill: { label: string; value: string }): void => {
-    setSelectedOption(skill?.value);
-    setCurrentPage(1);
+  const updateFilterSkills = (newValue: SingleValue<OptionType> | MultiValue<OptionType>): void => {
+    if (!Array.isArray(newValue)) {
+      setSelectedOption(newValue as OptionType);
+      setCurrentPage(1);
+    }
   };
 
   const buttonsClasses = 'px-3 py-1 rounded text-base md:text-2xl text-white';
