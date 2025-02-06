@@ -36,6 +36,14 @@ export function getIcon(
     );
   }
 
+  if (skill === 'express') {
+    return (
+      <i
+        className={`devicon-express-original colored ${margin && 'mx-3'} ${standardClassnames}`}
+      ></i>
+    );
+  }
+
   return (
     <i className={`devicon-${skill}-plain colored ${margin && 'mx-3'} ${standardClassnames}`}></i>
   );
