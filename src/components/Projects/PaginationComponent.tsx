@@ -69,38 +69,40 @@ const PaginationComponent = ({
     setCurrentPage(1);
   };
 
-  const buttonsClasses = 'px-3 py-1 rounded text-2xl text-white';
+  const buttonsClasses = 'px-3 py-1 rounded text-base md:text-2xl text-white';
   const disableClasses = 'bg-gray-400 cursor-not-allowed';
   const enableClasses =
     'bg-gray-800 text-white hover:bg-gray-400 hover:cursor-pointer border-1 border-gray-200';
-  const sharedNavButtonClasses = `mr-auto ml-5 ${buttonsClasses}`;
+  const sharedNavButtonClasses = `my-1 mr-auto ml-5 ${buttonsClasses}`;
 
   return (
-    <div className="relative">
-      <div className="flex mt-20 my-8 sticky top-12 bg-gray-800 p-2 z-100">
-        <div className="ml-0 md:ml-[6vw]">
-          <button
-            className={`${sharedNavButtonClasses} ${currentFilter === Filter.ALL ? disableClasses : enableClasses}`}
-            onClick={() => updateFilter(Filter.ALL)}
-          >
-            All
-          </button>
-          <button
-            className={`${sharedNavButtonClasses} ${currentFilter === Filter.WORK ? disableClasses : enableClasses}`}
-            onClick={() => updateFilter(Filter.WORK)}
-          >
-            👔 Work
-          </button>
-          <button
-            className={`${sharedNavButtonClasses} ${currentFilter === Filter.OPENSOURCE ? disableClasses : enableClasses}`}
-            onClick={() => updateFilter(Filter.OPENSOURCE)}
-          >
-            🤝 Opensource
-          </button>
+    <div>
+      <div className="flex mt-20 my-8 sticky top-12 bg-gray-800 p-2 z-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ">
+        <div className="col-span-1 md:ml-[6vw] mx-auto">
+          <div className="mx-auto items-center md:block">
+            <button
+              className={`${sharedNavButtonClasses} ${currentFilter === Filter.ALL ? disableClasses : enableClasses}`}
+              onClick={() => updateFilter(Filter.ALL)}
+            >
+              All
+            </button>
+            <button
+              className={`${sharedNavButtonClasses} ${currentFilter === Filter.WORK ? disableClasses : enableClasses}`}
+              onClick={() => updateFilter(Filter.WORK)}
+            >
+              👔 Work
+            </button>
+            <button
+              className={`${sharedNavButtonClasses} ${currentFilter === Filter.OPENSOURCE ? disableClasses : enableClasses}`}
+              onClick={() => updateFilter(Filter.OPENSOURCE)}
+            >
+              🤝 Opensource
+            </button>
+          </div>
         </div>
 
-        <div className="mx-auto">
-          <div className="min-w-60 text-left">
+        <div className="col-span-1 mx-auto my-2">
+          <div className="min-w-60 text-left mx-5 md:mx-5 lg:mx-0">
             <Select
               placeholder="Filter by technology"
               menuIsOpen={menuOpen}
@@ -115,7 +117,7 @@ const PaginationComponent = ({
           </div>
         </div>
 
-        <div className="mx-auto space-x-2">
+        <div className=" col-span-1 mx-auto space-x-2 my-2">
           <button
             className={`${buttonsClasses} ${currentPage === 1 ? disableClasses : enableClasses}`}
             onClick={() => goToPage(currentPage - 1)}
