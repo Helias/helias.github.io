@@ -5,7 +5,7 @@ export const ProjectList: ProjectProps[] = [
     prefix: '👔 Work:',
     title: 'Developed and mantained the FedEx rating application',
     // description: 'description',
-    image: 'projects/fedex.png',
+    image: 'projects/FedEx.png',
     skills: [
       'typescript',
       'angular',
@@ -23,6 +23,7 @@ export const ProjectList: ProjectProps[] = [
     demo: 'https://www.fedex.com/en-nl/online/rating.html',
     date: 'Jan 2021 - Present',
     multiplier: 4,
+    customClass: 'no-bg-cover bg-[length:90%] bg-[position:30px_60px] bg-no-repeat',
   },
   {
     prefix: '👔 Work:',
