@@ -1,9 +1,7 @@
 import { ReactNode } from 'react';
 import {
   AngularIcon,
-  ElectronIcon,
   JenkinsIcon,
-  NodejsIcon,
   NxIcon,
   OptimizelyIcon,
   PytestIcon,
@@ -15,8 +13,6 @@ export const MissingDevIconsMap: (classNames?: string) => { [key: string]: React
   classNames = '',
 ) => ({
   angular: AngularIcon(classNames),
-  electron: ElectronIcon(classNames),
-  nodejs: NodejsIcon(classNames),
   nx: NxIcon(classNames),
   jenkins: JenkinsIcon(classNames),
   optimizely: OptimizelyIcon(classNames),
