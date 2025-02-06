@@ -293,7 +293,7 @@ export const ProjectList: ProjectProps[] = [
     skills: ['react', 'typescript', 'threejs', 'socketio'],
     github: 'https://github.com/UniCT-ARSLab/sensors-output-3D',
     demo: 'https://unict-arslab.github.io/sensors-output-3D/',
-    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
+    customClass: 'no-bg-cover bg-[length:140%] bg-no-repeat bg-center',
   },
   {
     prefix: '🤝 Opensource:',
@@ -334,6 +334,64 @@ export const ProjectList: ProjectProps[] = [
     github: 'https://github.com/azerothcore/wow-statistics',
     demo: 'https://chromiecraft.com/apps/wow-statistics/build/',
     customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title: 'Slavery Valley, World of Warcraft custom battleground',
+    // description: 'description',
+    image: 'https://github.com/Helias/mod-bg-slaveryvalley/raw/master/images/SlaveryValley_Map.png',
+    skills: ['cplusplus'],
+    github: 'https://github.com/Helias/mod-bg-slaveryvalley',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title: 'Twin Peaks, retroporting of World of Warcraft battleground from Cataclysm to WOTLK',
+    // description: 'description',
+    image: 'https://github.com/Helias/mod-bg-twinpeaks/raw/master/images/TP-Zone.png',
+    skills: ['cplusplus'],
+    github: 'https://github.com/Helias/mod-bg-twinpeaks',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title:
+      'Battle for Gilneas, retroporting of World of Warcraft battleground from Cataclysm to WOTLK',
+    // description: 'description',
+    image: 'https://github.com/Helias/mod-bg-battle-for-gilneas/raw/master/images/BFG-WorldMap.jpg',
+    skills: ['cplusplus'],
+    github: 'https://github.com/Helias/mod-bg-battle-for-gilneas',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title: "Tol' Viron, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK",
+    // description: 'description',
+    image: 'https://github.com/Helias/mod-arena-tolviron/raw/master/images/TolViron.jpg',
+    skills: ['cplusplus'],
+    github: 'https://github.com/Helias/mod-arena-tolviron',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title:
+      "Tiger's Peak, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK",
+    // description: 'description',
+    image: 'https://github.com/Helias/mod-arena-tigerspeak/raw/master/images/TigersPeak.png',
+    skills: ['cplusplus'],
+    github: 'https://github.com/Helias/mod-arena-tigerspeak',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title: 'World of Warcraft 3v3soloQ mod implementation',
+    // description: 'description',
+    image: 'https://github.com/azerothcore/mod-arena-3v3-solo-queue/raw/master/icon.png?raw=true',
+    skills: ['cplusplus'],
+    github: 'https://github.com/azerothcore/mod-arena-3v3-solo-queue',
+  },
+  {
+    prefix: '🤝 Opensource:',
+    title: 'World of Warcraft Arena Replay mod implementation',
+    // description: 'description',
+    image: 'https://github.com/azerothcore/mod-arena-replay/raw/main/icon.png?raw=true',
+    skills: ['cplusplus'],
+    github: 'https://github.com/azerothcore/mod-arena-replay',
   },
 ];
 
