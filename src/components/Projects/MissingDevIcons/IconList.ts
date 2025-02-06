@@ -10,13 +10,15 @@ import {
   TelegramIcon,
 } from './MissingIcons';
 
-export const MissingDevIconsMap: { [key: string]: ReactNode } = {
-  angular: AngularIcon,
-  electron: ElectronIcon,
-  nodejs: NodejsIcon,
-  nx: NxIcon,
-  jenkins: JenkinsIcon,
-  optimizely: OptimizelyIcon,
-  python: PythonIcon,
-  telegram: TelegramIcon,
-};
+export const MissingDevIconsMap: (classNames?: string) => { [key: string]: ReactNode } = (
+  classNames = '',
+) => ({
+  angular: AngularIcon(classNames),
+  electron: ElectronIcon(classNames),
+  nodejs: NodejsIcon(classNames),
+  nx: NxIcon(classNames),
+  jenkins: JenkinsIcon(classNames),
+  optimizely: OptimizelyIcon(classNames),
+  python: PythonIcon(classNames),
+  telegram: TelegramIcon(classNames),
+});

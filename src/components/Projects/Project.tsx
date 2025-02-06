@@ -1,6 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
-import { MissingDevIconsMap } from './MissingDevIcons/IconList';
+import { getIcon } from './helper';
 
 export interface ProjectProps {
   image: string;
@@ -13,6 +13,7 @@ export interface ProjectProps {
   website?: string;
   date?: string;
   customClass?: string;
+  menuOpen?: boolean;
 }
 
 export default function Project({
@@ -26,14 +27,15 @@ export default function Project({
   website,
   date,
   customClass = 'bg-top-center',
+  menuOpen,
 }: ProjectProps): JSX.Element {
   const animationClasses = 'opacity-0 group-hover:opacity-100 transition-all duration-500 ';
-  const bgCover = customClass.includes('no-bg-cover') ? '' : 'bg-cover';
+  const bgCover = !customClass.includes('no-bg-cover') && 'bg-cover';
 
   return (
     <div
       className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group ${bgCover} ${customClass}`}
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${image})`, zIndex: menuOpen ? '-1' : '1' }}
     >
       <div className={`h-16 bg-gray-800 flex items-center justify-center p-2 ${animationClasses}`}>
         <h2 className="text-lg text-center text-white my-auto">
@@ -56,13 +58,7 @@ export default function Project({
           <div className="text-center text-2xl pt-2 border-t-1 border-gray-800">
             {skills
               // .sort()
-              .map((skill) =>
-                Object.keys(MissingDevIconsMap).includes(skill) ? (
-                  MissingDevIconsMap[skill]
-                ) : (
-                  <i className={`devicon-${skill}-plain colored mx-3`}></i>
-                ),
-              )}
+              .map((skill) => getIcon(skill, true, 'inline-block w-8 h-8'))}
           </div>
         )}
 

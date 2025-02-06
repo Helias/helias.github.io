@@ -173,3 +173,5 @@ export const ProjectList: ProjectProps[] = [
     customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
   },
 ];
+
+export const allSkills = new Set([...ProjectList.map((p) => p.skills)].flat());

@@ -1,11 +1,33 @@
 import { useState } from 'react';
+import Select, { components } from 'react-select';
+import { getIcon } from './helper';
 import Project, { ProjectProps } from './Project';
+import { allSkills } from './ProjectList';
 
 const enum Filter {
   ALL = 'all',
   WORK = 'work',
   OPENSOURCE = 'opensource',
 }
+
+const { Option } = components;
+const IconOption = (props: { data?: { value?: string; label?: string } }) => (
+  <Option {...props} className="text-left w-8">
+    {getIcon(props?.data?.value as string, false, 'inline-block w-5 h-5', 'align-middle')}{' '}
+    {props?.data?.label}
+  </Option>
+);
+
+const CustomSingleValue = (props) => {
+  return (
+    <>
+      <div className="absolute ml-5">
+        {getIcon(props?.data?.value as string, false, 'inline-block w-5 h-5 mt-0', 'align-middle')}{' '}
+        {props?.data?.label}
+      </div>
+    </>
+  );
+};
 
 const PaginationComponent = ({
   items,
@@ -16,10 +38,14 @@ const PaginationComponent = ({
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentFilter, setCurrentFilter] = useState(Filter.ALL);
+  const [selectedOption, setSelectedOption] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const filteredItems = items.filter(
-    (i) => currentFilter === Filter.ALL || i.prefix?.toLowerCase().includes(currentFilter),
-  );
+  const options = [...allSkills].map((skill: string) => ({ value: skill, label: skill }));
+
+  const filteredItems = items
+    .filter((i) => currentFilter === Filter.ALL || i.prefix?.toLowerCase().includes(currentFilter))
+    .filter((item) => !selectedOption || item.skills.includes(selectedOption));
 
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
 
@@ -38,6 +64,11 @@ const PaginationComponent = ({
     setCurrentPage(1);
   };
 
+  const updateFilterSkills = (skill: { label: string; value: string }): void => {
+    setSelectedOption(skill?.value);
+    setCurrentPage(1);
+  };
+
   const buttonsClasses = 'px-3 py-1 rounded text-2xl text-white';
   const disableClasses = 'bg-gray-400 cursor-not-allowed';
   const enableClasses =
@@ -45,8 +76,8 @@ const PaginationComponent = ({
   const sharedNavButtonClasses = `mr-auto ml-5 ${buttonsClasses}`;
 
   return (
-    <div>
-      <div className="flex mt-20 my-8 sticky top-12 bg-gray-800 p-2">
+    <div className="relative">
+      <div className="flex mt-20 my-8 sticky top-12 bg-gray-800 p-2 z-100">
         <div className="ml-0 md:ml-[6vw]">
           <button
             className={`${sharedNavButtonClasses} ${currentFilter === Filter.ALL ? disableClasses : enableClasses}`}
@@ -66,6 +97,22 @@ const PaginationComponent = ({
           >
             🤝 Opensource
           </button>
+        </div>
+
+        <div className="mx-auto">
+          <div className="min-w-60 text-left">
+            <Select
+              placeholder="Filter by technology"
+              menuIsOpen={menuOpen}
+              onMenuOpen={() => setMenuOpen(true)}
+              onMenuClose={() => setMenuOpen(false)}
+              defaultValue={selectedOption}
+              onChange={updateFilterSkills}
+              options={options}
+              components={{ Option: IconOption, SingleValue: CustomSingleValue }}
+              isClearable
+            />
+          </div>
         </div>
 
         <div className="mx-auto space-x-2">
@@ -128,6 +175,7 @@ const PaginationComponent = ({
                   github={github}
                   date={date}
                   customClass={customClass}
+                  menuOpen={menuOpen}
                 />
               ),
             )}

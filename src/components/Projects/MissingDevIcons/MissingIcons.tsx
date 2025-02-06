@@ -1,10 +1,9 @@
 import { ReactNode } from 'react';
 
-const sharedClassName = 'w-8 h-8 inline-block mx-5';
 const sharedStyle = { marginTop: '-10px' };
 
-export const AngularIcon: ReactNode = (
-  <svg viewBox="0 0 128 128" className={sharedClassName} style={sharedStyle}>
+export const AngularIcon: (classNames: string) => ReactNode = (classNames) => (
+  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
     <g id="surface1">
       {' '}
       <path
@@ -38,14 +37,14 @@ export const AngularIcon: ReactNode = (
   </svg>
 );
 
-export const OptimizelyIcon: ReactNode = (
+export const OptimizelyIcon: (classNames: string) => ReactNode = (classNames) => (
   <svg
     version="1.1"
     id="Layer_1"
     x="0px"
     y="0px"
     viewBox="0 0 77.4 73"
-    className={sharedClassName}
+    className={classNames}
     style={sharedStyle}
   >
     <style>
@@ -82,8 +81,8 @@ export const OptimizelyIcon: ReactNode = (
   </svg>
 );
 
-export const PythonIcon: ReactNode = (
-  <svg viewBox="0 0 128 128" className={sharedClassName} style={sharedStyle}>
+export const PythonIcon: (classNames: string) => ReactNode = (classNames) => (
+  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
     <linearGradient
       id="python-original-a"
       gradientUnits="userSpaceOnUse"
@@ -137,8 +136,8 @@ export const PythonIcon: ReactNode = (
   </svg>
 );
 
-export const TelegramIcon: ReactNode = (
-  <svg viewBox="0 0 240 240" className={sharedClassName} style={sharedStyle}>
+export const TelegramIcon: (classNames: string) => ReactNode = (classNames) => (
+  <svg viewBox="0 0 240 240" className={classNames} style={sharedStyle}>
     <defs>
       <linearGradient
         id="linear-gradient"
@@ -168,8 +167,8 @@ export const TelegramIcon: ReactNode = (
   </svg>
 );
 
-export const NodejsIcon: ReactNode = (
-  <svg viewBox="0 0 128 128" className={sharedClassName} style={sharedStyle}>
+export const NodejsIcon: (classNames: string) => ReactNode = (classNames) => (
+  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
     <path
       fill="#5fa04e"
       d="M114.313 55.254a.26.26 0 0 0-.145.044l-2.346 1.37a.3.3 0 0 0-.142.26v2.74c0 .116.055.204.142.262l2.346 1.368a.262.262 0 0 0 .29 0l2.342-1.368a.308.308 0 0 0 .145-.263V56.93a.303.303 0 0 0-.145-.26l-2.343-1.371a.26.26 0 0 0-.144-.044zM63.22 71.638c-.427 0-.852.104-1.214.308l-11.549 6.727a2.457 2.457 0 0 0-1.214 2.124V94.22c0 .874.462 1.69 1.214 2.128l3.04 1.746c1.476.728 1.997.726 2.662.726 2.17 0 3.415-1.339 3.415-3.64V81.935a.356.356 0 0 0-.348-.351h-1.474a.356.356 0 0 0-.35.351v13.248c0 1.019-1.069 2.04-2.776 1.167l-3.155-1.835c-.116-.058-.175-.206-.175-.322V80.767c0-.116.059-.26.175-.319l11.545-6.697c.087-.058.233-.058.349 0l11.548 6.697c.115.059.172.174.172.32v13.424c0 .145-.057.264-.172.322l-11.548 6.727c-.087.058-.233.058-.349 0l-2.951-1.779c-.087-.058-.203-.087-.29-.029-.81.466-.952.527-1.734.789-.174.058-.463.173.115.493l3.85 2.302c.376.203.78.319 1.214.319.434 0 .867-.115 1.214-.26l11.549-6.727a2.463 2.463 0 0 0 1.214-2.128V80.797c0-.874-.462-1.687-1.214-2.124l-11.549-6.727a2.488 2.488 0 0 0-1.214-.308Zm18.03 6.13a2.236 2.236 0 0 0-2.227 2.243 2.236 2.236 0 0 0 2.227 2.242c1.217 0 2.228-1.019 2.228-2.242a2.254 2.254 0 0 0-2.228-2.242zm-.03.379a1.86 1.86 0 0 1 1.883 1.864c0 1.02-.84 1.894-1.882 1.894-1.012 0-1.852-.846-1.852-1.894s.869-1.864 1.852-1.864zm-.809.611v2.562h.494v-1.016h.434c.174 0 .231.058.26.203 0 .03.086.67.086.786h.52c-.058-.116-.087-.466-.116-.67-.028-.32-.056-.553-.404-.582.174-.059.463-.146.463-.612 0-.67-.58-.67-.868-.67zm.435.408h.404c.146 0 .376 0 .376.349 0 .116-.056.351-.376.351h-.405zm-14.47 2.01c-3.3 0-5.268 1.398-5.268 3.757 0 2.534 1.968 3.23 5.123 3.551 3.79.379 4.08.933 4.08 1.69 0 1.31-1.044 1.864-3.475 1.864-3.068 0-3.733-.758-3.965-2.301 0-.175-.142-.29-.316-.29H61.05a.35.35 0 0 0-.346.349c0 1.98 1.041 4.31 6.107 4.31 3.645 0 5.758-1.458 5.758-4.02 0-2.505-1.68-3.174-5.238-3.64-3.59-.466-3.965-.728-3.965-1.572 0-.699.318-1.63 2.98-1.63 2.373 0 3.269.525 3.617 2.126a.34.34 0 0 0 .319.26h1.533c.088 0 .175-.057.234-.115a.476.476 0 0 0 .085-.263c-.231-2.795-2.053-4.077-5.758-4.077z"
@@ -238,8 +237,8 @@ export const NodejsIcon: ReactNode = (
   </svg>
 );
 
-export const ElectronIcon: ReactNode = (
-  <svg viewBox="0 0 128 128" className={sharedClassName} style={sharedStyle}>
+export const ElectronIcon: (classNames: string) => ReactNode = (classNames) => (
+  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
     <g fill="#47848f">
       <path d="M49.07 32.66c-14.37-2.62-25.72.12-30.25 8-3.38 5.85-2.41 13.61 2.34 21.9a1.47 1.47 0 002.56-1.47c-4.28-7.47-5.12-14.17-2.35-19 3.76-6.51 13.89-9 27.17-6.54a1.47 1.47 0 10.53-2.9zM28.63 72.61a92.2 92.2 0 0022 17.34c20.84 12 43 15.25 54 7.79a1.47 1.47 0 00-1.66-2.43C93.11 102 72 98.92 52.07 87.39a89.27 89.27 0 01-21.26-16.77 1.47 1.47 0 00-2.18 2z"></path>
       <path d="M101.06 70.81c9.41-11.11 12.69-22.29 8.17-30.11-3.32-5.76-10.35-8.8-19.69-8.92a1.47 1.47 0 000 2.95c8.4.11 14.45 2.73 17.18 7.45 3.75 6.5.82 16.47-7.87 26.74a1.47 1.47 0 102.25 1.9zM76.89 33.15a92 92 0 00-26.25 10.4C29.13 56 15.09 74.29 17 87.57a1.47 1.47 0 003-.43C18.23 75.35 31.53 58 52.11 46.11A89.07 89.07 0 0177.51 36a1.47 1.47 0 10-.62-2.88z"></path>
@@ -249,14 +248,14 @@ export const ElectronIcon: ReactNode = (
   </svg>
 );
 
-export const NxIcon: ReactNode = (
+export const NxIcon: (classNames: string) => ReactNode = (classNames) => (
   <svg
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     aria-hidden="true"
-    className={sharedClassName}
+    className={classNames}
     style={sharedStyle}
   >
     <title>Nx</title>
@@ -264,8 +263,8 @@ export const NxIcon: ReactNode = (
   </svg>
 );
 
-export const JenkinsIcon: ReactNode = (
-  <svg viewBox="0 0 128 128" className={sharedClassName} style={sharedStyle}>
+export const JenkinsIcon: (classNames: string) => ReactNode = (classNames) => (
+  <svg viewBox="0 0 128 128" className={classNames} style={sharedStyle}>
     <path
       fill="#d33833"
       d="M108.893 61.68c0 25.36-20.099 45.918-44.892 45.918-24.794 0-44.893-20.558-44.893-45.918s20.1-45.92 44.893-45.92 44.892 20.56 44.892 45.92"

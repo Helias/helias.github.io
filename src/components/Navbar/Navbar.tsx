@@ -38,7 +38,7 @@ export default function Navbar(): JSX.Element {
                   <a
                     key={item.name}
                     href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
+                    aria-current={item.current && 'page'}
                     className={classNames(
                       item.current
                         ? 'bg-gray-900 text-white'
@@ -72,7 +72,7 @@ export default function Navbar(): JSX.Element {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? 'page' : undefined}
+              aria-current={item.current && 'page'}
               className={classNames(
                 item.current
                   ? 'bg-gray-900 text-white'
