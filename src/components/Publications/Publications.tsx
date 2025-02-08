@@ -4,7 +4,7 @@ export default function Publications(): JSX.Element {
   return (
     <div id="publications" className="mb-10 pt-16">
       <div className="w-full">
-        <div className="ml-[5vw]">
+        <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw]">
           <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">
             Publications
           </h2>

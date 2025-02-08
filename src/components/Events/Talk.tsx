@@ -31,7 +31,7 @@ export default function Talk({
   return (
     <div className="col-span-1 flex flex-col border p-4 bg-gray-800 p-1 m-3 max-h-100 min-h-100">
       <h2 className="text-white text-xl">
-        <span className="text-gray-500">{prefix}</span> {title}
+        <strong className="text-red-300">{prefix}</strong> {title}
       </h2>
 
       <img src={image} className="mt-2 flex-1 object-contain w-full h-10" />
