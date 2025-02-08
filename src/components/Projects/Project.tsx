@@ -1,4 +1,3 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import { getIcon } from './helper';
 
@@ -71,7 +70,8 @@ export default function Project({
           <div className="text-center mt-2 mb-3">
             {github && (
               <a href={github} target="_blank" className={`mx-5 ${sharedButtonsClasses}`}>
-                <GitHubIcon /> <span className="underline">github</span>
+                <i className="devicon-github-original align-middle mr-2 py-2 text-2xl"></i>-{' '}
+                <span className="underline">github</span>
               </a>
             )}
             {demo && !Array.isArray(demo) && (

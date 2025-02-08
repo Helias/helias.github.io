@@ -1,6 +1,5 @@
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import DataObjectIcon from '@mui/icons-material/DataObject';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
@@ -68,7 +67,8 @@ export default function Article({
               {github && (
                 <div className="col-span-1">
                   <a href={github} className="hover:text-gray-400 text-2xl ml-5" target="_blank">
-                    <GitHubIcon sx={{ fontSize: 30 }} /> - <span className="underline">GitHub</span>
+                    <i className="devicon-github-original align-middle mr-2 text-3xl"></i>-{' '}
+                    <span className="underline">GitHub</span>
                   </a>
                 </div>
               )}

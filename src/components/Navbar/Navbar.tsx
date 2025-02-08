@@ -1,6 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 const navigation = [
   { name: 'Home', href: '#home', current: false },
@@ -58,7 +57,7 @@ export default function Navbar(): JSX.Element {
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
             >
               <a href="https://github.com/Helias" target="_blank">
-                <GitHubIcon />
+                <i className="devicon-github-original text-4xl"></i>
               </a>
             </button>
           </div>

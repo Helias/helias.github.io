@@ -1,6 +1,5 @@
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import DescriptionIcon from '@mui/icons-material/Description';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import MicIcon from '@mui/icons-material/Mic';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
@@ -64,7 +63,8 @@ export default function Talk({
         {(event || slides) && github && ' - '}
         {github && (
           <a href={github} target="_blank" className="hover:text-gray-400">
-            <GitHubIcon /> <span className="underline">github</span>
+            <i className="devicon-github-original align-middle py-2 text-2xl"></i>-{' '}
+            <span className="underline">github</span>
           </a>
         )}
         {(github || event) && website && ' - '}

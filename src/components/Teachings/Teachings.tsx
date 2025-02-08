@@ -1,6 +1,5 @@
 import CodeIcon from '@mui/icons-material/Code';
 import DescriptionIcon from '@mui/icons-material/Description';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import Course from './Course';
 import CourseLink from './CourseLink';
@@ -49,7 +48,7 @@ export default function Teachings(): JSX.Element {
                   <div className="col-span-4 md:col-span-2 lg:col-span-1">
                     <CourseLink
                       href="https://github.com/UNICT-Quality-Development/"
-                      icon={<GitHubIcon sx={{ fontSize: 50 }} className="bg-black" />}
+                      icon={<i className="devicon-github-original align-middle mr-2 text-5xl"></i>}
                       text="GitHub Organization"
                     />
                   </div>
