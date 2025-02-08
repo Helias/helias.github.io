@@ -50,7 +50,7 @@ export default function Article({
               )}
               {cite && (
                 <div className="col-span-1">
-                  <a href={cite} className="hover:text-gray-400 text-2xl ml-5" target="_blank">
+                  <a href={cite} className="hover:text-gray-400 text-2xl ml-1" target="_blank">
                     <DataObjectIcon sx={{ fontSize: 30 }} /> -{' '}
                     <span className="underline">Cite</span>
                   </a>
@@ -58,7 +58,7 @@ export default function Article({
               )}
               {event && (
                 <div className="col-span-1">
-                  <a href={event} className="hover:text-gray-400 text-2xl ml-5" target="_blank">
+                  <a href={event} className="hover:text-gray-400 text-2xl ml-1" target="_blank">
                     <CalendarMonthIcon sx={{ fontSize: 30 }} /> -{' '}
                     <span className="underline">Event</span>
                   </a>
@@ -66,7 +66,7 @@ export default function Article({
               )}{' '}
               {github && (
                 <div className="col-span-1">
-                  <a href={github} className="hover:text-gray-400 text-2xl ml-5" target="_blank">
+                  <a href={github} className="hover:text-gray-400 text-2xl ml-1" target="_blank">
                     <i className="devicon-github-original align-middle mr-2 text-3xl"></i>-{' '}
                     <span className="underline">GitHub</span>
                   </a>
@@ -74,7 +74,7 @@ export default function Article({
               )}
               {website && (
                 <div className="col-span-1">
-                  <a href={website} className="hover:text-gray-400 text-2xl ml-5" target="_blank">
+                  <a href={website} className="hover:text-gray-400 text-2xl ml-1" target="_blank">
                     <LanguageIcon sx={{ fontSize: 30 }} /> -{' '}
                     <span className="underline">Website</span>
                   </a>
