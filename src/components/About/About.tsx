@@ -42,8 +42,9 @@ export default function About(): JSX.Element {
           <p>I'm a software engineer who started programming for fun at the age of 12.</p>
           <p className="mt-10">
             I have several years of working experience mostly using web technologies like
-            TypeScript/JavaScript, Angular, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap,
-            HTML, CSS/SCSS, C++, PHP, and Laravel.
+            TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js,
+            Python, Bootstrap, HTML, CSS/SCSS, C++, PHP, and Laravel (go to Skills & Projects for a
+            full list).
           </p>
           <p className="mt-10">
             In my spare time, I manage two opensource communities that I have founded{' '}

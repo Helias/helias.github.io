@@ -18,9 +18,8 @@ export default function ProjectsPage(): JSX.Element {
         Angular. My expertise lies in creating dynamic and responsive web applications, leveraging
         TypeScript and modern front-end frameworks. Beyond Angular, I have experience with various
         front-end and back-end technologies. I have also developed several Telegram bots, showcasing
-        my ability to create software solutions that enhance user experience. I have founded two
-        opensource communities like AzerothCore and UNICT Devs and I contribute on platforms such as
-        Stack Overflow, always looking to share knowledge and refine my skills.
+        my ability to create software solutions that enhance user experience. I contribute on
+        platforms such as Stack Overflow, always looking to share knowledge and refine my skills.
       </div>
 
       <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw] mt-10 text-center w-[80vw]">
@@ -37,6 +36,16 @@ export default function ProjectsPage(): JSX.Element {
                 {/* {weight}: */} {getIcon(skill, false, `inline-block mt-0`)}
               </span>
             ))}
+        </div>
+        <div className="mt-10 text-center">
+          <strong>All skills & technologies:</strong> Angular, Typescript, Javascript, RxJS, Redux,
+          NGRX, React.js, Next.js, Nx, Cypress, Playwright, Karma, Jasmine, Jest, Webpack, Node.js,
+          Nestjs, Expressjs, Three.js, Electron, Websocket, PHP, Laravel, Python, Selenium, FastAPI,
+          Flask, Pytest, Pytorch, R, C, C++, Java, Web Components, Micro Front-end, Microservices,
+          SASS, CSS, TailwindCSS, Bootstrap, Material Design, Apache, Nginx, Docker, Linux, OpenWRT,
+          Radius, Wordpress, Git, Gitlab, Github, Bitbucket, Jira, Scrum, Safe-Agile, Kanban, A/B
+          testing, SOAP, OAuth, CI/CD, GitHub Actions, Jenkins, DevOps, MySQL, SQlite, Lua, Bash,
+          Firebase, Supabase (Realtime, Monitoring), Networking (RESTful APIs, JSON, XML), Azure
         </div>
       </div>
 
