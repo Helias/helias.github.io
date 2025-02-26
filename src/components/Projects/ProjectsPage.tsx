@@ -40,12 +40,13 @@ export default function ProjectsPage(): JSX.Element {
         <div className="mt-10 text-center">
           <strong>All skills & technologies:</strong> Angular, Typescript, Javascript, RxJS, Redux,
           NGRX, React.js, Next.js, Nx, Cypress, Playwright, Karma, Jasmine, Jest, Webpack, Node.js,
-          Nestjs, Expressjs, Three.js, Electron, Websocket, PHP, Laravel, Python, Selenium, FastAPI,
-          Flask, Pytest, Pytorch, R, C, C++, Java, Web Components, Micro Front-end, Microservices,
-          SASS, CSS, TailwindCSS, Bootstrap, Material Design, Apache, Nginx, Docker, Linux, OpenWRT,
-          Radius, Wordpress, Git, Gitlab, Github, Bitbucket, Jira, Scrum, Safe-Agile, Kanban, A/B
-          testing, SOAP, OAuth, CI/CD, GitHub Actions, Jenkins, DevOps, MySQL, SQlite, Lua, Bash,
-          Firebase, Supabase (Realtime, Monitoring), Networking (RESTful APIs, JSON, XML), Azure
+          Nestjs, Expressjs, Three.js, Electron, Websocket, Socketio, PHP, Laravel, Python,
+          Selenium, FastAPI, Flask, Pytest, Pytorch, R, C, C++, Java, Web Components, Micro
+          Front-end, Microservices, SASS, CSS, TailwindCSS, Bootstrap, Material Design, Apache,
+          Nginx, Docker, Linux, OpenWRT, Radius, WordPress, Git, Gitlab, Github, Bitbucket, Jira,
+          Scrum, SAFe-Agile, Kanban, A/B testing, SOAP, OAuth, CI/CD, GitHub Actions, Jenkins,
+          DevOps, MySQL, SQlite, Lua, Bash, Firebase, Supabase (Realtime, Monitoring), Networking
+          (RESTful APIs, JSON, XML), Azure, Accessibility, WCAG
         </div>
       </div>
 
