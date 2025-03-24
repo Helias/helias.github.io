@@ -16,6 +16,7 @@ export const ProjectList: ProjectProps[] = [
       'nx',
       'rxjs',
       'cypressio',
+      'playwright',
       'githubactions',
       'jenkins',
       'docker',

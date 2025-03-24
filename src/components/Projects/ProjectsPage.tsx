@@ -46,7 +46,7 @@ export default function ProjectsPage(): JSX.Element {
           Nginx, Docker, Linux, OpenWRT, Radius, WordPress, Git, Gitlab, Github, Bitbucket, Jira,
           Scrum, SAFe-Agile, Kanban, A/B testing, SOAP, OAuth, CI/CD, GitHub Actions, Jenkins,
           DevOps, MySQL, SQlite, Lua, Bash, Firebase, Supabase (Realtime, Monitoring), Networking
-          (RESTful APIs, JSON, XML), Azure, Accessibility, WCAG
+          (RESTful APIs, JSON, XML), Azure, Accessibility, WCAG, Figma, AdobeAnalytics, LaTeX
         </div>
       </div>
 
