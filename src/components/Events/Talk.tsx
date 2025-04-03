@@ -63,7 +63,7 @@ export default function Talk({
         {(event || slides) && github && ' - '}
         {github && (
           <a href={github} target="_blank" className="hover:text-gray-400">
-            <i className="devicon-github-original align-middle py-2 text-2xl"></i>-{' '}
+            <i className="devicon-github-original align-middle py-2 text-2xl"></i>{' '}
             <span className="underline">github</span>
           </a>
         )}
