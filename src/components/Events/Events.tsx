@@ -16,6 +16,15 @@ export default function Events(): JSX.Element {
               <div className="mt-5 ml-[2vw]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20">
                   <Talk
+                    image="events/Secure-Systems-and-programmable-networks.png"
+                    prefix="🇮🇹 Speaker:"
+                    title="GitHub & CI/CD per la sicurezza del codice"
+                    slides="https://github.com/UNICT-Quality-Development/fuzz-test-example/tree/main/docs"
+                    github="https://github.com/UNICT-Quality-Development/fuzz-test-example"
+                    event="https://web.dmi.unict.it/it/corsi/l-31/secure-systems-and-programmable-networks-tools-future"
+                  />
+
+                  <Talk
                     image="events/Audio Processing - ffmpeg.png"
                     prefix="🇮🇹 Speaker:"
                     title="Audio Processing - ffmpeg"
