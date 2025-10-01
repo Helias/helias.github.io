@@ -3,7 +3,7 @@ import { ProjectProps } from './Project';
 export const ProjectList: ProjectProps[] = [
   {
     prefix: '👔 Work:',
-    title: 'Developed and mantained the FedEx rating application',
+    title: 'Developed a software management application',
     // description: 'description',
     image: 'projects/BAM.jpg',
     skills: [
