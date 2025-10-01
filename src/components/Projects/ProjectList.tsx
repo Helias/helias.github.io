@@ -22,6 +22,7 @@ export const ProjectList: ProjectProps[] = [
     ],
     date: 'May 2025 - Present',
     multiplier: 3,
+    website: 'https://www.bam.com/en',
     customClass: 'no-bg-cover bg-[length:90%] bg-[position:30px_60px] bg-no-repeat',
   },
   {
