@@ -21,19 +21,24 @@ export default function Teachings(): JSX.Element {
                 <div className="col-span-6 md:col-span-2">
                   <img src="teachings/qd-logo.png" className="w-100 mt-15 mx-auto md:mx-none" />
                 </div>
-                <div className="col-span-6 md:col-span-3 mt-5 flex items-center justify-center">
-                  <div className="md:max-h-45 md:min-h-45 my-auto md:ml-5">
-                    <div className="h-full bg-gray-800">
+                <div className="col-span-6 md:col-span-3 flex items-center justify-center">
+                  <div className="md:ml-5 mt-10">
+                    <div className="h-full bg-gray-800 w-80  md:w-100 p-2 md:p-5">
+                      <h2 className="text-[#00ec7a] text-2xl">Quality Development</h2>
                       <Course
-                        name="Quality Development 2023/2024"
+                        name="2025/2026"
+                        link="https://web.dmi.unict.it/it/corsi/l-31/quality-development-how-properly-write-your-project-2025"
+                      />
+                      <Course
+                        name="2023/2024"
                         link="https://web.dmi.unict.it/it/corsi/l-31/quality-development-how-properly-write-your-project-2023"
                       />
                       <Course
-                        name="Quality Development 2022/2023"
+                        name="2022/2023"
                         link="https://web.dmi.unict.it/it/corsi/l-31/quality-development-how-properly-write-your-project-2022"
                       />
                       <Course
-                        name="Quality Development 2021/2022"
+                        name="2021/2022"
                         link="https://web.dmi.unict.it/it/corsi/l-31/quality-development-how-properly-write-your-project"
                       />
                     </div>
