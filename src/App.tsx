@@ -14,6 +14,7 @@ function App(): JSX.Element {
   return (
     <>
       <div id="home">
+        test
         <Navbar />
         <Home />
         <About />
