@@ -16,6 +16,15 @@ export default function Events(): JSX.Element {
               <div className="mt-5 ml-[2vw]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20">
                   <Talk
+                    image="events/PythonCatania.png"
+                    prefix="🇮🇹 Speaker:"
+                    title="PythonCatania - Python extendibility"
+                    slides="https://github.com/Helias/PythonCatania-extendibility/blob/main/slides.pdf"
+                    github="https://github.com/Helias/PythonCatania-extendibility"
+                    event="https://www.meetup.com/python-catania/events/311306942/?eventOrigin=group_past_events"
+                  />
+
+                  <Talk
                     image="events/Secure-Systems-and-programmable-networks.png"
                     prefix="🇮🇹 Speaker:"
                     title="GitHub & CI/CD per la sicurezza del codice"
