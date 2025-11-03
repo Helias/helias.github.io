@@ -19,7 +19,7 @@ export default function Events(): JSX.Element {
                     image="events/PythonCatania.png"
                     prefix="🇮🇹 Speaker:"
                     title="PythonCatania - Python extendibility"
-                    slides="https://github.com/Helias/PythonCatania-extendibility/blob/main/slides.pdf"
+                    slides="https://slides.com/stefanoborzi/code-b233c7/fullscreen"
                     github="https://github.com/Helias/PythonCatania-extendibility"
                     event="https://www.meetup.com/python-catania/events/311306942/?eventOrigin=group_past_events"
                   />
