@@ -18,7 +18,7 @@ export default function Events(): JSX.Element {
                   <Talk
                     image="events/PythonCatania-multithreading.jpg"
                     prefix="🇮🇹 Speaker:"
-                    title="PythonCatania - Python multithreading"
+                    title="PythonCatania - multithreading"
                     slides="https://slides.com/stefanoborzi/code-b233c7/fullscreen"
                     github="https://github.com/Helias/PythonCatania-multithreading"
                     event="https://www.meetup.com/python-catania/events/312066711/?eventOrigin=group_past_events"
@@ -27,7 +27,7 @@ export default function Events(): JSX.Element {
                   <Talk
                     image="events/PythonCatania-extendibility.png"
                     prefix="🇮🇹 Speaker:"
-                    title="PythonCatania - Python extendibility"
+                    title="PythonCatania - extendibility"
                     slides="https://slides.com/stefanoborzi/code-b233c7/fullscreen"
                     github="https://github.com/Helias/PythonCatania-extendibility"
                     event="https://www.meetup.com/python-catania/events/311306942/?eventOrigin=group_past_events"
