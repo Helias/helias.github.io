@@ -19,7 +19,7 @@ export default function Events(): JSX.Element {
                     image="events/PythonCatania-multithreading.jpg"
                     prefix="🇮🇹 Speaker:"
                     title="PythonCatania - multithreading"
-                    slides="https://slides.com/stefanoborzi/code-b233c7/fullscreen"
+                    slides="https://slides.com/stefanoborzi/code-e7d3ed/fullscreen#/1"
                     github="https://github.com/Helias/PythonCatania-multithreading"
                     event="https://www.meetup.com/python-catania/events/312066711/?eventOrigin=group_past_events"
                   />
@@ -28,7 +28,7 @@ export default function Events(): JSX.Element {
                     image="events/PythonCatania-extendibility.png"
                     prefix="🇮🇹 Speaker:"
                     title="PythonCatania - extendibility"
-                    slides="https://slides.com/stefanoborzi/code-b233c7/fullscreen"
+                    slides="https://slides.com/stefanoborzi/code-e7d3ed/fullscreen"
                     github="https://github.com/Helias/PythonCatania-extendibility"
                     event="https://www.meetup.com/python-catania/events/311306942/?eventOrigin=group_past_events"
                   />
