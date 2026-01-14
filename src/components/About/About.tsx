@@ -29,12 +29,18 @@ export default function About(): JSX.Element {
               <SchoolIcon sx={{ fontSize: 50 }} />
             </SocialLink>
           </div>
-          <div className="mt-10 flex items-center justify-center">
+          <div className="mt-5 flex items-center justify-center">
             <a
               className="bg-gray-800 px-12 py-5 font-medium text-white hover:text-red-400"
               href="StefanoBorzi-CV.pdf"
             >
-              <DescriptionIcon fontSize="medium" className="align-bottom" /> Download Resume
+              <DescriptionIcon fontSize="medium" className="align-bottom" /> Full Resume
+            </a>
+            <a
+              className="bg-gray-800 px-12 py-5 ml-5 font-medium text-white hover:text-red-400"
+              href="StefanoBorzi-CV-Industry.pdf"
+            >
+              <DescriptionIcon fontSize="medium" className="align-bottom" /> Industry Resume
             </a>
           </div>
         </div>
