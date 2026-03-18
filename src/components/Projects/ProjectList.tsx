@@ -170,12 +170,23 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
+    title: 'Pyhthon Catania website',
+    // description: 'description',
+    image: 'projects/PythonCatania.png',
+    skills: ['angular', 'typescript', 'tailwindcss', 'githubactions'],
+    github: 'https://github.com/PythonCatania/PythonCatania.github.io',
+    demo: 'https://catania.python.it',
+    customClass: 'bg-center',
+  },
+
+  {
+    prefix: '🤝 Opensource:',
     title: 'My personal website (this website!)',
     // description: 'description',
     image: 'projects/personal-website.png',
     skills: ['react', 'typescript', 'tailwindcss', 'githubactions'],
     github: 'https://github.com/helias/helias.github.io',
-    demo: 'helias.github.io',
+    demo: 'https://helias.github.io',
     customClass: 'bg-center',
   },
   {
