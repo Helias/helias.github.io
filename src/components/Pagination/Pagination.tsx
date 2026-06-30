@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react';
+import { useTranslation } from '../../i18n/context';
 
 interface PaginationProps<T> {
   items: T[];
@@ -20,6 +21,7 @@ export default function Pagination<T>({
   resetKey,
   children,
 }: PaginationProps<T>): JSX.Element {
+  const { t } = useTranslation();
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -50,7 +52,7 @@ export default function Pagination<T>({
             onClick={() => goToPage(page - 1)}
             disabled={page === 1}
           >
-            Prev
+            {t('pagination.prev')}
           </button>
 
           {Array.from({ length: totalPages }, (_, index) => (
@@ -68,7 +70,7 @@ export default function Pagination<T>({
             onClick={() => goToPage(page + 1)}
             disabled={page === totalPages}
           >
-            Next
+            {t('pagination.next')}
           </button>
         </div>
       </div>

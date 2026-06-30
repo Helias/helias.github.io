@@ -3,14 +3,19 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SchoolIcon from '@mui/icons-material/School';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import { useTranslation } from '../../i18n/context';
 import SocialLink from './SocialLink';
 
 export default function About(): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <div id="about">
       <div className="grid grid-cols-12 mb-20">
         <div className="ml-[5vw] text-center md:col-span-5 col-span-12">
-          <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">About</h2>
+          <h2 className="text-6xl mt-20 text-gray-600 underline underline-offset-15">
+            {t('about.title')}
+          </h2>
           <img className="rounded-full h-75 mt-10 mx-auto border" src="about/Stefano.png" />
           <div className="mt-10 flex justify-center items-center">
             <SocialLink url="mailto:stefanoborzi32@gmail.com">
@@ -34,34 +39,30 @@ export default function About(): JSX.Element {
               className="bg-gray-800 px-12 py-5 font-medium text-white hover:text-red-400"
               href="StefanoBorzi-CV.pdf"
             >
-              <DescriptionIcon fontSize="medium" className="align-bottom" /> Full Resume
+              <DescriptionIcon fontSize="medium" className="align-bottom" /> {t('about.resume')}
             </a>
             <a
               className="bg-gray-800 px-12 py-5 ml-5 font-medium text-white hover:text-red-400"
               href="StefanoBorzi-CV-Industry.pdf"
             >
-              <DescriptionIcon fontSize="medium" className="align-bottom" /> Industry Resume
+              <DescriptionIcon fontSize="medium" className="align-bottom" />{' '}
+              {t('about.resumeIndustry')}
             </a>
           </div>
         </div>
         <div className="mt-40 md:col-span-6 col-span-12 text-2xl text-gray-600 px-10">
-          <p>I'm a software engineer who started programming for fun at the age of 12.</p>
+          <p>{t('about.p1')}</p>
+          <p className="mt-10">{t('about.p2')}</p>
           <p className="mt-10">
-            I have several years of working experience mostly using web technologies like
-            TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js,
-            Python, Bootstrap, HTML, CSS/SCSS, C++, PHP, and Laravel (go to Skills & Projects for a
-            full list).
-          </p>
-          <p className="mt-10">
-            In my spare time, I manage two opensource communities that I have founded{' '}
+            {t('about.p3.before')}
             <a
               className="underline hover:text-black"
               href="https://github.com/azerothcore"
               target="_blank"
             >
               AzerothCore
-            </a>{' '}
-            and{' '}
+            </a>
+            {t('about.p3.and')}
             <a
               className="underline hover:text-black"
               href="https://github.com/unict-dmi"
@@ -73,7 +74,7 @@ export default function About(): JSX.Element {
           </p>
           <p className="mt-10 text-center">
             <img className="inline-block align-middle mr-3" src="about/opensource.png" width="32" />
-            I am really passionate about opensource and Linux.{' '}
+            {t('about.p4')}{' '}
             <img className="inline-block align-middle" src="about/linux-tux.png" width="32" />
           </p>
         </div>

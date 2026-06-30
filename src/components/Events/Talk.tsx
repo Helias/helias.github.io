@@ -3,6 +3,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import LanguageIcon from '@mui/icons-material/Language';
 import MicIcon from '@mui/icons-material/Mic';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
+import { useTranslation } from '../../i18n/context';
 
 interface TalkProps {
   image: string;
@@ -27,10 +28,12 @@ export default function Talk({
   github,
   website,
 }: TalkProps): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <div className="col-span-1 flex flex-col border p-4 bg-gray-800 p-1 m-3 max-h-100 min-h-100">
       <h2 className="text-white text-xl">
-        <strong className="text-red-300">{prefix}</strong> {title}
+        <strong className="text-red-300">{t(prefix)}</strong> {t(title)}
       </h2>
 
       <img src={image} className="mt-2 flex-1 object-contain w-full h-10" />
@@ -39,38 +42,40 @@ export default function Talk({
         {slides && (
           <a href={slides} target="_blank" className="hover:text-gray-400">
             <DescriptionIcon className="align-top" />
-            <span className="underline">slides</span>
+            <span className="underline">{t('talk.slides')}</span>
           </a>
         )}
         {slides && video && ' - '}
         {video && (
           <a href={video} target="_blank" className="hover:text-gray-400">
-            <SmartDisplayIcon className="text-red-600" /> <span className="underline">video</span>
+            <SmartDisplayIcon className="text-red-600" />{' '}
+            <span className="underline">{t('talk.video')}</span>
           </a>
         )}
         {slides && interview && ' - '}
         {interview && (
           <a href={interview} target="_blank" className="hover:text-gray-400">
-            <MicIcon className="text-gray-500" /> <span className="underline">interview </span>
+            <MicIcon className="text-gray-500" />{' '}
+            <span className="underline">{t('talk.interview')} </span>
           </a>
         )}
         {slides && event && ' - '}
         {event && (
           <a href={event} target="_blank" className="hover:text-gray-400">
-            <CalendarMonthIcon /> <span className="underline">event</span>
+            <CalendarMonthIcon /> <span className="underline">{t('talk.event')}</span>
           </a>
         )}
         {(event || slides) && github && ' - '}
         {github && (
           <a href={github} target="_blank" className="hover:text-gray-400">
             <i className="devicon-github-original align-middle py-2 text-2xl"></i>{' '}
-            <span className="underline">github</span>
+            <span className="underline">{t('talk.github')}</span>
           </a>
         )}
         {(github || event) && website && ' - '}
         {website && (
           <a href={website} target="_blank" className="hover:text-gray-400">
-            <LanguageIcon /> <span className="underline">website</span>
+            <LanguageIcon /> <span className="underline">{t('talk.website')}</span>
           </a>
         )}
       </div>

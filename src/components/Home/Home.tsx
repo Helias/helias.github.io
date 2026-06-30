@@ -1,6 +1,9 @@
+import { useTranslation } from '../../i18n/context';
 import TypedText from './Typed-text';
 
 export default function Home(): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-full">
       <img
@@ -13,7 +16,7 @@ export default function Home(): JSX.Element {
             Stefano Borzì
           </h1>
           <p className="text-2xl text-white font-bold mt-7 md:ml-45 drop-shadow-[5px_5px_5px_rgba(0,0,0,1)]">
-            I am <TypedText />
+            {t('home.iam')} <TypedText />
           </p>
         </div>
       </div>
