@@ -1,10 +1,13 @@
 import CodeIcon from '@mui/icons-material/Code';
 import DescriptionIcon from '@mui/icons-material/Description';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import { useTranslation } from '../../i18n/context';
 import Course from './Course';
 import CourseLink from './CourseLink';
 
 export default function Teachings(): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <div id="teachings" className="pt-16 bg-gray-800">
       <div className="bg-[url('/teachings/qd-bg.jpg')] bg-fixed bg-center bg-cover">
@@ -12,7 +15,7 @@ export default function Teachings(): JSX.Element {
           <div className="w-full">
             <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw] pt-10">
               <h2 className="text-6xl text-white underline underline-offset-15 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
-                Teachings
+                {t('teachings.title')}
               </h2>
             </div>
 
@@ -54,28 +57,28 @@ export default function Teachings(): JSX.Element {
                     <CourseLink
                       href="https://github.com/UNICT-Quality-Development/"
                       icon={<i className="devicon-github-original align-middle mr-2 text-5xl"></i>}
-                      text="GitHub Organization"
+                      text={t('teachings.link.github')}
                     />
                   </div>
                   <div className="col-span-4 md:col-span-2 lg:col-span-1">
                     <CourseLink
                       href="https://slides.com/stefanoborzi/code"
                       icon={<DescriptionIcon sx={{ fontSize: 50 }} />}
-                      text="Slides"
+                      text={t('teachings.link.slides')}
                     />
                   </div>
                   <div className="col-span-4 md:col-span-2 lg:col-span-1">
                     <CourseLink
                       href="https://unict-quality-development.github.io/git-catalogue/#/"
                       icon={<CodeIcon sx={{ fontSize: 50 }} />}
-                      text="Students Projects"
+                      text={t('teachings.link.projects')}
                     />
                   </div>
                   <div className="col-span-4 md:col-span-2 lg:col-span-1">
                     <CourseLink
                       href="https://t.me/unict_qd"
                       icon={<TelegramIcon sx={{ fontSize: 50 }} className="text-sky-500 mx-2" />}
-                      text="Telegram"
+                      text={t('teachings.link.telegram')}
                     />
                   </div>
                 </div>
@@ -85,10 +88,7 @@ export default function Teachings(): JSX.Element {
             <div className="p-10 mt-30 bg-gray-800">
               <div className="mx-auto md:w-[80%] lg:w-[75%]">
                 <p className="text-white drop-shadow-[2px_2px_2px_rgba(0,0,0,1)] text-2xl">
-                  The course covers topics such as UNIX Shell usage, version control with Git and
-                  GitHub workflows, open-source community engagement, Python programming, unit
-                  testing, code quality principles (ex. SOLID), and Continuous
-                  Integration/Continuous Deployment (CI/CD) tools.
+                  {t('teachings.desc')}
                 </p>
 
                 <div className="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 place-items-center">
