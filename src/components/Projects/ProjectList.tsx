@@ -140,6 +140,16 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
+    title:
+      'ai-notify, plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused',
+    // description: 'description',
+    image: 'projects/ai-notify.jpeg',
+    skills: ['powershell', 'bash', 'javascript'],
+    github: 'https://github.com/Helias/ai-notify',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
+  },
+  {
+    prefix: '🤝 Opensource:',
     title: 'Keira3 web application',
     // description: 'description',
     image: 'projects/Keira3.png',
