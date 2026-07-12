@@ -183,6 +183,8 @@ const it: Dictionary = {
   '🇮🇹 Panel:': '🇮🇹 Panel:',
 
   // Project titles
+  'ai-notify, plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused':
+    'ai-notify, riproduce un suono quando un agente di coding AI termina o richiede attenzione mentre il suo terminale non è a fuoco',
   'Developed a software management application': "Sviluppata un'applicazione gestionale software",
   'Developed and mantained the FedEx rating application':
     "Sviluppata e mantenuta l'applicazione di tariffazione di FedEx",
@@ -382,6 +384,8 @@ const nl: Dictionary = {
   '🇮🇹 Panel:': '🇮🇹 Panel:',
 
   // Project titles
+  'ai-notify, plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused':
+    'ai-notify, speelt een geluid af wanneer een AI-codeeragent klaar is of aandacht nodig heeft terwijl de terminal niet gefocust is',
   'Developed a software management application': 'Een softwarebeheerapplicatie ontwikkeld',
   'Developed and mantained the FedEx rating application':
     'De FedEx-tariefapplicatie ontwikkeld en onderhouden',
