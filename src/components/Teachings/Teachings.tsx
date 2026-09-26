@@ -59,7 +59,7 @@ export default function Teachings(): JSX.Element {
                   </div>
                   <div className="col-span-4 md:col-span-2 lg:col-span-1">
                     <CourseLink
-                      href="https://slides.com/stefanoborzi/code"
+                      href="https://unict-quality-development.github.io/QualityDevelopment-slides/"
                       icon={<DescriptionIcon sx={{ fontSize: 50 }} />}
                       text="Slides"
                     />

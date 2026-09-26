@@ -35,7 +35,7 @@
 
 ## Teaching
 - [Teachings](https://helias.github.io/#teachings): "Quality Development" course at the University of Catania (academic years 2021/2022 through 2025/2026). Covers UNIX shell, Git/GitHub workflows, open-source engagement, Python, unit testing, code quality (SOLID), and CI/CD.
-  - [Course GitHub Organization](https://github.com/UNICT-Quality-Development/) | [Slides](https://slides.com/stefanoborzi/code) | [Students Projects](https://unict-quality-development.github.io/git-catalogue/) | [Telegram](https://t.me/unict_qd)
+  - [Course GitHub Organization](https://github.com/UNICT-Quality-Development/) | [Slides](https://unict-quality-development.github.io/QualityDevelopment-slides/) | [Students Projects](https://unict-quality-development.github.io/git-catalogue/) | [Telegram](https://t.me/unict_qd)
 
 ## Publications
 - [Publications](https://helias.github.io/#publications): Research focused on synthetic/deepfake audio detection and audio processing.
