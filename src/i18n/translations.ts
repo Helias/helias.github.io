@@ -75,7 +75,9 @@ const en: Dictionary = {
   'teachings.link.slides': 'Slides',
   'teachings.link.projects': 'Students Projects',
   'teachings.link.telegram': 'Telegram',
-  'teachings.desc':
+  'teachings.sqpd.desc':
+    'The course covers topics such as UNIX Shell usage, version control with Git and GitHub workflows, open-source community engagement, Python programming, unit and end-to-end testing with Playwright, containerization with Docker, code quality principles (ex. SOLID), Continuous Integration/Continuous Deployment (CI/CD) tools, and agentic coding with AI assistants.',
+  'teachings.qd.desc':
     'The course covers topics such as UNIX Shell usage, version control with Git and GitHub workflows, open-source community engagement, Python programming, unit testing, code quality principles (ex. SOLID), and Continuous Integration/Continuous Deployment (CI/CD) tools.',
 
   'publications.title': 'Publications',
@@ -162,7 +164,9 @@ const it: Dictionary = {
   'teachings.link.slides': 'Slide',
   'teachings.link.projects': 'Progetti degli studenti',
   'teachings.link.telegram': 'Telegram',
-  'teachings.desc':
+  'teachings.sqpd.desc':
+    "Il corso affronta argomenti come l'uso della shell UNIX, il controllo di versione con Git e i workflow di GitHub, la partecipazione alle community open-source, la programmazione in Python, gli unit test e i test end-to-end con Playwright, la containerizzazione con Docker, i principi di qualità del codice (es. SOLID), gli strumenti di Continuous Integration/Continuous Deployment (CI/CD) e l'agentic coding con assistenti AI.",
+  'teachings.qd.desc':
     "Il corso affronta argomenti come l'uso della shell UNIX, il controllo di versione con Git e i workflow di GitHub, la partecipazione alle community open-source, la programmazione in Python, gli unit test, i principi di qualità del codice (es. SOLID) e gli strumenti di Continuous Integration/Continuous Deployment (CI/CD).",
 
   'publications.title': 'Pubblicazioni',

@@ -1,10 +1,18 @@
 interface CourseLinkProps {
-  href: string;
+  href?: string;
   icon: React.ReactNode;
   text: string;
 }
 
 const CourseLink: React.FC<CourseLinkProps> = ({ href, icon, text }): JSX.Element => {
+  if (!href) {
+    return (
+      <span className="text-gray-500 cursor-not-allowed">
+        {icon} <span className="underline">{text}</span>
+      </span>
+    );
+  }
+
   return (
     <a
       href={href}
