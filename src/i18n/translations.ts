@@ -1,26 +1,22 @@
-export type Language = 'en' | 'it' | 'nl';
+export const LANGUAGES = ['en', 'it'] as const;
 
-// Languages offered to visitors. Dutch is disabled but its dictionary is kept,
-// so adding 'nl' back here re-enables it.
-export const LANGUAGES: readonly Language[] = ['en', 'it'];
+export type Language = (typeof LANGUAGES)[number];
 
 export const LANGUAGE_LABELS: Record<Language, string> = {
   en: 'English',
   it: 'Italiano',
-  nl: 'Nederlands',
 };
 
 export const LANGUAGE_FLAGS: Record<Language, string> = {
   en: '🇬🇧',
   it: '🇮🇹',
-  nl: '🇳🇱',
 };
 
 type Dictionary = Record<string, string>;
 
 // English is the source language. Content-specific keys (project/talk titles)
 // are keyed by their English string and fall back to the key itself, so only
-// the it/nl dictionaries need to provide their translations.
+// the it dictionary needs to provide translations for them.
 const en: Dictionary = {
   'nav.home': 'Home',
   'nav.about': 'About',
@@ -300,205 +296,5 @@ const it: Dictionary = {
     'Workshop sui bot Telegram - Google I/O Extended al GDG di Catania',
 };
 
-const nl: Dictionary = {
-  'nav.home': 'Home',
-  'nav.about': 'Over mij',
-  'nav.projects': 'Vaardigheden & Projecten',
-  'nav.opensource': 'Opensource',
-  'nav.teachings': 'Onderwijs',
-  'nav.publications': 'Publicaties',
-  'nav.events': 'Evenementen',
 
-  'home.iam': 'Ik ben',
-  'home.typed.1': 'een opensource-ontwikkelaar',
-  'home.typed.2': 'een techliefhebber',
-  'home.typed.3': 'een webontwikkelaar',
-  'home.typed.4': 'een software-engineer',
-  'home.typed.5': 'een full-stack-ontwikkelaar',
-
-  'about.title': 'Over mij',
-  'about.p1':
-    'Ik ben een software-engineer die op 12-jarige leeftijd voor de lol begon met programmeren.',
-  'about.p2':
-    'Ik heb meerdere jaren werkervaring, voornamelijk met webtechnologieën zoals TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP en Laravel (ga naar Vaardigheden & Projecten voor de volledige lijst).',
-  'about.p3.before': 'In mijn vrije tijd beheer ik twee opensource-communities die ik heb opgericht: ',
-  'about.p3.and': ' en ',
-  'about.p4': 'Ik ben echt gepassioneerd door opensource en Linux.',
-  'about.resume': 'Volledig cv',
-  'about.resumeIndustry': 'Industrie-cv',
-
-  'projects.title': 'Vaardigheden & Projecten',
-  'projects.intro':
-    'Ik ben een full-stack-ontwikkelaar met een sterke focus op front-end-ontwikkeling, voornamelijk met Angular. Mijn expertise ligt in het bouwen van dynamische en responsieve webapplicaties met TypeScript en moderne front-end-frameworks. Naast Angular heb ik ervaring met diverse front-end- en back-end-technologieën. Ik heb ook verschillende Telegram-bots ontwikkeld, wat mijn vermogen toont om softwareoplossingen te maken die de gebruikerservaring verbeteren. Ik draag bij aan platforms zoals Stack Overflow, altijd op zoek om kennis te delen en mijn vaardigheden te verfijnen.',
-  'projects.skillsNote':
-    'De volgende vaardigheden hebben een grootte die gebaseerd is op de kwaliteit en kwantiteit van de hieronder vermelde projecten (de volgorde wordt bij elk bezoek willekeurig bepaald).',
-  'projects.allSkills': 'Alle vaardigheden & technologieën:',
-  'projects.filter.all': 'Alle',
-  'projects.filter.work': '👔 Werk',
-  'projects.filter.opensource': '🤝 Opensource',
-  'projects.filterPlaceholder': 'Filter op technologie',
-
-  'opensource.title': 'Opensource',
-  'opensource.intro1':
-    'Ik ben enorm gepassioneerd door opensource. Ik ben altijd betrokken geweest bij verschillende opensource-communities en heb er twee van mezelf opgericht: ',
-  'opensource.intro2': ' en ',
-  'opensource.azerothcore.desc':
-    "AzerothCore is een opensource-gameserverapplicatie en -framework, ontworpen voor het hosten van massively multiplayer online rollenspellen (MMORPG's). Het is gebaseerd op het populaire MMORPG World of Warcraft (WoW) en probeert de speelervaring van het originele spel uit patch 3.3.5a na te bootsen.",
-  'opensource.unictdevs.desc':
-    'UNICT Devs is een opensource-community opgericht door studenten van de afdeling Wiskunde en Informatica (DMI) van de Universiteit van Catania. De community ontwikkelt en onderhoudt Telegram-bots, webapps en automatiseringstools om de universitaire communicatie, het delen van bronnen en de studentenservices te verbeteren.',
-
-  'teachings.title': 'Onderwijs',
-  'teachings.program': 'programma',
-  'teachings.link.github': 'GitHub-organisatie',
-  'teachings.link.slides': 'Slides',
-  'teachings.link.projects': 'Studentenprojecten',
-  'teachings.link.telegram': 'Telegram',
-  'teachings.desc':
-    'De cursus behandelt onderwerpen zoals het gebruik van de UNIX-shell, versiebeheer met Git en GitHub-workflows, betrokkenheid bij opensource-communities, programmeren in Python, unit testing, principes voor codekwaliteit (bijv. SOLID) en tools voor Continuous Integration/Continuous Deployment (CI/CD).',
-
-  'publications.title': 'Publicaties',
-  'article.article': 'artikel',
-  'article.cite': 'citeren',
-  'article.event': 'evenement',
-  'article.github': 'github',
-  'article.website': 'website',
-
-  'events.title': 'Evenementen',
-  'events.filter.video': 'Video',
-  'events.filter.github': 'Github',
-  'talk.slides': 'slides',
-  'talk.video': 'video',
-  'talk.interview': 'interview',
-  'talk.event': 'evenement',
-  'talk.github': 'github',
-  'talk.website': 'website',
-
-  'footer.copyleft': 'Copyleft - Alle rechten omgekeerd',
-
-  'pagination.prev': 'Vorige',
-  'pagination.next': 'Volgende',
-
-  // Prefixes (the flag denotes the original talk language and is kept as-is)
-  '👔 Work:': '👔 Werk:',
-  '🤝 Opensource:': '🤝 Opensource:',
-  '🇮🇹 Speaker:': '🇮🇹 Spreker:',
-  '🇬🇧 Speaker:': '🇬🇧 Spreker:',
-  '🇮🇹 Panel:': '🇮🇹 Panel:',
-
-  // Project titles
-  'ai-notify, plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused':
-    'ai-notify, speelt een geluid af wanneer een AI-codeeragent klaar is of aandacht nodig heeft terwijl de terminal niet gefocust is',
-  'Developed a software management application': 'Een softwarebeheerapplicatie ontwikkeld',
-  'Developed and mantained the FedEx rating application':
-    'De FedEx-tariefapplicatie ontwikkeld en onderhouden',
-  'Developed a web application for InfrontFinance (ex VWD)':
-    'Een webapplicatie ontwikkeld voor InfrontFinance (voorheen VWD)',
-  'Provided services as freelancer in Fiverr': 'Diensten geleverd als freelancer op Fiverr',
-  'Software Management for NewTecna & ItaliaHotspot':
-    'Softwarebeheer voor NewTecna & ItaliaHotspot',
-  'Software management developed for Codice a Barre Italia & GirasoleEventi':
-    'Softwarebeheer ontwikkeld voor Codice a Barre Italia & GirasoleEventi',
-  'Software management developed for PerdichizziGioiellerie':
-    'Softwarebeheer ontwikkeld voor PerdichizziGioiellerie',
-  'BarcodeDatabase, website for Codice a Barre Italia':
-    'BarcodeDatabase, website voor Codice a Barre Italia',
-  'Consultant for ItaliaHotspot, developing a web interface, RadiusServer interface and OpenWRT OS':
-    'Consultant voor ItaliaHotspot, ontwikkeling van een webinterface, RadiusServer-interface en OpenWRT-besturingssysteem',
-  'Consultant for Insolaria, developing a web application':
-    'Consultant voor Insolaria, ontwikkeling van een webapplicatie',
-  'Keira3 web application': 'Keira3-webapplicatie',
-  'AzerothCore, complete open source and modular solution for MMO':
-    'AzerothCore, complete opensource en modulaire oplossing voor MMO',
-  'Pyhthon Catania website': 'Website van Python Catania',
-  'My personal website (this website!)': 'Mijn persoonlijke website (deze website!)',
-  'Git-catalogue, a web application to catalog git repositories':
-    'Git-catalogue, een webapplicatie om git-repositories te catalogiseren',
-  'Car Model Recognition, computer vision application to recognize car models':
-    'Car Model Recognition, computervisietoepassing om automodellen te herkennen',
-  'Audio feature extractor for synthetic audio detection':
-    'Audiokenmerk-extractor voor de detectie van synthetische audio',
-  'Web application for visualizing audio dataset features.':
-    'Webapplicatie voor het visualiseren van kenmerken van audiodatasets.',
-  'Server-status, web application': 'Server-status, webapplicatie',
-  'Arena-stats, web application': 'Arena-stats, webapplicatie',
-  'Acore API, RESTful APIs for Azerothcore written in NestJS':
-    "Acore API, RESTful API's voor Azerothcore geschreven in NestJS",
-  'Telegram automated db backup, tool to backup the database automatically through Telegram':
-    'Geautomatiseerde db-back-up via Telegram, tool om de database automatisch via Telegram te back-uppen',
-  'Telegram DMI Bot, a Telegram bot for the University of Catania Department of Mathematician and C.S.':
-    'Telegram DMI Bot, een Telegram-bot voor de afdeling Wiskunde en Informatica van de Universiteit van Catania',
-  'ERSU Bot, telegram bot for the University of Catania':
-    'ERSU Bot, Telegram-bot voor de Universiteit van Catania',
-  'Spotted DMI Bot, a Telegram bot for the University of Catania Department of Mathematician and C.S.':
-    'Spotted DMI Bot, een Telegram-bot voor de afdeling Wiskunde en Informatica van de Universiteit van Catania',
-  'MedBot, a Telegram bot for the University of Catania Department of Medicine':
-    'MedBot, een Telegram-bot voor de afdeling Geneeskunde van de Universiteit van Catania',
-  'UNICT Telegram Hub, web application to show all the Telegram channels/bots made by UNICT Devs':
-    'UNICT Telegram Hub, webapplicatie om alle Telegram-kanalen/bots van UNICT Devs te tonen',
-  'UNICT Telegram Channels Bot, a Telegram bot behind all the University of Catania Telegram channels':
-    'UNICT Telegram Channels Bot, een Telegram-bot achter alle Telegram-kanalen van de Universiteit van Catania',
-  'Albo UNICT Bot, Telegram bot that displays all the research calls from the University of Catania':
-    'Albo UNICT Bot, Telegram-bot die alle onderzoeksoproepen van de Universiteit van Catania weergeeft',
-  'UNICT-Elezioni, a web application that displays all student elections at the University of Catania':
-    'UNICT-Elezioni, een webapplicatie die alle studentenverkiezingen aan de Universiteit van Catania weergeeft',
-  'OPIS Manager, web app to show all the statistics of the University of Catania':
-    'OPIS Manager, webapp om alle statistieken van de Universiteit van Catania te tonen',
-  'Robot sensors output 3D viewer': '3D-viewer voor de sensoruitvoer van een robot',
-  'py-robot-controller, API to control a robot through a web interface and websockets':
-    'py-robot-controller, API om een robot te besturen via een webinterface en websockets',
-  'wowgaming - AoWoW, database search engine': 'wowgaming - AoWoW, zoekmachine voor de database',
-  'World of Warcraft player map': 'Spelerskaart voor World of Warcraft',
-  'World of Warcraft statistics web tool': 'Webtool voor World of Warcraft-statistieken',
-  'Slavery Valley, World of Warcraft custom battleground':
-    'Slavery Valley, aangepast strijdveld voor World of Warcraft',
-  'Twin Peaks, retroporting of World of Warcraft battleground from Cataclysm to WOTLK':
-    'Twin Peaks, retroporting van een World of Warcraft-strijdveld van Cataclysm naar WOTLK',
-  'Battle for Gilneas, retroporting of World of Warcraft battleground from Cataclysm to WOTLK':
-    'Battle for Gilneas, retroporting van een World of Warcraft-strijdveld van Cataclysm naar WOTLK',
-  "Tol' Viron, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK":
-    "Tol' Viron, retroporting van een World of Warcraft-arena van Pandaria naar WOTLK",
-  "Tiger's Peak, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK":
-    "Tiger's Peak, retroporting van een World of Warcraft-arena van Pandaria naar WOTLK",
-  'World of Warcraft 3v3soloQ mod implementation':
-    'Implementatie van de 3v3soloQ-mod voor World of Warcraft',
-  'World of Warcraft Arena Replay mod implementation':
-    'Implementatie van de Arena Replay-mod voor World of Warcraft',
-  'Speech-Gender-Recognition-Bot, for recognizing gender male/female from audio':
-    'Speech-Gender-Recognition-Bot, om mannelijk/vrouwelijk geslacht uit audio te herkennen',
-  'BG Queue Abuser Viewer, single page application to view battleground queue abusers':
-    'BG Queue Abuser Viewer, single-page-applicatie om misbruikers van de strijdveldwachtrij te bekijken',
-  'Amazon Defense, game built with PhaserJS during a GDG Global Game Jam':
-    'Amazon Defense, game gebouwd met PhaserJS tijdens een GDG Global Game Jam',
-  'Sicily social network activities report - web application':
-    'Rapport over socialemedia-activiteiten in Sicilië - webapplicatie',
-  'PNG reindexer Bot, a Telegram bot to reindex PNG palette images':
-    'PNG reindexer Bot, een Telegram-bot om PNG-paletafbeeldingen opnieuw te indexeren',
-  'QR-Scanner-Bot, a Telegram bot to scan easily any QR code':
-    'QR-Scanner-Bot, een Telegram-bot om eenvoudig elke QR-code te scannen',
-  'EPUB-to-PDF, a Telegram bot that converts EPUB files to PDF':
-    'EPUB-to-PDF, een Telegram-bot die EPUB-bestanden naar PDF converteert',
-  'ImageEditor, editor written in Processing that allows to modify colors channels and apply filters':
-    'ImageEditor, editor geschreven in Processing waarmee je kleurkanalen kunt aanpassen en filters kunt toepassen',
-  'Android Face Detection app': 'Android-app voor gezichtsdetectie',
-  'Multi-agent 3D scene simulator with JavaScript preset scripts, built with MEAN.js':
-    'Multi-agent 3D-scènesimulator met vooraf ingestelde JavaScript-scripts, gebouwd met MEAN.js',
-
-  // Talk titles (descriptive ones; proper event names are left untranslated)
-  'Best practices and quality code - GDG Catania DevFest 2022':
-    'Best practices en codekwaliteit - GDG Catania DevFest 2022',
-  'Is synthetic voice detection research going into the right direction?':
-    'Gaat het onderzoek naar detectie van synthetische stemmen de juiste kant op?',
-  'Saturday Morning Snippets - History of Operating Systems':
-    'Saturday Morning Snippets - Geschiedenis van besturingssystemen',
-  'GenerazioneY Report - Sicily Social Network Report':
-    'GenerazioneY Report - Rapport over sociale netwerken in Sicilië',
-  'Linux Day - Debian-based distros': 'Linux Day - Distributies gebaseerd op Debian',
-  'Telegram Bot Talk and Workshop at the Google DevFest 2018':
-    'Telegram-bot-talk en workshop op de Google DevFest 2018',
-  'Telegram Bot Talk at the Google DevFest 2017':
-    'Telegram-bot-talk op de Google DevFest 2017',
-  'Telegram Bot Workshop - Google I/O Extended at the GDG in Catania':
-    'Telegram-bot-workshop - Google I/O Extended bij de GDG in Catania',
-};
-
-export const dictionaries: Record<Language, Dictionary> = { en, it, nl };
+export const dictionaries: Record<Language, Dictionary> = { en, it };
