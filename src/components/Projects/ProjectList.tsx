@@ -170,6 +170,18 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
+    title:
+      'TuxGuitar Synthesia converter, turns tabs, scores and MIDI into falling-notes piano videos',
+    // description: 'description',
+    image:
+      'https://github.com/Helias/tuxguitar-synthesia-converter/raw/main/SynthesiaConverter.png',
+    skills: ['angular', 'typescript', 'tailwindcss', 'rxjs', 'docker', 'githubactions'],
+    github: 'https://github.com/Helias/tuxguitar-synthesia-converter',
+    demo: 'https://stefanoborzi.dev/tuxguitar-synthesia-converter/',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
+  },
+  {
+    prefix: '🤝 Opensource:',
     title: 'Pyhthon Catania website',
     // description: 'description',
     image: 'projects/PythonCatania.png',
