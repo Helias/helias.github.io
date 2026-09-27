@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Opensource from './components/Opensource/Opensource';
 import ProjectsPage from './components/Projects/ProjectsPage';
 import Publications from './components/Publications/Publications';
+import Skills from './components/Skills/Skills';
 import Teachings from './components/Teachings/Teachings';
 
 function App(): JSX.Element {
@@ -18,6 +19,7 @@ function App(): JSX.Element {
         <Home />
         <About />
         <hr />
+        <Skills />
         <ProjectsPage />
         <Opensource />
         <Teachings />

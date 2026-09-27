@@ -1,12 +1,14 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from '../../i18n/context';
+import { navbarContainerClasses } from '../layout';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const navigation = [
   { key: 'nav.home', href: '#home', current: false },
   { key: 'nav.about', href: '#about', current: false },
   // { key: 'nav.experience', href: '#', current: false },
+  { key: 'nav.skills', href: '#skills', current: false },
   { key: 'nav.projects', href: '#projects', current: false },
   { key: 'nav.opensource', href: '#opensource', current: false },
   { key: 'nav.teachings', href: '#teachings', current: false },
@@ -23,7 +25,7 @@ export default function Navbar(): JSX.Element {
 
   return (
     <Disclosure as="nav" className="bg-gray-800 z-100 top-0 sticky w-full border-b-2">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className={navbarContainerClasses}>
         <div className="relative flex h-12 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
             {/* Mobile menu button*/}
@@ -35,8 +37,8 @@ export default function Navbar(): JSX.Element {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="hidden sm:ml-6 md:block">
-              <div className="flex space-x-4">
+            <div className="hidden md:block lg:ml-6">
+              <div className="flex space-x-1 lg:space-x-4">
                 {navigation.map((item) => (
                   <a
                     key={item.key}
@@ -46,7 +48,7 @@ export default function Navbar(): JSX.Element {
                       item.current
                         ? 'bg-gray-900 text-white'
                         : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
+                      'rounded-md px-2 lg:px-3 py-2 text-sm font-medium',
                     )}
                   >
                     {t(item.key)}
@@ -55,7 +57,7 @@ export default function Navbar(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center gap-1 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center gap-1 pr-2 sm:static sm:inset-auto sm:ml-2 lg:ml-6 sm:pr-0">
             <LanguageSwitcher />
             <button
               type="button"

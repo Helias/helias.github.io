@@ -17,16 +17,16 @@ export default function Community({
 }: CommunityProps): JSX.Element {
   return (
     <div className={`md:col-span-3 col-span-6 text-center ${extraClass}`}>
-      <div className="py-10">
-        <img src={image} className="h-75 mt-10 mx-auto" />
-        <h2 className="text-6xl mt-10">{name}</h2>
+      <div className="pt-8 pb-4">
+        <img src={image} className="h-56 mx-auto" />
+        <h3 className="text-4xl mt-6">{name}</h3>
       </div>
       <div>
-        <p className="p-5 text-2xl">{description}</p>
+        <p className="px-5 pb-3 text-lg">{description}</p>
       </div>
       <div>
         <iframe
-          className="mt-5 mb-5 mx-auto"
+          className="mt-2 mb-3 mx-auto"
           src={`https://ghbtns.com/github-btn.html?user=${organization}&type=follow&count=true&size=large`}
           width="230"
           height="30"

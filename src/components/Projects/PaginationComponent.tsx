@@ -7,6 +7,7 @@ import Select, {
   SingleValueProps,
 } from 'react-select';
 import { useTranslation } from '../../i18n/context';
+import { navbarContainerClasses } from '../layout';
 import Pagination from '../Pagination/Pagination';
 import { getIcon } from './helper';
 import Project, { ProjectProps } from './Project';
@@ -58,51 +59,42 @@ const PaginationComponent = ({
     }
   };
 
-  const buttonsClasses = 'px-3 py-1 rounded text-base md:text-2xl text-white';
+  const buttonsClasses = 'px-3 py-1 rounded text-base md:text-lg text-white';
   const disableClasses = 'bg-gray-400 cursor-not-allowed';
   const enableClasses =
     'bg-gray-800 text-white hover:bg-gray-400 hover:cursor-pointer border-1 border-gray-200';
-  const sharedNavButtonClasses = `my-1 mr-auto ml-5 ${buttonsClasses}`;
+
+  const filterButton = (filter: Filter, labelKey: string) => (
+    <button
+      className={`${buttonsClasses} ${currentFilter === filter ? disableClasses : enableClasses}`}
+      onClick={() => setCurrentFilter(filter)}
+    >
+      {t(labelKey)}
+    </button>
+  );
 
   const controls = (
     <>
-      <div className="col-span-1 md:ml-[6vw] mx-auto">
-        <div className="mx-auto items-center md:block">
-          <button
-            className={`${sharedNavButtonClasses} ${currentFilter === Filter.ALL ? disableClasses : enableClasses}`}
-            onClick={() => setCurrentFilter(Filter.ALL)}
-          >
-            {t('projects.filter.all')}
-          </button>
-          <button
-            className={`${sharedNavButtonClasses} ${currentFilter === Filter.WORK ? disableClasses : enableClasses}`}
-            onClick={() => setCurrentFilter(Filter.WORK)}
-          >
-            {t('projects.filter.work')}
-          </button>
-          <button
-            className={`${sharedNavButtonClasses} ${currentFilter === Filter.OPENSOURCE ? disableClasses : enableClasses}`}
-            onClick={() => setCurrentFilter(Filter.OPENSOURCE)}
-          >
-            {t('projects.filter.opensource')}
-          </button>
-        </div>
+      <h2 className="text-2xl md:text-3xl text-white">{t('projects.title')}</h2>
+
+      <div className="flex flex-wrap items-center gap-2">
+        {filterButton(Filter.ALL, 'projects.filter.all')}
+        {filterButton(Filter.WORK, 'projects.filter.work')}
+        {filterButton(Filter.OPENSOURCE, 'projects.filter.opensource')}
       </div>
 
-      <div className="col-span-1 mx-auto my-2">
-        <div className="min-w-60 text-left mx-5 md:mx-5 lg:mx-0">
-          <Select
-            placeholder={t('projects.filterPlaceholder')}
-            menuIsOpen={menuOpen}
-            onMenuOpen={() => setMenuOpen(true)}
-            onMenuClose={() => setMenuOpen(false)}
-            defaultValue={selectedOption}
-            onChange={updateFilterSkills}
-            options={options}
-            components={{ Option: IconOption, SingleValue: CustomSingleValue }}
-            isClearable
-          />
-        </div>
+      <div className="min-w-60 text-left">
+        <Select
+          placeholder={t('projects.filterPlaceholder')}
+          menuIsOpen={menuOpen}
+          onMenuOpen={() => setMenuOpen(true)}
+          onMenuClose={() => setMenuOpen(false)}
+          defaultValue={selectedOption}
+          onChange={updateFilterSkills}
+          options={options}
+          components={{ Option: IconOption, SingleValue: CustomSingleValue }}
+          isClearable
+        />
       </div>
     </>
   );
@@ -113,11 +105,15 @@ const PaginationComponent = ({
       itemsPerPage={itemsPerPage}
       controls={controls}
       resetKey={`${currentFilter}-${selectedOption?.value ?? ''}`}
+      className="flex flex-col lg:min-h-screen pt-[50px]"
+      barClassName="mb-4 border-t-2 border-white"
+      barContentClassName={navbarContainerClasses}
     >
       {(currentItems) => (
-        <div className="w-full">
-          <div className="mx-auto md:w-[95%] lg:w-[85%]">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20 mx-auto">
+        <div className="w-full flex-1 flex">
+          <div className={`${navbarContainerClasses} w-full flex`}>
+            {/* two rows of 3 share the viewport height left below the navbar and filter bar */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[repeat(2,minmax(18rem,1fr))] gap-4 mb-20 mx-auto">
               {currentItems.map(
                 ({
                   prefix,

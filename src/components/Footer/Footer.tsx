@@ -1,13 +1,14 @@
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import { useTranslation } from '../../i18n/context';
+import { navbarContainerClasses } from '../layout';
 
 export default function Footer(): JSX.Element {
   const { t } = useTranslation();
 
   return (
     <>
-      <nav className="bg-gray-800 w-full mb-10">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <nav className="bg-gray-800 w-full">
+        <div className={navbarContainerClasses}>
           <div className="relative flex h-16 items-center justify-between">
             <div className="sm:items-stretch sm:justify-center">
               <div className="hidden sm:ml-6 sm:block">

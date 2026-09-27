@@ -40,7 +40,7 @@ export default function Project({
 
   return (
     <div
-      className={`col-span-1 flex flex-col border border-gray-800 min-h-100 group ${bgCover} ${customClass}`}
+      className={`col-span-1 flex flex-col border border-gray-800 min-h-100 lg:min-h-72 group ${bgCover} ${customClass}`}
       style={{ backgroundImage: `url(${image})`, zIndex: menuOpen ? '-1' : '1' }}
     >
       <div className={`h-16 bg-gray-800 flex items-center justify-center p-2 ${animationClasses}`}>

@@ -6,10 +6,13 @@ interface PaginationProps<T> {
   itemsPerPage?: number;
   controls?: ReactNode;
   resetKey?: unknown;
+  className?: string;
+  barClassName?: string;
+  barContentClassName?: string;
   children: (pageItems: T[]) => ReactNode;
 }
 
-const buttonsClasses = 'px-3 py-1 rounded text-base md:text-2xl text-white';
+const buttonsClasses = 'px-3 py-1 rounded text-base md:text-lg text-white';
 const disableClasses = 'bg-gray-400 cursor-not-allowed';
 const enableClasses =
   'bg-gray-800 text-white hover:bg-gray-400 hover:cursor-pointer border-1 border-gray-200';
@@ -19,6 +22,9 @@ export default function Pagination<T>({
   itemsPerPage = 6,
   controls,
   resetKey,
+  className = '',
+  barClassName = '',
+  barContentClassName = 'px-4',
   children,
 }: PaginationProps<T>): JSX.Element {
   const { t } = useTranslation();
@@ -41,37 +47,47 @@ export default function Pagination<T>({
     }
   };
 
+  const firstVisiblePage = Math.max(1, Math.min(page - 1, totalPages - 2));
+  const visiblePages = Array.from(
+    { length: Math.min(3, totalPages) },
+    (_, index) => firstVisiblePage + index,
+  );
+
+  const navButton = (target: number, label: string, ariaLabel: string, disabled: boolean) => (
+    <button
+      className={`${buttonsClasses} ${disabled ? disableClasses : enableClasses}`}
+      onClick={() => goToPage(target)}
+      disabled={disabled}
+      aria-label={ariaLabel}
+    >
+      {label}
+    </button>
+  );
+
   return (
-    <div>
-      <div className="mt-20 my-8 sticky top-12 bg-gray-800 p-2 z-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-        {controls}
+    <div className={className}>
+      <div className={`${barClassName} sticky top-[50px] bg-gray-800 py-2 z-100`}>
+        <div
+          className={`${barContentClassName} flex flex-wrap items-center justify-between gap-x-6 gap-y-2`}
+        >
+          {controls}
 
-        <div className="col-span-1 mx-auto space-x-2 my-2">
-          <button
-            className={`${buttonsClasses} ${page === 1 ? disableClasses : enableClasses}`}
-            onClick={() => goToPage(page - 1)}
-            disabled={page === 1}
-          >
-            {t('pagination.prev')}
-          </button>
-
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index + 1}
-              className={`${buttonsClasses} ${page === index + 1 ? disableClasses : enableClasses}`}
-              onClick={() => goToPage(index + 1)}
-            >
-              {index + 1}
-            </button>
-          ))}
-
-          <button
-            className={`${buttonsClasses} ${page === totalPages ? disableClasses : enableClasses}`}
-            onClick={() => goToPage(page + 1)}
-            disabled={page === totalPages}
-          >
-            {t('pagination.next')}
-          </button>
+          <div className="flex items-center gap-1 mx-auto md:mx-0">
+            {navButton(1, '«', t('pagination.first'), page === 1)}
+            {navButton(page - 1, '‹', t('pagination.prev'), page === 1)}
+            {visiblePages.map((pageNumber) => (
+              <button
+                key={pageNumber}
+                className={`${buttonsClasses} ${page === pageNumber ? disableClasses : enableClasses}`}
+                onClick={() => goToPage(pageNumber)}
+                aria-current={page === pageNumber ? 'page' : undefined}
+              >
+                {pageNumber}
+              </button>
+            ))}
+            {navButton(page + 1, '›', t('pagination.next'), page === totalPages)}
+            {navButton(totalPages, '»', t('pagination.last'), page === totalPages)}
+          </div>
         </div>
       </div>
 

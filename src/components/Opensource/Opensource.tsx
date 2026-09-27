@@ -1,28 +1,26 @@
 import { useTranslation } from '../../i18n/context';
+import { navbarContainerClasses } from '../layout';
 import Community from './Community';
 
 export default function Opensource(): JSX.Element {
   const { t } = useTranslation();
 
   return (
-    <div id="opensource" className="bg-gray-800 text-white pt-1">
-      <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw] pt-10">
-        <h2 className="text-6xl mt-10 underline underline-offset-15">{t('opensource.title')}</h2>
+    <div id="opensource" className="bg-gray-800 text-white pt-16">
+      <div
+        className={`${navbarContainerClasses} flex flex-col md:flex-row md:items-center gap-4 md:gap-8`}
+      >
+        <h2 className="text-4xl underline underline-offset-8 shrink-0">{t('opensource.title')}</h2>
+        <p className="text-lg md:text-xl">
+          {t('opensource.intro1')}
+          <strong>AzerothCore</strong>
+          {t('opensource.intro2')}
+          <strong>UNICT Devs</strong>.
+        </p>
       </div>
 
       <div className="mx-auto md:w-[80%] lg:w-[75%]">
-        <div className="grid grid-cols-12">
-          <div className="col-span-12">
-            <p className="max-w-300 mx-auto mt-10 text-center p-5 text-2xl">
-              {t('opensource.intro1')}
-              <strong>AzerothCore</strong>
-              {t('opensource.intro2')}
-              <strong>UNICT Devs</strong>.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-6">
+        <div className="grid grid-cols-6 mt-10">
           <Community
             name="AzerothCore"
             image="opensource/azerothcore.png"

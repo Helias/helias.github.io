@@ -1,6 +1,7 @@
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
 import { useState } from 'react';
 import { useTranslation } from '../../i18n/context';
+import { navbarContainerClasses } from '../layout';
 import Pagination from '../Pagination/Pagination';
 import Talk from './Talk';
 
@@ -163,60 +164,54 @@ export default function Events(): JSX.Element {
   );
 
   return (
-    <div id="events" className="pt-16 bg-gray-800">
+    <div id="events" className="pt-[50px] bg-gray-800">
       <div className="bg-[url('/events/events.jpg')] bg-fixed bg-cover">
-        <div className="bg-[rgba(0,0,0,0.5)]">
-          <div className="w-full">
-            <div className="mx-auto md:w-[95%] lg:w-[85%]">
-              <div className="pt-10 ml-[5vw] md:ml-[0vw] lg:ml-[0vw]">
-                <h2 className="text-6xl text-white underline underline-offset-15 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
-                  {t('events.title')}
-                </h2>
+        <div className="bg-[rgba(0,0,0,0.5)] pb-10">
+          <Pagination
+            items={filteredTalks}
+            barClassName="mb-6 border-t-2 border-white"
+            barContentClassName={navbarContainerClasses}
+            controls={
+              <>
+                <h2 className="text-2xl md:text-3xl text-white">{t('events.title')}</h2>
+
+                <div className="flex flex-wrap items-center gap-6 text-white text-lg">
+                  <label className="flex items-center gap-2 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={onlyVideo}
+                      onChange={(e) => setOnlyVideo(e.target.checked)}
+                      className="h-5 w-5 cursor-pointer accent-red-600"
+                    />
+                    <SmartDisplayIcon className="text-red-600" />
+                    <span>{t('events.filter.video')}</span>
+                  </label>
+
+                  <label className="flex items-center gap-2 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={onlyGithub}
+                      onChange={(e) => setOnlyGithub(e.target.checked)}
+                      className="h-5 w-5 cursor-pointer accent-red-600"
+                    />
+                    <i className="devicon-github-original align-middle text-2xl"></i>
+                    <span>{t('events.filter.github')}</span>
+                  </label>
+                </div>
+              </>
+            }
+            resetKey={`${onlyVideo}-${onlyGithub}`}
+          >
+            {(currentTalks) => (
+              <div className={navbarContainerClasses}>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {currentTalks.map((talk) => (
+                    <Talk key={talk.title} {...talk} />
+                  ))}
+                </div>
               </div>
-
-              <Pagination
-                items={filteredTalks}
-                controls={
-                  <div className="col-span-1 md:col-span-2 ml-5 mr-3 flex items-center">
-                    <div className="flex flex-wrap items-center gap-8 text-white text-2xl">
-                      <label className="flex items-center gap-2 cursor-pointer select-none">
-                        <input
-                          type="checkbox"
-                          checked={onlyVideo}
-                          onChange={(e) => setOnlyVideo(e.target.checked)}
-                          className="h-5 w-5 cursor-pointer accent-red-600"
-                        />
-                        <SmartDisplayIcon className="text-red-600" fontSize="large" />
-                        <span>{t('events.filter.video')}</span>
-                      </label>
-
-                      <label className="flex items-center gap-2 cursor-pointer select-none">
-                        <input
-                          type="checkbox"
-                          checked={onlyGithub}
-                          onChange={(e) => setOnlyGithub(e.target.checked)}
-                          className="h-5 w-5 cursor-pointer accent-red-600"
-                        />
-                        <i className="devicon-github-original align-middle text-3xl"></i>
-                        <span>{t('events.filter.github')}</span>
-                      </label>
-                    </div>
-                  </div>
-                }
-                resetKey={`${onlyVideo}-${onlyGithub}`}
-              >
-                {(currentTalks) => (
-                  <div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                      {currentTalks.map((talk) => (
-                        <Talk key={talk.title} {...talk} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </Pagination>
-            </div>
-          </div>
+            )}
+          </Pagination>
         </div>
       </div>
     </div>

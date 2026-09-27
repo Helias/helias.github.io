@@ -30,8 +30,8 @@ export default function Article({
   const { t } = useTranslation();
 
   return (
-    <div className="col-span-1 flex flex-col border p-4 bg-gray-800 p-1 m-3 max-h-100 min-h-100">
-      <h2 className="text-white text-xl">{title}</h2>
+    <div className="col-span-1 flex flex-col border p-4 bg-gray-800 h-88">
+      <h3 className="text-white text-lg leading-snug">{title}</h3>
       <p className="text-gray-400 text-sm">{authors}</p>
 
       <div className="flex-1 flex items-center justify-center mt-2 overflow-hidden">

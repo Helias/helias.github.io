@@ -20,7 +20,8 @@ type Dictionary = Record<string, string>;
 const en: Dictionary = {
   'nav.home': 'Home',
   'nav.about': 'About',
-  'nav.projects': 'Skills & Projects',
+  'nav.skills': 'Skills',
+  'nav.projects': 'Projects',
   'nav.opensource': 'Opensource',
   'nav.teachings': 'Teachings',
   'nav.publications': 'Publications',
@@ -36,19 +37,24 @@ const en: Dictionary = {
   'about.title': 'About',
   'about.p1': "I'm a software engineer who started programming for fun at the age of 12.",
   'about.p2':
-    'I have several years of working experience mostly using web technologies like TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP, and Laravel (go to Skills & Projects for a full list).',
+    'I have several years of working experience mostly using web technologies like TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP, and Laravel (go to Skills for a full list).',
   'about.p3.before': 'In my spare time, I manage two opensource communities that I have founded ',
   'about.p3.and': ' and ',
   'about.p4': 'I am really passionate about opensource and Linux.',
   'about.resume': 'Full Resume',
   'about.resumeIndustry': 'Industry Resume',
 
-  'projects.title': 'Skills & Projects',
-  'projects.intro':
-    'I am full-stack developer with a strong focus on front-end development, primarily using Angular. My expertise lies in creating dynamic and responsive web applications, leveraging TypeScript and modern front-end frameworks. Beyond Angular, I have experience with various front-end and back-end technologies. I have also developed several Telegram bots, showcasing my ability to create software solutions that enhance user experience. I contribute on platforms such as Stack Overflow, always looking to share knowledge and refine my skills.',
-  'projects.skillsNote':
-    'The following skills are linked to their size based on the quality and quantity of the projects listed below (note that the order is randomized with each visit).',
-  'projects.allSkills': 'All skills & technologies:',
+  'skills.title': 'Skills',
+  'projects.title': 'Projects',
+  'skills.intro':
+    'Full-stack developer focused on front-end, mainly Angular and TypeScript, with back-end work and plenty of Telegram bots along the way.',
+  'skills.note': 'Icon size reflects how many projects use it, the order is random.',
+  'skills.allSkills': 'All skills & technologies',
+  'skills.group.frontend': 'Front-end',
+  'skills.group.backend': 'Back-end & data',
+  'skills.group.testing': 'Testing',
+  'skills.group.devops': 'DevOps & tools',
+  'skills.group.methodologies': 'Methodologies',
   'projects.filter.all': 'All',
   'projects.filter.work': '👔 Work',
   'projects.filter.opensource': '🤝 Opensource',
@@ -91,14 +97,17 @@ const en: Dictionary = {
 
   'footer.copyleft': 'Copyleft - All Rights Reversed',
 
+  'pagination.first': 'First',
   'pagination.prev': 'Prev',
   'pagination.next': 'Next',
+  'pagination.last': 'Last',
 };
 
 const it: Dictionary = {
   'nav.home': 'Home',
   'nav.about': 'Chi sono',
-  'nav.projects': 'Competenze e Progetti',
+  'nav.skills': 'Competenze',
+  'nav.projects': 'Progetti',
   'nav.opensource': 'Opensource',
   'nav.teachings': 'Insegnamenti',
   'nav.publications': 'Pubblicazioni',
@@ -115,19 +124,24 @@ const it: Dictionary = {
   'about.p1':
     "Sono un ingegnere del software che ha iniziato a programmare per divertimento all'età di 12 anni.",
   'about.p2':
-    "Ho diversi anni di esperienza lavorativa, principalmente con tecnologie web come TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP e Laravel (vai a Competenze e Progetti per l'elenco completo).",
+    "Ho diversi anni di esperienza lavorativa, principalmente con tecnologie web come TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP e Laravel (vai a Competenze per l'elenco completo).",
   'about.p3.before': 'Nel tempo libero gestisco due community opensource che ho fondato: ',
   'about.p3.and': ' e ',
   'about.p4': 'Sono davvero appassionato di opensource e Linux.',
   'about.resume': 'Curriculum completo',
   'about.resumeIndustry': 'Curriculum aziendale',
 
-  'projects.title': 'Competenze e Progetti',
-  'projects.intro':
-    "Sono uno sviluppatore full-stack con una forte attenzione allo sviluppo front-end, principalmente con Angular. La mia specializzazione è la creazione di applicazioni web dinamiche e responsive, sfruttando TypeScript e i moderni framework front-end. Oltre ad Angular, ho esperienza con diverse tecnologie front-end e back-end. Ho inoltre sviluppato diversi bot Telegram, dimostrando la mia capacità di creare soluzioni software che migliorano l'esperienza utente. Contribuisco su piattaforme come Stack Overflow, sempre con l'obiettivo di condividere conoscenza e affinare le mie competenze.",
-  'projects.skillsNote':
-    "Le seguenti competenze hanno una dimensione proporzionale alla qualità e alla quantità dei progetti elencati di seguito (nota che l'ordine è casuale a ogni visita).",
-  'projects.allSkills': 'Tutte le competenze e tecnologie:',
+  'skills.title': 'Competenze',
+  'projects.title': 'Progetti',
+  'skills.intro':
+    'Sviluppatore full-stack focalizzato sul front-end, principalmente Angular e TypeScript, con esperienza anche back-end e diversi bot Telegram.',
+  'skills.note': "La dimensione dell'icona indica in quanti progetti è usata, l'ordine è casuale.",
+  'skills.allSkills': 'Tutte le competenze e tecnologie',
+  'skills.group.frontend': 'Front-end',
+  'skills.group.backend': 'Back-end e dati',
+  'skills.group.testing': 'Testing',
+  'skills.group.devops': 'DevOps e strumenti',
+  'skills.group.methodologies': 'Metodologie',
   'projects.filter.all': 'Tutti',
   'projects.filter.work': '👔 Lavoro',
   'projects.filter.opensource': '🤝 Opensource',
@@ -170,8 +184,10 @@ const it: Dictionary = {
 
   'footer.copyleft': 'Copyleft - Tutti i diritti rovesciati',
 
+  'pagination.first': 'Prima',
   'pagination.prev': 'Prec',
   'pagination.next': 'Succ',
+  'pagination.last': 'Ultima',
 
   // Prefixes (the flag denotes the original talk language and is kept as-is)
   '👔 Work:': '👔 Lavoro:',
