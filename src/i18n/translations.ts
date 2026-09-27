@@ -1,6 +1,8 @@
-export const LANGUAGES = ['en', 'it', 'nl'] as const;
+export type Language = 'en' | 'it' | 'nl';
 
-export type Language = (typeof LANGUAGES)[number];
+// Languages offered to visitors. Dutch is disabled but its dictionary is kept,
+// so adding 'nl' back here re-enables it.
+export const LANGUAGES: readonly Language[] = ['en', 'it'];
 
 export const LANGUAGE_LABELS: Record<Language, string> = {
   en: 'English',
