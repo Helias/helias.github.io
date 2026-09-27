@@ -164,12 +164,12 @@ export default function Events(): JSX.Element {
   );
 
   return (
-    <div id="events" className="pt-[50px] bg-gray-800">
+    <div id="events" className="pt-[50px]">
       <div className="bg-[url('/events/events.jpg')] bg-fixed bg-cover">
-        <div className="bg-[rgba(0,0,0,0.5)] pb-10">
+        <div className="bg-[rgba(0,0,0,0.5)] pb-4">
           <Pagination
             items={filteredTalks}
-            barClassName="mb-6 border-t-2 border-white"
+            barClassName="mb-4 border-t-2 border-white"
             barContentClassName={navbarContainerClasses}
             controls={
               <>

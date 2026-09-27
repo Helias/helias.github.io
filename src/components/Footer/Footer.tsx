@@ -9,7 +9,7 @@ export default function Footer(): JSX.Element {
     <>
       <nav className="bg-gray-800 w-full">
         <div className={navbarContainerClasses}>
-          <div className="relative flex h-16 items-center justify-between">
+          <div className="relative flex h-12 items-center justify-between">
             <div className="sm:items-stretch sm:justify-center">
               <div className="hidden sm:ml-6 sm:block">
                 <div className="space-x-4 text-white">

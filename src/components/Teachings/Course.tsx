@@ -9,7 +9,7 @@ export default function Course({ name, link }: CourseProps): JSX.Element {
   const { t } = useTranslation();
 
   return (
-    <p className={`text-white text-2xl p-3 w-full md:max-w-130`}>
+    <p className="text-white text-xl py-1.5 w-full">
       - {name} - 🎓{' '}
       <a href={link} target="_blank" className="underline hover:text-gray-400">
         {t('teachings.program')}
