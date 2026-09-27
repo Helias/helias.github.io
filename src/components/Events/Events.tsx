@@ -1,5 +1,6 @@
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
 import { useState } from 'react';
+import { useTranslation } from '../../i18n/context';
 import Pagination from '../Pagination/Pagination';
 import Talk from './Talk';
 
@@ -153,6 +154,7 @@ const talks: TalkData[] = [
 ];
 
 export default function Events(): JSX.Element {
+  const { t } = useTranslation();
   const [onlyVideo, setOnlyVideo] = useState(false);
   const [onlyGithub, setOnlyGithub] = useState(false);
 
@@ -168,7 +170,7 @@ export default function Events(): JSX.Element {
             <div className="mx-auto md:w-[95%] lg:w-[85%]">
               <div className="pt-10 ml-[5vw] md:ml-[0vw] lg:ml-[0vw]">
                 <h2 className="text-6xl text-white underline underline-offset-15 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
-                  Events
+                  {t('events.title')}
                 </h2>
               </div>
 
@@ -185,7 +187,7 @@ export default function Events(): JSX.Element {
                           className="h-5 w-5 cursor-pointer accent-red-600"
                         />
                         <SmartDisplayIcon className="text-red-600" fontSize="large" />
-                        <span>Video</span>
+                        <span>{t('events.filter.video')}</span>
                       </label>
 
                       <label className="flex items-center gap-2 cursor-pointer select-none">
@@ -196,7 +198,7 @@ export default function Events(): JSX.Element {
                           className="h-5 w-5 cursor-pointer accent-red-600"
                         />
                         <i className="devicon-github-original align-middle text-3xl"></i>
-                        <span>Github</span>
+                        <span>{t('events.filter.github')}</span>
                       </label>
                     </div>
                   </div>

@@ -6,6 +6,7 @@ import Select, {
   SingleValue,
   SingleValueProps,
 } from 'react-select';
+import { useTranslation } from '../../i18n/context';
 import Pagination from '../Pagination/Pagination';
 import { getIcon } from './helper';
 import Project, { ProjectProps } from './Project';
@@ -37,6 +38,7 @@ const PaginationComponent = ({
   items: ProjectProps[];
   itemsPerPage?: number;
 }) => {
+  const { t } = useTranslation();
   const [currentFilter, setCurrentFilter] = useState(Filter.ALL);
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,19 +72,19 @@ const PaginationComponent = ({
             className={`${sharedNavButtonClasses} ${currentFilter === Filter.ALL ? disableClasses : enableClasses}`}
             onClick={() => setCurrentFilter(Filter.ALL)}
           >
-            All
+            {t('projects.filter.all')}
           </button>
           <button
             className={`${sharedNavButtonClasses} ${currentFilter === Filter.WORK ? disableClasses : enableClasses}`}
             onClick={() => setCurrentFilter(Filter.WORK)}
           >
-            👔 Work
+            {t('projects.filter.work')}
           </button>
           <button
             className={`${sharedNavButtonClasses} ${currentFilter === Filter.OPENSOURCE ? disableClasses : enableClasses}`}
             onClick={() => setCurrentFilter(Filter.OPENSOURCE)}
           >
-            🤝 Opensource
+            {t('projects.filter.opensource')}
           </button>
         </div>
       </div>
@@ -90,7 +92,7 @@ const PaginationComponent = ({
       <div className="col-span-1 mx-auto my-2">
         <div className="min-w-60 text-left mx-5 md:mx-5 lg:mx-0">
           <Select
-            placeholder="Filter by technology"
+            placeholder={t('projects.filterPlaceholder')}
             menuIsOpen={menuOpen}
             onMenuOpen={() => setMenuOpen(true)}
             onMenuClose={() => setMenuOpen(false)}

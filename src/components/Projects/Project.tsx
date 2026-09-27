@@ -1,4 +1,5 @@
 import LanguageIcon from '@mui/icons-material/Language';
+import { useTranslation } from '../../i18n/context';
 import { getIcon } from './helper';
 
 export interface ProjectProps {
@@ -29,6 +30,7 @@ export default function Project({
   customClass = 'bg-top-center',
   menuOpen,
 }: ProjectProps): JSX.Element {
+  const { t } = useTranslation();
   const animationClasses =
     'opacity-0 group-active:opacity-100  group-focus:opacity-100 group-hover:opacity-100 transition-all duration-500 ';
   const bgCover = !customClass.includes('no-bg-cover') && 'bg-cover';
@@ -43,7 +45,7 @@ export default function Project({
     >
       <div className={`h-16 bg-gray-800 flex items-center justify-center p-2 ${animationClasses}`}>
         <h2 className="text-lg text-center text-white my-auto">
-          <strong className="text-red-400">{prefix}</strong> {title}
+          <strong className="text-red-400">{prefix && t(prefix)}</strong> {t(title)}
         </h2>
       </div>
 

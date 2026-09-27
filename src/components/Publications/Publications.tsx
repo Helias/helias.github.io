@@ -1,11 +1,16 @@
+import { useTranslation } from '../../i18n/context';
 import Article from './Article';
 
 export default function Publications(): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <div id="publications" className="mb-10 pt-16">
       <div className="w-full">
         <div className="ml-[5vw] md:ml-[10vw] lg:ml-[10vw]">
-          <h2 className="text-6xl text-gray-600 underline underline-offset-15">Publications</h2>
+          <h2 className="text-6xl text-gray-600 underline underline-offset-15">
+            {t('publications.title')}
+          </h2>
         </div>
       </div>
 
