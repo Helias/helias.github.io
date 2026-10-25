@@ -21,7 +21,7 @@ const talks: TalkData[] = [
   {
     image: 'events/PythonCatania-ai-py-skills.png',
     prefix: '🇮🇹 Speaker:',
-    title: 'PythonCatania - AI PY skills',
+    title: 'PythonCatania - AI py skills',
     slides: 'https://slides.com/stefanoborzi/code-e7d3ed/fullscreen#/2',
     github: 'https://github.com/PythonCatania/ai-py-skills',
     event: 'https://www.meetup.com/python-catania/events/316796896/',
