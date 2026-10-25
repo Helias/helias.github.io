@@ -4,7 +4,7 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import { useState } from 'react';
 import { useTranslation } from '../../i18n/context';
 import { navbarContainerClasses } from '../layout';
-import Course from './Course';
+import Course, { EditionLink } from './Course';
 import CourseLink from './CourseLink';
 
 interface Topic {
@@ -15,7 +15,7 @@ interface Topic {
 interface CourseInfo {
   title: string;
   logo: string;
-  editions: { name: string; link?: string }[];
+  editions: { name: string; link?: EditionLink }[];
   github: string;
   slides?: string;
   studentProjects?: string;
@@ -38,7 +38,15 @@ const COURSES: CourseInfo[] = [
   {
     title: 'Software Quality and Project Development',
     logo: 'teachings/sqpd-logo.png',
-    editions: [{ name: '2026/2027' }],
+    editions: [
+      {
+        name: '2026/2027',
+        link: {
+          en: 'https://web.dmi.unict.it/courses/lm-18/course-units?aa=127&ins=9799487',
+          it: 'https://web.dmi.unict.it/corsi/lm-18/insegnamenti?aa=127&ins=9799487',
+        },
+      },
+    ],
     github: 'https://github.com/UNICT-Quality-Development/',
     telegram: 'https://t.me/unict_sqpd',
     descriptionKey: 'teachings.sqpd.desc',
