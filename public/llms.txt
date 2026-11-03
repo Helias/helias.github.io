@@ -18,11 +18,12 @@
 - Testing & QA: Cypress, Playwright, Jest, Karma, Jasmine, Pytest, Selenium, A/B Testing (Optimizely), Accessibility (WCAG)
 - Infrastructure & DevOps: Docker, CI/CD (GitHub Actions, Jenkins), Azure, Linux (OpenWRT, DDWRT), Firebase, Supabase, Nginx, Apache, Radius
 - Tools & UI/UX: Git (GitHub, GitLab, Bitbucket), Nx, Webpack, Vite, Jira, Figma, Adobe Analytics, SASS, TailwindCSS, Bootstrap, Material Design, WordPress
+- AI: Agentic AI (skills, rules, and tools for AI coding agents)
 - Methodologies: Scrum, SAFe-Agile, Kanban, Technical Writing (LaTeX)
 
 ## Work Experience
 - [Projects](https://helias.github.io/#projects): Full-stack developer with a strong focus on front-end (Angular). Selected roles:
-  - Fullstack Developer (freelance), Royal BAM Group, May 2025 - Present: digitalizing construction processes (TypeScript, Angular, NestJS, NgRx, .NET, Nx, Playwright)
+  - Fullstack Developer (freelance), Royal BAM Group, May 2025 - Present: digitalizing construction processes (TypeScript, Angular, Node.js, NestJS, NgRx, .NET, Nx, Playwright)
   - Team Lead, FedEx, Jan 2023 - May 2025: led frontend development, releases, and hiring for an international web app
   - Senior Programmer Analyst, FedEx, Jan 2021 - Dec 2022: 33% app size reduction, Angular upgrades, performance optimization
   - Software Engineer, Infront Finance (ex VWD group), Jan 2020 - Dec 2020: FinTech platform, removed jQuery dependency
@@ -32,6 +33,10 @@
 - [Opensource](https://helias.github.io/#opensource): Founder of two open-source communities.
   - [AzerothCore](https://github.com/azerothcore): Open-source MMORPG game server framework based on World of Warcraft (patch 3.3.5a)
   - [UNICT-DEVS](https://github.com/unict-dmi): Community of University of Catania DMI students building Telegram bots, web apps, and automation tools for university services
+- Agentic AI projects:
+  - [agent-toolkit](https://github.com/eai-org/agent-toolkit) (contributor): Minimalistic, project-agnostic skills and rules for AI coding agents
+  - [ai-py-skills](https://github.com/PythonCatania/ai-py-skills): Agent skills for Python projects, from the Python Catania community
+  - [ai-notify](https://github.com/Helias/ai-notify): Plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused
 
 ## Teaching
 - [Teachings](https://helias.github.io/#teachings): "Quality Development" course at the University of Catania (academic years 2021/2022 through 2025/2026). Covers UNIX shell, Git/GitHub workflows, open-source engagement, Python, unit testing, code quality (SOLID), and CI/CD.
@@ -46,7 +51,7 @@
   - [SMART: The String Matching Algorithms Research Tool](https://www.stringology.org/papers/PSC2016.pdf#page=109): Tool and survey for testing exact string matching algorithms
 
 ## Events & Talks
-- [Events](https://helias.github.io/#events): Conference and meetup talks (mostly in Italian). Topics include Python multithreading and extensibility (PythonCatania), GitHub & CI/CD for code security, audio processing with ffmpeg, synthetic voice detection (MediaForensics 2022), history of operating systems, and open data manipulation (OpenDataSicilia 2022).
+- [Events](https://helias.github.io/#events): Conference and meetup talks (mostly in Italian). Topics include Python multithreading, extensibility, and AI agent skills (PythonCatania), GitHub & CI/CD for code security, audio processing with ffmpeg, synthetic voice detection (MediaForensics 2022), history of operating systems, and open data manipulation (OpenDataSicilia 2022).
 
 ## Education
 - University of Catania, PhD in Data Science (2021-2026)
