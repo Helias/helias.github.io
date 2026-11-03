@@ -203,6 +203,10 @@ const it: Dictionary = {
   // Project titles
   'ai-notify, plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused':
     'ai-notify, riproduce un suono quando un agente di coding AI termina o richiede attenzione mentre il suo terminale non è attivo',
+  'agent-toolkit, minimalistic skills and rules for AI coding agents':
+    'agent-toolkit, skill e regole minimaliste per agenti di coding AI',
+  'ai-py-skills, agent skills for Python projects, by Python Catania':
+    'ai-py-skills, skill AI per progetti Python, da Python Catania',
   'Developed a software management application': "Sviluppata un'applicazione gestionale software",
   'Developed and mantained the FedEx rating application':
     "Sviluppata e mantenuta l'applicazione di tariffazione di FedEx",

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import {
   AngularIcon,
+  ClaudeIcon,
   JenkinsIcon,
   NxIcon,
   OptimizelyIcon,
@@ -14,6 +15,7 @@ export const MissingDevIconsMap: (classNames?: string) => { [key: string]: React
   classNames = '',
 ) => ({
   angular: AngularIcon(classNames),
+  'agentic-ai': ClaudeIcon(classNames),
   nx: NxIcon(classNames),
   jenkins: JenkinsIcon(classNames),
   optimizely: OptimizelyIcon(classNames),

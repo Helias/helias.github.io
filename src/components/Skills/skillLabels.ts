@@ -1,5 +1,6 @@
 // Display names for the devicon ids used in ProjectList; unlisted ids fall back to the id itself.
 export const SKILL_LABELS: Record<string, string> = {
+  'agentic-ai': 'Agentic AI',
   android: 'Android',
   angular: 'Angular',
   azure: 'Azure',
