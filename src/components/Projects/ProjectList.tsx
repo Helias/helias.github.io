@@ -571,7 +571,7 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
-    title: 'QR-Scanner-Bot, a Telegram bot to scan easily any QR code',
+    title: 'QR-Scanner-Bot, a Telegram bot to easily scan any QR code',
     // description: 'description',
     image: 'projects/qr-scaner-bot.jpg',
     skills: ['python', 'telegram'],
@@ -592,7 +592,7 @@ export const ProjectList: ProjectProps[] = [
   {
     prefix: '🤝 Opensource:',
     title:
-      'ImageEditor, editor written in Processing that allows to modify colors channels and apply filters',
+      'ImageEditor, editor written in Processing that lets you modify color channels and apply filters',
     // description: 'description',
     image: 'https://raw.githubusercontent.com/Helias/ImageEditor/master/doc/screen1.png',
     skills: ['processing'],

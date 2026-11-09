@@ -292,11 +292,11 @@ const it: Dictionary = {
     'Report delle attività sui social network in Sicilia - applicazione web',
   'PNG reindexer Bot, a Telegram bot to reindex PNG palette images':
     'PNG reindexer Bot, un bot Telegram per reindicizzare le immagini PNG con palette',
-  'QR-Scanner-Bot, a Telegram bot to scan easily any QR code':
+  'QR-Scanner-Bot, a Telegram bot to easily scan any QR code':
     'QR-Scanner-Bot, un bot Telegram per scansionare facilmente qualsiasi codice QR',
   'EPUB-to-PDF, a Telegram bot that converts EPUB files to PDF':
     'EPUB-to-PDF, un bot Telegram che converte i file EPUB in PDF',
-  'ImageEditor, editor written in Processing that allows to modify colors channels and apply filters':
+  'ImageEditor, editor written in Processing that lets you modify color channels and apply filters':
     'ImageEditor, editor scritto in Processing che permette di modificare i canali di colore e applicare filtri',
   'Android Face Detection app': 'App Android di rilevamento dei volti',
   'Multi-agent 3D scene simulator with JavaScript preset scripts, built with MEAN.js':
