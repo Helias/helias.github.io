@@ -67,7 +67,7 @@ const en: Dictionary = {
   'opensource.azerothcore.desc':
     'AzerothCore is an open-source game server application and framework designed for hosting massively multiplayer online role-playing games (MMORPGs). It is based on the popular MMORPG World of Warcraft (WoW) and seeks to recreate the gameplay experience of the original game from patch 3.3.5a.',
   'opensource.unictdevs.desc':
-    'UNICT Devs is an open-source community created by students of the Department of Mathematics and Computer Science (DMI) at the University of Catania.It develops and maintains Telegram bots, web apps, and automation tools to enhance university communication, resource sharing, and student services.',
+    'UNICT Devs is an open-source community created by students of the Department of Mathematics and Computer Science (DMI) at the University of Catania. It develops and maintains Telegram bots, web apps, and automation tools to enhance university communication, resource sharing, and student services.',
 
   'teachings.title': 'Teachings',
   'teachings.program': 'program',
@@ -208,7 +208,7 @@ const it: Dictionary = {
   'ai-py-skills, agent skills for Python projects, by Python Catania':
     'ai-py-skills, skill AI per progetti Python, da Python Catania',
   'Developed a software management application': "Sviluppata un'applicazione gestionale software",
-  'Developed and mantained the FedEx rating application':
+  'Developed and maintained the FedEx rating application':
     "Sviluppata e mantenuta l'applicazione di tariffazione di FedEx",
   'Developed a web application for InfrontFinance (ex VWD)':
     "Sviluppata un'applicazione web per InfrontFinance (ex VWD)",
@@ -228,7 +228,7 @@ const it: Dictionary = {
   'Keira3 web application': 'Applicazione web Keira3',
   'AzerothCore, complete open source and modular solution for MMO':
     'AzerothCore, soluzione open source completa e modulare per MMO',
-  'Pyhthon Catania website': 'Sito web di Python Catania',
+  'Python Catania website': 'Sito web di Python Catania',
   'My personal website (this website!)': 'Il mio sito web personale (questo sito!)',
   'Git-catalogue, a web application to catalog git repositories':
     "Git-catalogue, un'applicazione web per catalogare repository git",
@@ -244,11 +244,11 @@ const it: Dictionary = {
     'Acore API, API RESTful per Azerothcore scritte in NestJS',
   'Telegram automated db backup, tool to backup the database automatically through Telegram':
     'Backup automatico del database su Telegram, strumento per eseguire automaticamente il backup del database tramite Telegram',
-  'Telegram DMI Bot, a Telegram bot for the University of Catania Department of Mathematician and C.S.':
+  'Telegram DMI Bot, a Telegram bot for the University of Catania Department of Mathematics and Computer Science':
     "Telegram DMI Bot, un bot Telegram per il Dipartimento di Matematica e Informatica dell'Università di Catania",
   'ERSU Bot, telegram bot for the University of Catania':
     "ERSU Bot, bot Telegram per l'Università di Catania",
-  'Spotted DMI Bot, a Telegram bot for the University of Catania Department of Mathematician and C.S.':
+  'Spotted DMI Bot, a Telegram bot for the University of Catania Department of Mathematics and Computer Science':
     "Spotted DMI Bot, un bot Telegram per il Dipartimento di Matematica e Informatica dell'Università di Catania",
   'MedBot, a Telegram bot for the University of Catania Department of Medicine':
     "MedBot, un bot Telegram per il Dipartimento di Medicina dell'Università di Catania",
@@ -274,9 +274,9 @@ const it: Dictionary = {
     'Twin Peaks, retroporting di un campo di battaglia di World of Warcraft da Cataclysm a WOTLK',
   'Battle for Gilneas, retroporting of World of Warcraft battleground from Cataclysm to WOTLK':
     'Battle for Gilneas, retroporting di un campo di battaglia di World of Warcraft da Cataclysm a WOTLK',
-  "Tol' Viron, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK":
+  "Tol' Viron, retroporting of World of Warcraft arena battleground from Pandaria to WOTLK":
     "Tol' Viron, retroporting di un'arena di World of Warcraft da Pandaria a WOTLK",
-  "Tiger's Peak, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK":
+  "Tiger's Peak, retroporting of World of Warcraft arena battleground from Pandaria to WOTLK":
     "Tiger's Peak, retroporting di un'arena di World of Warcraft da Pandaria a WOTLK",
   'World of Warcraft 3v3soloQ mod implementation':
     'Implementazione della mod 3v3soloQ per World of Warcraft',

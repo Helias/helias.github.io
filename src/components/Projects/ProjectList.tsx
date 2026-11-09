@@ -28,7 +28,7 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '👔 Work:',
-    title: 'Developed and mantained the FedEx rating application',
+    title: 'Developed and maintained the FedEx rating application',
     // description: 'description',
     image: 'projects/FedEx_0.png',
     skills: [
@@ -212,7 +212,7 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
-    title: 'Pyhthon Catania website',
+    title: 'Python Catania website',
     // description: 'description',
     image: 'projects/PythonCatania.png',
     skills: ['angular', 'typescript', 'tailwindcss', 'githubactions'],
@@ -313,7 +313,7 @@ export const ProjectList: ProjectProps[] = [
   {
     prefix: '🤝 Opensource:',
     title:
-      'Telegram DMI Bot, a Telegram bot for the University of Catania Department of Mathematician and C.S.',
+      'Telegram DMI Bot, a Telegram bot for the University of Catania Department of Mathematics and Computer Science',
     // description: 'description',
     image: 'https://github.com/UNICT-DMI/Telegram-DMI-Bot/raw/master/icon.png',
     skills: ['telegram', 'python', 'pytest', 'docker', 'sqlite', 'fastapi'],
@@ -335,7 +335,7 @@ export const ProjectList: ProjectProps[] = [
   {
     prefix: '🤝 Opensource:',
     title:
-      'Spotted DMI Bot, a Telegram bot for the University of Catania Department of Mathematician and C.S.',
+      'Spotted DMI Bot, a Telegram bot for the University of Catania Department of Mathematics and Computer Science',
     // description: 'description',
     image: 'https://github.com/UNICT-DMI/Telegram-SpottedDMI-Bot/raw/main/icon.png',
     skills: ['telegram', 'python', 'pytest', 'docker', 'sqlite'],
@@ -490,7 +490,8 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
-    title: "Tol' Viron, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK",
+    title:
+      "Tol' Viron, retroporting of World of Warcraft arena battleground from Pandaria to WOTLK",
     // description: 'description',
     image: 'https://github.com/Helias/mod-arena-tolviron/raw/master/images/TolViron.jpg',
     skills: ['cplusplus'],
@@ -499,7 +500,7 @@ export const ProjectList: ProjectProps[] = [
   {
     prefix: '🤝 Opensource:',
     title:
-      "Tiger's Peak, retropoting of World of Warcraft arena battleground from Pandaria to WOTLK",
+      "Tiger's Peak, retroporting of World of Warcraft arena battleground from Pandaria to WOTLK",
     // description: 'description',
     image: 'https://github.com/Helias/mod-arena-tigerspeak/raw/master/images/TigersPeak.png',
     skills: ['cplusplus'],
