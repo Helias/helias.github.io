@@ -1,15 +1,17 @@
 # Stefano Borzì
 
 > Personal portfolio of Stefano Borzì, a freelance full-stack software engineer based in the
-> Netherlands and PhD candidate in Data Science at the University of Catania. The site covers his
-> work experience, skills, software projects, open-source communities, teaching, academic
-> publications, and conference talks. He works primarily with TypeScript, Angular, React, Node.js,
-> NestJS, Python, and Laravel, and is passionate about open source and Linux.
+> Netherlands, focused on Angular and TypeScript, with a PhD in Computer Science from the University
+> of Catania. He is open to new freelance roles as an Angular frontend or full-stack developer, in
+> the Amsterdam area or remote. The site covers his work experience, skills, software projects,
+> open-source communities, teaching, academic publications, and conference talks. He works
+> primarily with TypeScript, Angular, React, Node.js, NestJS, Python, and Laravel, and is
+> passionate about open source and Linux.
 
 ## About
-- [About](https://helias.github.io/#about): Bio and contact. Software engineer who started programming at 12; founder of two open-source communities (AzerothCore, UNICT-DEVS).
-- [Full Resume (PDF)](https://helias.github.io/StefanoBorzi-CV.pdf): Complete academic and industry CV.
-- [Industry Resume (PDF)](https://helias.github.io/StefanoBorzi-CV-Industry.pdf): Industry-focused CV.
+- [About](https://stefanoborzi.dev/#about): Bio and contact. Freelance full-stack engineer at Royal BAM Group, previously frontend team lead at FedEx, and Contract Professor at the University of Catania. Started programming at 12; founder of two open-source communities (AzerothCore, UNICT-DEVS). Open to new freelance roles.
+- [Full Resume (PDF)](https://stefanoborzi.dev/StefanoBorzi-CV.pdf): Complete academic and industry CV.
+- [Industry Resume (PDF)](https://stefanoborzi.dev/StefanoBorzi-CV-Industry.pdf): Industry-focused CV.
 - Contact: stefanoborzi32@gmail.com | [GitHub @Helias](https://github.com/Helias) | [LinkedIn](https://linkedin.com/in/stefanoborzi) | [Telegram @Helias](https://t.me/Helias) | [Google Scholar](https://scholar.google.com/citations?user=80n8dycAAAAJ)
 
 ## Skills & Technologies
@@ -22,7 +24,7 @@
 - Methodologies: Scrum, SAFe-Agile, Kanban, Technical Writing (LaTeX)
 
 ## Work Experience
-- [Projects](https://helias.github.io/#projects): Full-stack developer with a strong focus on front-end (Angular). Selected roles:
+- [Projects](https://stefanoborzi.dev/#projects): Full-stack developer with a strong focus on front-end (Angular). Selected roles:
   - Fullstack Developer (freelance), Royal BAM Group, May 2025 - Present: digitalizing construction processes (TypeScript, Angular, Node.js, NestJS, NgRx, .NET, Nx, Playwright)
   - Team Lead, FedEx, Jan 2023 - May 2025: led frontend development, releases, and hiring for an international web app
   - Senior Programmer Analyst, FedEx, Jan 2021 - Dec 2022: 33% app size reduction, Angular upgrades, performance optimization
@@ -30,7 +32,7 @@
   - Software Developer (freelance), Fiverr, Aug 2018 - Jan 2020: web scrapers, Telegram bots, automation (Python, Node.js)
 
 ## Open Source
-- [Opensource](https://helias.github.io/#opensource): Founder of two open-source communities.
+- [Opensource](https://stefanoborzi.dev/#opensource): Founder of two open-source communities.
   - [AzerothCore](https://github.com/azerothcore): Open-source MMORPG game server framework based on World of Warcraft (patch 3.3.5a)
   - [UNICT-DEVS](https://github.com/unict-dmi): Community of University of Catania DMI students building Telegram bots, web apps, and automation tools for university services
 - Agentic AI projects:
@@ -39,11 +41,14 @@
   - [ai-notify](https://github.com/Helias/ai-notify): Plays a sound when an AI coding agent finishes or needs attention while its terminal is unfocused
 
 ## Teaching
-- [Teachings](https://helias.github.io/#teachings): "Quality Development" course at the University of Catania (academic years 2021/2022 through 2025/2026). Covers UNIX shell, Git/GitHub workflows, open-source engagement, Python, unit testing, code quality (SOLID), and CI/CD.
+- [Teachings](https://stefanoborzi.dev/#teachings): Contract Professor at the University of Catania, Department of Mathematics and Computer Science.
+- "Software Quality and Project Development", master's course (academic year 2026/2027). Covers UNIX shell, Git/GitHub workflows, open-source engagement, Python, unit and end-to-end testing with Playwright, Docker, code quality (SOLID), CI/CD, and agentic coding with AI assistants.
+  - [Course page](https://web.dmi.unict.it/courses/lm-18/course-units?aa=127&ins=9799487) | [Course GitHub Organization](https://github.com/UNICT-Quality-Development/) | [Telegram](https://t.me/unict_sqpd)
+- "Quality Development", bachelor's course (academic years 2021/2022, 2022/2023, 2023/2024 and 2025/2026). Covers UNIX shell, Git/GitHub workflows, open-source engagement, Python, unit testing, code quality (SOLID), and CI/CD.
   - [Course GitHub Organization](https://github.com/UNICT-Quality-Development/) | [Slides](https://unict-quality-development.github.io/QualityDevelopment-slides/) | [Students Projects](https://unict-quality-development.github.io/git-catalogue/) | [Telegram](https://t.me/unict_qd)
 
 ## Publications
-- [Publications](https://helias.github.io/#publications): Research focused on synthetic/deepfake audio detection and audio processing.
+- [Publications](https://stefanoborzi.dev/#publications): Research focused on synthetic/deepfake audio detection and audio processing.
   - [Breaking the Silence: Detecting AI-Converted Voices in the Quietest Moments](https://link.springer.com/chapter/10.1007/978-3-031-88223-4_14): Deepfake audio detection using handcrafted features and Random Forest on silent audio segments
   - [Is synthetic voice detection research going into the right direction?](https://openaccess.thecvf.com/content/CVPR2022W/WMF/papers/Borzi_Is_Synthetic_Voice_Detection_Research_Going_Into_the_Right_Direction_CVPRW_2022_paper.pdf): CVPR 2022 workshop paper critiquing voice spoofing datasets
   - [Spafe: Simplified Python Audio Features Extraction](https://zenodo.org/records/11396240): Lightweight Python audio feature extraction library
@@ -51,10 +56,11 @@
   - [SMART: The String Matching Algorithms Research Tool](https://www.stringology.org/papers/PSC2016.pdf#page=109): Tool and survey for testing exact string matching algorithms
 
 ## Events & Talks
-- [Events](https://helias.github.io/#events): Conference and meetup talks (mostly in Italian). Topics include Python multithreading, extensibility, and AI agent skills (PythonCatania), GitHub & CI/CD for code security, audio processing with ffmpeg, synthetic voice detection (MediaForensics 2022), history of operating systems, and open data manipulation (OpenDataSicilia 2022).
+- [Events](https://stefanoborzi.dev/#events): Conference and meetup talks (mostly in Italian). Topics include Python multithreading, extensibility, and AI agent skills (PythonCatania), GitHub & CI/CD for code security, audio processing with ffmpeg, synthetic voice detection (MediaForensics 2022), history of operating systems, and open data manipulation (OpenDataSicilia 2022).
 
 ## Education
-- University of Catania, PhD in Data Science (2021-2026)
+- University of Catania, PhD in Computer Science (2021-2026)
+- Nordita, Stockholm, visiting PhD student (May 2024 - Oct 2024): machine learning for Barkhausen noise analysis
 - University of Catania, MSc in Computer Science / Data Science (2017-2019)
 - University of Catania, BSc in Computer Science (2014-2017)
 
