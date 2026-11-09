@@ -20,7 +20,6 @@ type Dictionary = Record<string, string>;
 const en: Dictionary = {
   'nav.home': 'Home',
   'nav.about': 'About',
-  'nav.skills': 'Skills',
   'nav.projects': 'Projects',
   'nav.opensource': 'Opensource',
   'nav.teachings': 'Teachings',
@@ -47,10 +46,38 @@ const en: Dictionary = {
   'about.resume': 'Full Resume',
   'about.resumeIndustry': 'Industry Resume',
 
+  'about.tab.experience': 'Work Experience',
+  'about.experience.present': 'Present',
+  'about.tab.education': 'Education',
+  'about.education.degrees': 'Degrees',
+  'about.education.languages': 'Languages',
+  'experience.bam.desc':
+    'Helping digitalize construction processes, for a more sustainable future and against the housing shortage in the Netherlands, with TypeScript, Angular, NgRx, Nx, Node.js, NestJS, .NET and Tailwind. Keeping the project maintainable with Playwright E2E tests next to unit tests.',
+  'experience.fedex-lead.desc':
+    'Team lead of the MAGR team: led frontend development and the releases of this international web application, coordinated with other teams, and interviewed, hired and onboarded new developers.',
+  'experience.unict.desc':
+    'Teaching the Quality Development course (2021/2022 to 2025/2026) and Software Quality and Project Development (since 2026/2027).',
+  'experience.fedex-senior.desc':
+    'Cut the application size by 33% by removing unused and non-tree-shakable packages, reduced Google Maps costs and shared the approach with other teams, and kept Angular on the latest version. TypeScript, Angular, NgRx, Jasmine, Karma, Optimizely, Playwright, Cypress.',
+  'experience.infront.desc':
+    'Developed a FinTech platform, kept Angular up to date and removed the jQuery dependency in favor of Angular and native JavaScript. TypeScript, Angular, NgRx, Jasmine, Karma, SASS, Bootstrap.',
+  'experience.fiverr.desc':
+    'Delivered software projects for international clients, from requirements to delivery: web scraping tools in Python and Node.js, Telegram bots and automation scripts.',
+  'experience.italiahotspot-2018.desc':
+    "IT consultant and software developer for the client NewTecna: built custom management software with a secure Laravel REST API and an AngularJS single-page application, aligned with the client's business goals.",
+  'experience.codiceabarre-2017.desc':
+    'Developed a full-stack management system with a Laravel REST API and an AngularJS single-page application.',
+  'experience.perdichizzi.desc':
+    'Built a management system with a Laravel RESTful API and an AngularJS single-page application.',
+  'experience.codiceabarre-2016.desc':
+    'Built a demo e-commerce platform integrating WordPress, WooCommerce and the Telegram API, with a custom PHP, Bootstrap and jQuery frontend.',
+  'experience.italiahotspot-2015.desc':
+    'Full-stack developer working with PHP/Laravel and Angular/Bootstrap, and configuring OpenWRT/DD-WRT router firmware with FreeRADIUS servers.',
+  'experience.insolaria.desc':
+    'Developed a web portal for public administrations with a Laravel backend, an AngularJS frontend and WordPress API integration.',
+
   'skills.title': 'Skills',
   'projects.title': 'Projects',
-  'skills.intro':
-    'Full-stack developer focused on front-end, mainly Angular and TypeScript, with back-end work and plenty of Telegram bots along the way.',
   'skills.note': 'Icon size reflects how many projects use it, the order is random.',
   'skills.allSkills': 'All skills & technologies',
   'skills.group.frontend': 'Front-end',
@@ -111,7 +138,6 @@ const en: Dictionary = {
 const it: Dictionary = {
   'nav.home': 'Home',
   'nav.about': 'Chi sono',
-  'nav.skills': 'Competenze',
   'nav.projects': 'Progetti',
   'nav.opensource': 'Opensource',
   'nav.teachings': 'Insegnamenti',
@@ -138,10 +164,38 @@ const it: Dictionary = {
   'about.resume': 'Curriculum completo',
   'about.resumeIndustry': 'Curriculum aziendale',
 
+  'about.tab.experience': 'Esperienza lavorativa',
+  'about.experience.present': 'Oggi',
+  'about.tab.education': 'Formazione',
+  'about.education.degrees': 'Titoli di studio',
+  'about.education.languages': 'Lingue',
+  'experience.bam.desc':
+    'Contribuisco alla digitalizzazione dei processi edilizi, per un futuro più sostenibile e contro la carenza di alloggi nei Paesi Bassi, con TypeScript, Angular, NgRx, Nx, Node.js, NestJS, .NET e Tailwind. Mantengo il progetto manutenibile con test E2E in Playwright accanto agli unit test.',
+  'experience.fedex-lead.desc':
+    'Team lead del team MAGR: ho guidato lo sviluppo frontend e i rilasci di questa applicazione web internazionale, mi sono coordinato con gli altri team e ho svolto colloqui, assunto e inserito nuovi sviluppatori.',
+  'experience.unict.desc':
+    'Insegno il corso di Quality Development (dal 2021/2022 al 2025/2026) e Software Quality and Project Development (dal 2026/2027).',
+  'experience.fedex-senior.desc':
+    "Ho ridotto del 33% le dimensioni dell'applicazione rimuovendo i pacchetti inutilizzati e non tree-shakable, ho ridotto i costi di Google Maps e condiviso l'approccio con altri team, e ho mantenuto Angular all'ultima versione. TypeScript, Angular, NgRx, Jasmine, Karma, Optimizely, Playwright, Cypress.",
+  'experience.infront.desc':
+    'Ho sviluppato una piattaforma FinTech, mantenuto Angular aggiornato e rimosso la dipendenza da jQuery in favore di Angular e JavaScript nativo. TypeScript, Angular, NgRx, Jasmine, Karma, SASS, Bootstrap.',
+  'experience.fiverr.desc':
+    'Ho realizzato progetti software per clienti internazionali, dai requisiti alla consegna: strumenti di web scraping in Python e Node.js, bot Telegram e script di automazione.',
+  'experience.italiahotspot-2018.desc':
+    'Consulente IT e sviluppatore software per il cliente NewTecna: ho realizzato software gestionali su misura con una REST API sicura in Laravel e una single-page application in AngularJS, in linea con gli obiettivi di business del cliente.',
+  'experience.codiceabarre-2017.desc':
+    'Ho sviluppato un gestionale full-stack con una REST API in Laravel e una single-page application in AngularJS.',
+  'experience.perdichizzi.desc':
+    'Ho realizzato un gestionale con una RESTful API in Laravel e una single-page application in AngularJS.',
+  'experience.codiceabarre-2016.desc':
+    'Ho realizzato una piattaforma e-commerce dimostrativa integrando WordPress, WooCommerce e le API di Telegram, con un frontend personalizzato in PHP, Bootstrap e jQuery.',
+  'experience.italiahotspot-2015.desc':
+    'Ho lavorato come sviluppatore full-stack con PHP/Laravel e Angular/Bootstrap e ho configurato il firmware OpenWRT/DD-WRT dei router con server FreeRADIUS.',
+  'experience.insolaria.desc':
+    'Ho sviluppato un portale web per le pubbliche amministrazioni con backend Laravel, frontend AngularJS e integrazione delle API di WordPress.',
+
   'skills.title': 'Competenze',
   'projects.title': 'Progetti',
-  'skills.intro':
-    'Sviluppatore full-stack focalizzato sul front-end, principalmente Angular e TypeScript, con esperienza anche back-end e diversi bot Telegram.',
   'skills.note': "La dimensione dell'icona indica in quanti progetti è usata, l'ordine è casuale.",
   'skills.allSkills': 'Tutte le competenze e tecnologie',
   'skills.group.frontend': 'Front-end',
@@ -323,6 +377,31 @@ const it: Dictionary = {
     'Talk sui bot Telegram al Google DevFest 2017',
   'Telegram Bot Workshop - Google I/O Extended at the GDG in Catania':
     'Workshop sui bot Telegram - Google I/O Extended al GDG di Catania',
+
+  // Work experience roles and institutions
+  'Fullstack Developer (freelancer)': 'Sviluppatore fullstack (freelance)',
+  'Software Developer (freelancer)': 'Sviluppatore software (freelance)',
+  'Web Developer (part-time)': 'Sviluppatore web (part-time)',
+  'Contract Professor': 'Professore a contratto',
+  'University of Catania': 'Università di Catania',
+
+  // Education
+  'PhD in Computer Science': 'Dottorato di ricerca in Informatica',
+  'Visiting PhD student': 'Dottorando in visita',
+  'Nordita, Stockholm': 'Nordita, Stoccolma',
+  'Machine learning for Barkhausen noise analysis':
+    "Machine learning per l'analisi del rumore di Barkhausen",
+  'MSc in Computer Science (Data Science)': 'Laurea magistrale in Informatica (Data Science)',
+  'Grade: 110/110 cum laude': 'Voto: 110/110 e lode',
+  'BSc in Computer Science': 'Laurea triennale in Informatica',
+  'Grade: 106/110': 'Voto: 106/110',
+  Italian: 'Italiano',
+  English: 'Inglese',
+  Dutch: 'Olandese',
+  Spanish: 'Spagnolo',
+  Native: 'Madrelingua',
+  Fluent: 'Fluente',
+  Basic: 'Base',
 };
 
 

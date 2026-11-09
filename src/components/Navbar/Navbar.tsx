@@ -7,8 +7,6 @@ import LanguageSwitcher from './LanguageSwitcher';
 const navigation = [
   { key: 'nav.home', href: '#home', current: false },
   { key: 'nav.about', href: '#about', current: false },
-  // { key: 'nav.experience', href: '#', current: false },
-  { key: 'nav.skills', href: '#skills', current: false },
   { key: 'nav.projects', href: '#projects', current: false },
   { key: 'nav.opensource', href: '#opensource', current: false },
   { key: 'nav.teachings', href: '#teachings', current: false },

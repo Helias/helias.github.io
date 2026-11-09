@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { useTranslation } from '../../i18n/context';
-import { navbarContainerClasses } from '../layout';
 import { getIcon } from '../Projects/helper';
 import { skillsWeighted } from '../Projects/ProjectList';
 import { SKILL_LABELS } from './skillLabels';
@@ -34,7 +33,7 @@ const SKILL_GROUPS: { labelKey: string; skills: string }[] = [
   },
 ];
 
-export default function Skills(): JSX.Element {
+export default function SkillsTab(): JSX.Element {
   const { t } = useTranslation();
 
   const icons = useMemo(() => {
@@ -52,12 +51,8 @@ export default function Skills(): JSX.Element {
   }, []);
 
   return (
-    <div id="skills" className={`${navbarContainerClasses} pt-16`}>
-      <h2 className="text-4xl text-gray-600 underline underline-offset-8">{t('skills.title')}</h2>
-
-      <p className="mt-4 text-lg md:text-xl">{t('skills.intro')}</p>
-
-      <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 leading-none">
+    <div>
+      <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3 leading-none">
         {icons.map(({ skill, sizeRem }) => (
           <span
             key={skill}
@@ -73,19 +68,17 @@ export default function Skills(): JSX.Element {
       </div>
       <p className="mt-3 text-center text-sm text-gray-500">{t('skills.note')}</p>
 
-      <details className="mt-4 text-center">
-        <summary className="cursor-pointer text-lg font-semibold text-gray-700 hover:text-gray-900">
-          {t('skills.allSkills')}
-        </summary>
-        <dl className="mt-3 grid grid-cols-1 md:grid-cols-[max-content_1fr] gap-x-4 gap-y-2 text-left">
-          {SKILL_GROUPS.map(({ labelKey, skills }) => (
-            <div key={labelKey} className="contents">
-              <dt className="font-semibold">{t(labelKey)}</dt>
-              <dd className="mb-2 md:mb-0">{skills}</dd>
-            </div>
-          ))}
-        </dl>
-      </details>
+      <h3 className="mt-4 text-center text-lg font-semibold text-gray-700">
+        {t('skills.allSkills')}
+      </h3>
+      <dl className="mt-3 grid grid-cols-1 md:grid-cols-[max-content_1fr] gap-x-4 gap-y-2 text-left">
+        {SKILL_GROUPS.map(({ labelKey, skills }) => (
+          <div key={labelKey} className="contents">
+            <dt className="font-semibold">{t(labelKey)}</dt>
+            <dd className="mb-2 md:mb-0">{skills}</dd>
+          </div>
+        ))}
+      </dl>
     </div>
   );
 }

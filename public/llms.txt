@@ -9,7 +9,7 @@
 > passionate about open source and Linux.
 
 ## About
-- [About](https://stefanoborzi.dev/#about): Bio and contact. Freelance full-stack engineer at Royal BAM Group, previously frontend team lead at FedEx, and Contract Professor at the University of Catania. Started programming at 12; founder of two open-source communities (AzerothCore, UNICT-DEVS). Open to new freelance roles.
+- [About](https://stefanoborzi.dev/#about): Bio, contact, work experience, education, spoken languages and skills. Freelance full-stack engineer at Royal BAM Group, previously frontend team lead at FedEx, and Contract Professor at the University of Catania. Started programming at 12; founder of two open-source communities (AzerothCore, UNICT-DEVS). Open to new freelance roles.
 - [Full Resume (PDF)](https://stefanoborzi.dev/StefanoBorzi-CV.pdf): Complete academic and industry CV.
 - [Industry Resume (PDF)](https://stefanoborzi.dev/StefanoBorzi-CV-Industry.pdf): Industry-focused CV.
 - Contact: stefanoborzi32@gmail.com | [GitHub @Helias](https://github.com/Helias) | [LinkedIn](https://linkedin.com/in/stefanoborzi) | [Telegram @Helias](https://t.me/Helias) | [Google Scholar](https://scholar.google.com/citations?user=80n8dycAAAAJ)

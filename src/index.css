@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  /* Must equal the Navbar's h-12 row + border-b-2. */
+  --spacing-navbar: calc(3rem + 2px);
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
