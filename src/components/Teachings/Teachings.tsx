@@ -96,7 +96,7 @@ function CourseContent({ course }: { course: CourseInfo }): JSX.Element {
   return (
     <>
       <div className={navbarContainerClasses}>
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-12">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-center md:justify-start gap-12">
           <img src={course.logo} alt={course.title} className="h-64 w-auto" />
           <div className="bg-gray-800 w-80 md:w-100 p-4 md:p-5">
             <h3 className="text-[#00ec7a] text-2xl">{course.title}</h3>
@@ -177,7 +177,7 @@ export default function Teachings(): JSX.Element {
 
   return (
     <div id="teachings" className="pt-16 bg-gray-800">
-      <div className="bg-[url('/teachings/qd-bg.jpg')] bg-fixed bg-center bg-cover">
+      <div className="bg-[url('/teachings/lesson.jpg')] bg-fixed bg-center bg-cover">
         <div className="bg-[rgba(0,0,0,0.5)]">
           <div
             className={`${navbarContainerClasses} pt-10 flex flex-wrap items-center gap-x-8 gap-y-3`}
