@@ -35,12 +35,15 @@ const en: Dictionary = {
   'home.typed.5': 'a full-stack developer',
 
   'about.title': 'About',
-  'about.p1': "I'm a software engineer who started programming for fun at the age of 12.",
+  'about.p1':
+    "I'm a full-stack engineer based in the Netherlands, focused on Angular and TypeScript, with a PhD in Computer Science. I started programming for fun at the age of 12.",
   'about.p2':
-    'I have several years of working experience mostly using web technologies like TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP, and Laravel (go to Skills for a full list).',
-  'about.p3.before': 'In my spare time, I manage two opensource communities that I have founded ',
+    'I work as a freelancer at Royal BAM Group. Before that I spent four years at FedEx, where I went from senior developer to frontend team lead. I also teach Software Quality and Project Development at the University of Catania.',
+  'about.p3.before': 'In my spare time, I manage two open-source communities that I founded: ',
   'about.p3.and': ' and ',
-  'about.p4': 'I am really passionate about opensource and Linux.',
+  'about.p4': "I'm really passionate about open source and Linux.",
+  'about.p5':
+    "I'm open to new freelance roles as an Angular frontend or full-stack developer, in the Amsterdam area or remote.",
   'about.resume': 'Full Resume',
   'about.resumeIndustry': 'Industry Resume',
 
@@ -124,12 +127,14 @@ const it: Dictionary = {
 
   'about.title': 'Chi sono',
   'about.p1':
-    "Sono un ingegnere del software che ha iniziato a programmare per divertimento all'età di 12 anni.",
+    "Sono uno sviluppatore full-stack che vive nei Paesi Bassi, specializzato in Angular e TypeScript, con un dottorato in Informatica. Ho iniziato a programmare per divertimento all'età di 12 anni.",
   'about.p2':
-    "Ho diversi anni di esperienza lavorativa, principalmente con tecnologie web come TypeScript/JavaScript, Angular, NGRX, Redux, React, Next.js, Tailwindcss, Node.js, Python, Bootstrap, HTML, CSS/SCSS, C++, PHP e Laravel (vai a Competenze per l'elenco completo).",
-  'about.p3.before': 'Nel tempo libero gestisco due community opensource che ho fondato: ',
+    "Lavoro come freelance per Royal BAM Group. Prima ho passato quattro anni in FedEx, dove da sviluppatore senior sono diventato team lead del frontend. Insegno anche Software Quality and Project Development all'Università di Catania.",
+  'about.p3.before': 'Nel tempo libero gestisco due community open-source che ho fondato: ',
   'about.p3.and': ' e ',
-  'about.p4': 'Sono davvero appassionato di opensource e Linux.',
+  'about.p4': 'Sono davvero appassionato di open source e Linux.',
+  'about.p5':
+    "Sono disponibile per nuovi incarichi da freelance come sviluppatore frontend Angular o full-stack, nell'area di Amsterdam o da remoto.",
   'about.resume': 'Curriculum completo',
   'about.resumeIndustry': 'Curriculum aziendale',
 

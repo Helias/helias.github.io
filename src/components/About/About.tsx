@@ -77,6 +77,7 @@ export default function About(): JSX.Element {
             {t('about.p4')}{' '}
             <img className="inline-block align-middle" src="about/linux-tux.png" width="32" />
           </p>
+          <p className="mt-10">{t('about.p5')}</p>
         </div>
       </div>
     </div>
