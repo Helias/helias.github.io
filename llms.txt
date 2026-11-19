@@ -56,7 +56,7 @@
   - [SMART: The String Matching Algorithms Research Tool](https://www.stringology.org/papers/PSC2016.pdf#page=109): Tool and survey for testing exact string matching algorithms
 
 ## Events & Talks
-- [Events](https://stefanoborzi.dev/#events): Conference and meetup talks (mostly in Italian). Topics include Python multithreading, extensibility, and AI agent skills (PythonCatania), GitHub & CI/CD for code security, audio processing with ffmpeg, synthetic voice detection (MediaForensics 2022), history of operating systems, and open data manipulation (OpenDataSicilia 2022).
+- [Events](https://stefanoborzi.dev/#events): Conference and meetup talks (mostly in Italian). Topics include agentic engineering and the RPAC workflow (GDG DevFest Catania 2026), Python multithreading, extensibility, and AI agent skills (PythonCatania), GitHub & CI/CD for code security, audio processing with ffmpeg, synthetic voice detection (MediaForensics 2022), history of operating systems, and open data manipulation (OpenDataSicilia 2022).
 
 ## Education
 - University of Catania, PhD in Computer Science (2021-2026)
