@@ -19,6 +19,15 @@ interface TalkData {
 
 const talks: TalkData[] = [
   {
+    image: 'events/DevFest-2026-agentic-engineering.jpg',
+    prefix: '🇮🇹 Speaker:',
+    title: 'DevFest 2026 - Agentic Engineering and RPAC workflow',
+    slides: 'https://slides.com/stefanoborzi/code-1ec50d/fullscreen',
+    github: 'https://github.com/eai-org/agent-toolkit/',
+    event:
+      'https://gdg.community.dev/v0/forum/devfest-catania-2026-2060927/topic/devfest-catania-2026-programma-6530/',
+  },
+  {
     image: 'events/PythonCatania-ai-py-skills.png',
     prefix: '🇮🇹 Speaker:',
     title: 'PythonCatania - AI py skills',
