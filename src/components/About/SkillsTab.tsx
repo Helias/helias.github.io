@@ -16,7 +16,7 @@ const SKILL_GROUPS: { labelKey: string; skills: string }[] = [
   {
     labelKey: 'skills.group.backend',
     skills:
-      'Node.js, NestJS, Express.js, WebSocket, Socket.IO, PHP, Laravel, Python, FastAPI, Flask, PyTorch, R, C, C++, Java, .NET, Lua, Bash, Microservices, SOAP, OAuth, Networking (RESTful APIs, JSON, XML), MySQL, SQLite, Firebase, Supabase (Realtime, Monitoring)',
+      'Node.js, NestJS, Express.js, WebSocket, Socket.IO, PHP, Laravel, Python, FastAPI, Flask, PyTorch, R, C, C++, Java, Spring Boot, .NET, Lua, Bash, Microservices, SOAP, OAuth, Networking (RESTful APIs, JSON, XML), MySQL, SQLite, Firebase, Supabase (Realtime, Monitoring)',
   },
   {
     labelKey: 'skills.group.testing',
@@ -25,7 +25,7 @@ const SKILL_GROUPS: { labelKey: string; skills: string }[] = [
   {
     labelKey: 'skills.group.devops',
     skills:
-      'Nx, Webpack, Docker, Linux, OpenWRT, Radius, Apache, Nginx, Azure, CI/CD, GitHub Actions, Jenkins, DevOps, Git, GitHub, GitLab, Bitbucket, WordPress, Figma, Adobe Analytics, LaTeX',
+      'Nx, Webpack, Gradle, Docker, Linux, OpenWRT, Radius, Apache, Nginx, Azure, CI/CD, GitHub Actions, Jenkins, DevOps, Git, GitHub, GitLab, Bitbucket, WordPress, Figma, Adobe Analytics, LaTeX',
   },
   {
     labelKey: 'skills.group.methodologies',

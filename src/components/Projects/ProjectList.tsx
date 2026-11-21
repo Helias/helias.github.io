@@ -275,6 +275,17 @@ export const ProjectList: ProjectProps[] = [
   },
   {
     prefix: '🤝 Opensource:',
+    title:
+      "NETME, knowledge networks from biomedical literature through custom ontological databases in TAGME (master's thesis)",
+    // description: 'description',
+    image: 'projects/netme.png',
+    skills: ['java', 'spring', 'gradle', 'angular', 'typescript', 'bootstrap', 'python', 'mysql'],
+    github: 'https://github.com/Helias/multi-tagme',
+    website: 'https://link.springer.com/article/10.1007/s41109-021-00435-x',
+    customClass: 'no-bg-cover bg-[length:100%] bg-no-repeat bg-center',
+  },
+  {
+    prefix: '🤝 Opensource:',
     title: 'Server-status, web application',
     // description: 'description',
     image: 'projects/server-status.png',
