@@ -14,12 +14,13 @@ interface Topic {
 
 interface CourseInfo {
   title: string;
+  tabTitle?: string;
   logo: string;
   editions: { name: string; link?: EditionLink }[];
   github: string;
   slides?: string;
   studentProjects?: string;
-  telegram: string;
+  telegram?: string;
   descriptionKey: string;
   topics: Topic[];
 }
@@ -87,6 +88,28 @@ const COURSES: CourseInfo[] = [
     telegram: 'https://t.me/unict_qd',
     descriptionKey: 'teachings.qd.desc',
     topics: BASE_TOPICS,
+  },
+  {
+    title: 'Secure Systems and Programmable Networks: Tools for the Future',
+    tabTitle: 'Secure Systems and Programmable Networks',
+    logo: 'teachings/sssp-logo.jpg',
+    editions: [
+      {
+        name: '2024/2025',
+        link: 'https://web.dmi.unict.it/it/corsi/l-31/secure-systems-and-programmable-networks-tools-future',
+      },
+    ],
+    github: 'https://github.com/UNICT-Quality-Development/fuzz-test-example',
+    slides: 'https://github.com/UNICT-Quality-Development/fuzz-test-example/tree/main/docs',
+    descriptionKey: 'teachings.sssp.desc',
+    topics: [
+      { alt: 'Git', images: ['teachings/git.png'] },
+      { alt: 'GitHub', images: ['teachings/GitHub.png'] },
+      { alt: 'CI/CD', images: ['teachings/CI-CD.png'] },
+      { alt: 'GitHub Actions', images: ['teachings/githubactions.svg'] },
+      { alt: 'C++', images: ['teachings/cplusplus.svg'] },
+      { alt: 'Fuzz testing with libFuzzer', images: ['teachings/llvm.svg'] },
+    ],
   },
 ];
 
@@ -187,7 +210,7 @@ export default function Teachings(): JSX.Element {
             </h2>
 
             <div role="tablist" className="flex flex-wrap gap-2">
-              {COURSES.map(({ title }, index) => (
+              {COURSES.map(({ title, tabTitle }, index) => (
                 <button
                   key={title}
                   id={`teachings-tab-${index}`}
@@ -201,7 +224,7 @@ export default function Teachings(): JSX.Element {
                       : 'bg-gray-800 hover:bg-gray-400 cursor-pointer'
                   }`}
                 >
-                  {title}
+                  {tabTitle ?? title}
                 </button>
               ))}
             </div>

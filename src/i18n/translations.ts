@@ -110,6 +110,9 @@ const en: Dictionary = {
   'teachings.qd.desc':
     'The course covers topics such as UNIX Shell usage, version control with Git and GitHub workflows, open-source community engagement, Python programming, unit testing, code quality principles (ex. SOLID), and Continuous Integration/Continuous Deployment (CI/CD) tools.',
 
+  'teachings.sssp.desc':
+    'Part of a multi-speaker course on secure systems. My lessons covered version control with Git, GitHub collaboration (issues, pull requests, forks, GitHub Pages), CI/CD pipelines with GitHub Actions (builds, releases, secrets), and fuzz testing a C++ project with libFuzzer and AddressSanitizer, run in CI to catch crashes automatically.',
+
   'publications.title': 'Publications',
   'article.article': 'article',
   'article.cite': 'cite',
@@ -228,6 +231,8 @@ const it: Dictionary = {
   'teachings.qd.desc':
     "Il corso affronta argomenti come l'uso della shell UNIX, il controllo di versione con Git e i workflow di GitHub, la partecipazione alle community open-source, la programmazione in Python, gli unit test, i principi di qualità del codice (es. SOLID) e gli strumenti di Continuous Integration/Continuous Deployment (CI/CD).",
 
+  'teachings.sssp.desc':
+    'Parte di un corso sui sistemi sicuri tenuto da più docenti. Le mie lezioni hanno trattato il controllo di versione con Git, la collaborazione su GitHub (issue, pull request, fork, GitHub Pages), le pipeline CI/CD con GitHub Actions (build, release, secrets) e il fuzz testing di un progetto C++ con libFuzzer e AddressSanitizer, eseguito in CI per individuare automaticamente i crash.',
   'publications.title': 'Pubblicazioni',
   'article.article': 'articolo',
   'article.cite': 'cita',
@@ -373,8 +378,7 @@ const it: Dictionary = {
   'Linux Day - Debian-based distros': 'Linux Day - Distribuzioni basate su Debian',
   'Telegram Bot Talk and Workshop at the Google DevFest 2018':
     'Talk e workshop sui bot Telegram al Google DevFest 2018',
-  'Telegram Bot Talk at the Google DevFest 2017':
-    'Talk sui bot Telegram al Google DevFest 2017',
+  'Telegram Bot Talk at the Google DevFest 2017': 'Talk sui bot Telegram al Google DevFest 2017',
   'Telegram Bot Workshop - Google I/O Extended at the GDG in Catania':
     'Workshop sui bot Telegram - Google I/O Extended al GDG di Catania',
 
@@ -403,6 +407,5 @@ const it: Dictionary = {
   Fluent: 'Fluente',
   Basic: 'Base',
 };
-
 
 export const dictionaries: Record<Language, Dictionary> = { en, it };
